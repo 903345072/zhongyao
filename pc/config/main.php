@@ -7,7 +7,7 @@ $params = array_merge(
 );
 
 return [
-    'id' => 'app-home',
+    'id' => 'app-pc',
     'basePath' => dirname(__DIR__),
     'controllerNamespace' => 'home\controllers',
     'bootstrap' => bootstrap_filter(['admin'], ['log']),
