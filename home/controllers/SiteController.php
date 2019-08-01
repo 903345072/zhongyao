@@ -49,6 +49,7 @@ class SiteController extends \home\components\Controller
         $this->layout      = 'web_main';
         $this->view->title = '登录';
         if (! user()->isGuest) {
+
             return $this->redirect(['order/buy','id'=>1,'model_type'=>1]);
         }
 
@@ -63,7 +64,12 @@ class SiteController extends \home\components\Controller
             }
 
             if ($model->login()) {
-                return success(url(['order/buy','id'=>1,'model_type'=>1]));
+                if ($this->module->id == 'app-pc'){
+                    return success(url(['/']));
+                }else{
+                    return success(url(['order/buy','id'=>1,'model_type'=>1]));
+                }
+
             } else {
                 return error($model);
             }

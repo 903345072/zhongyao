@@ -23393,3 +23393,40 @@ Stack trace:
 #6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
 #7 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
 #8 {main}
+2019-08-01 19:27:46 [GET][http://localhost:82/order/positions?product_id=1&model_type=1][::1][-][tefj24m4ohu08jtia1ro16tl33][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and o.order_state = 1 and o.model_type = 1 group by a.symbol' at line 2' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\OrderController.php(788): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\OrderController->actionPositions()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('positions', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('order/positions', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and o.order_state = 1 and o.model_type = 1 group by a.symbol' at line 2
+The SQL being executed was: select count(o.id) as count,a.symbol from `order` o INNER JOIN product p on p.id = o.product_id 
+             INNER JOIN data_all a on a.name = p.table_name where o.user_id = and o.order_state = 1 and o.model_type = 1 group by a.symbol' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'select count(o....')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\OrderController.php(788): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\OrderController->actionPositions()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('positions', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('order/positions', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42000
+    [1] => 1064
+    [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and o.order_state = 1 and o.model_type = 1 group by a.symbol' at line 2
+)
+
