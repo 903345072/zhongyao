@@ -25,17 +25,23 @@ class SiteController extends \home\components\Controller
 
     public function actionIndex()
     {
-        return $this->redirect(url(['order/buy','id'=>1,'model_type'=>1]));
-        $this->layout      = 'web_main';
-        $this->view->title = '首页';
-        // 国内期货
-        $cashProduct = Product::getIndexCashProduct();
-        // 国际期货
-        $volumeProduct = Product::getIndexVolumeProduct();
 
-        $article = Article::find()->orderBy('publish_time desc')->one();
+        if ($this->module->id == 'app-pc'){
+            $this->layout      = 'web_main';
+            $this->view->title = '首页';
+            // 国内期货
+            $cashProduct = Product::getIndexCashProduct();
+            // 国际期货
+            $volumeProduct = Product::getIndexVolumeProduct();
 
-        return $this->render('index', compact('cashProduct', 'volumeProduct', 'article'));
+            $article = Article::find()->orderBy('publish_time desc')->one();
+
+            return $this->render('index', compact('cashProduct', 'volumeProduct', 'article'));
+        }else{
+            return $this->redirect(url(['order/buy','id'=>1,'model_type'=>1]));
+        }
+
+
     }
 
     public function actionLogin()

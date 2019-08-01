@@ -137,7 +137,7 @@
       </div>
     </div>
   </div>
-  <div class="wrap clearfix mb40">
+  <div style="display: none" class="wrap clearfix mb40">
     <div class="fl l">
       <h3>国内期货</h3>
       <p>火爆产品获利丰盛</p>
@@ -885,7 +885,7 @@
     var symbol2 = $('.curBtn2').attr('flag');
 
     $.ajax({
-      url: "<?=WEB_STOCKET_URL2?>" + symbol1 + ',' + symbol2,
+      url: "<?=WEB_STOCKET_URL2?>" + symbol2,
       async: true,dataType:'json',
       success: function (newData) {
 
