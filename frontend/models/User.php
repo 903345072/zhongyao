@@ -31,7 +31,7 @@ class User extends \common\models\User
             // 注册场景密码和确认密码的验证
             [['password'], 'compare', 'compareAttribute' => 'cfmPassword', 'on' => 'register'],
             // 注册场景验证短信手机号和实际手机号的验证
-            [['mobile'], 'compare', 'compareAttribute' => 'registerMobile', 'on' => 'register'],
+            //[['mobile'], 'compare', 'compareAttribute' => 'registerMobile', 'on' => 'register'],
             // 修改密码场景的基础验证
             [['oldPassword', 'newPassword', 'cfmPassword'], 'required', 'on' => 'password'],
             // 修改密码验证旧密码
@@ -39,7 +39,7 @@ class User extends \common\models\User
             // 修改密码场景新密码与验证密码的验证
             [['newPassword'], 'compare', 'compareAttribute' => 'cfmPassword'],
             // 短信验证码
-            [['verifyCode'], 'verifyCode'],
+            //[['verifyCode'], 'verifyCode'],
             // 验证码
             [['captcha'], 'captcha'],
             // 手机号必须11位

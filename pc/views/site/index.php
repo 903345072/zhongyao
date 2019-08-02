@@ -185,15 +185,34 @@
     <div class="fl sction3_r">
       <h3>扫一扫下载APP 随时随地交易</h3>
       <div class="clearfix erweima">
-        <div class="fl ios">
-          <img src="/web/images/erweima.jpg" alt="">
+          <?php
+          $file1 = config('web_url').config('ios_download_code');
+            if (config('ios_download_code')){
+                echo "<div class='fl ios'>
+          <img class='erms' src={$file1} alt=''>
           <p>苹果版</p>
-        </div>
-        <div class="fl">
-          <img src="/web/images/erweima.jpg" alt="">
+        </div>";
+            }
+          ?>
+
+          <?php
+          $file2 = config('web_url').config('android_download_code');
+          if (config('android_download_code')){
+              echo "<div class='fl'>
+          <img class='erms'  src={$file2} alt=''>
           <p>安卓版</p>
-        </div>
+        </div>";
+          }
+          ?>
+
       </div>
+        <style>
+            .erms{
+                width: 160px;
+                height: 160px;
+            }
+        </style>
+
     </div>
   </div>
 </div>
@@ -366,7 +385,7 @@
     </div>
   </div>
 </div>
-<a target="_blank" href="http://chat.livechatvalue.com/chat/chatClient/chatbox.jsp?jid=8827179158&companyID=1013221&configID=71501&codeType=custom">
+<a style="display: none" target="_blank" href="http://chat.livechatvalue.com/chat/chatClient/chatbox.jsp?jid=8827179158&companyID=1013221&configID=71501&codeType=custom">
   <div class="online">
     在线<br/>客服
   </div>

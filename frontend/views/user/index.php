@@ -111,6 +111,14 @@
         <p>意见反馈</p>
         <img src="/wap/img/user_icon_30.png" class="ris"/>
       </li></a>
+
+      <a href="<?= url(['user/conn-kf']) ?>"><li>
+              <div class="icon">
+                  <img src="/wap/img/user_icon10.png"/>
+              </div>
+              <p>联系客服</p>
+              <img src="/wap/img/user_icon_30.png" class="ris"/>
+          </li></a>
     <a href="<?=url(['site/logout'])?>"><li>
         <div class="icon">
           <img src="/wap/img/user_icon11.png"/>

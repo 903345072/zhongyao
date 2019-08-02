@@ -33,9 +33,7 @@ class SiteController extends \home\components\Controller
             $cashProduct = Product::getIndexCashProduct();
             // 国际期货
             $volumeProduct = Product::getIndexVolumeProduct();
-
             $article = Article::find()->orderBy('publish_time desc')->one();
-
             return $this->render('index', compact('cashProduct', 'volumeProduct', 'article'));
         }else{
             return $this->redirect(url(['order/buy','id'=>1,'model_type'=>1]));

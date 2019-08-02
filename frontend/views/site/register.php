@@ -11,7 +11,7 @@
           <input type="text" name="User[mobile]" placeholder="手机号码" autocomplete="off" id="user-mobile">
 					<img src="/wap/img/icons_07.jpg" class="c1 c"/>
 				</div>
-				<div class="lable">
+				<div style="display: none" class="lable">
 					<p>验证码</p>
           <input type="text" placeholder="验证码" name="User[verifyCode]" autocomplete="off" >
 					<button type="button"id="verifyCodeBtn" href="javascript:;"><div class="hq">获取</div></button>
