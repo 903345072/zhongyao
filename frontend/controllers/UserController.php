@@ -363,12 +363,9 @@ class UserController extends \frontend\components\Controller
                 UserCharge::hypay($amount, 'wangyin');//微信扫码支付，翰银支付
                 break;
             case '2':
-                $paytype = 'wxpay';
-                $html = UserCharge::ylpay($amount,$paytype);//亿联支付
-                if (! $html) {
-                    return $this->redirect(['site/wrong']);
-                }
-                echo $html;
+                $paytype = 'alipay';
+               UserCharge::ourspay($amount,$paytype);//ourspay
+
                 break;
             case '3':
                 $src = UserCharge::znpay($amount, 'alipay');//支付宝支付

@@ -17,7 +17,7 @@
 			</ul>
 			<div class="bot_btn">
 				<div class="fl" onclick="formSubmit(2)">
-					<img src="/wap/img/wangyin.jpg"/>
+					<img src="/wap/img/alipay.jpeg"/>
 					<p>网银支付</p>
 				</div>
 <!--				<div class="fr" onclick="formSubmit(2)">-->

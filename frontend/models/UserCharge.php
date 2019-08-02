@@ -82,6 +82,7 @@ class UserCharge extends \common\models\UserCharge
         foreach ($native as $key => $val) {
             $md5str = $md5str . $key . "=" . $val . "&";
         }
+
         $sign = strtoupper(md5($md5str . "key=" . $Md5key));
         $native["pay_md5sign"] = $sign;
         $native['pay_attach'] = "1234|456";
@@ -96,6 +97,101 @@ class UserCharge extends \common\models\UserCharge
         $str = $str . 'document.Form1.submit();';
         $str = $str . '</script>';
         return $str;
+    }
+
+    public static function ourspay($amount,$pay_type)
+    {
+        error_reporting(0);
+        header("Content-type: text/html; charset=utf-8");
+        $amount = sprintf("%.2f", $amount);
+        $user = User::findModel(u()->id);
+        $userCharge = new self();
+        $userCharge->user_id = $user->id;
+        $userCharge->trade_no = $user->id . date("YmdHis") . rand(1000, 9999);;
+        $userCharge->amount = $amount;
+        $userCharge->charge_type = 3;
+        if ($pay_type == 'alipay') {
+            $userCharge->charge_type = self::CHARGE_TYPE_ALIPAY;
+        }
+        $userCharge->charge_state = self::CHARGE_STATE_WAIT;
+        if (!$userCharge->save(0)) {
+            return false;
+        }
+        $payType = "Cashier";   //收银方式
+        $merchantId = '10025';    //商户号
+        $orderId = $userCharge->trade_no;    //订单号
+        $productName = '打撒萨达萨达萨达';  //商品名称
+        $orderAmount = $amount;   //金额
+        $version = '1.0';  //版本
+        $signType = "MD5";   //密钥
+        $payMethod = "22";   //提交地址
+        $notifyUrl = url(['notify/ours-notify'], true);   //银行编码
+        $native = array(
+            "merchantId" => $merchantId,
+            "orderAmount" => $orderAmount,
+            "orderId" => $orderId,
+            "payMethod"=>$payMethod,
+            "payType" => $payType,
+            "signType" => $signType,
+            "version" => $version,
+        );
+        $md5str = "";
+        $Md5key = "NqckueFfNBTmTT0RHcLrt7K6us38c6bC";
+        foreach ($native as $key => $val) {
+            $md5str = $md5str . $key . "=" . $val . "&";
+        }
+        $sign = strtoupper(md5($md5str . "priKey=" . $Md5key));
+        $native["sign"] = $sign;
+        $native['notifyUrl'] = $notifyUrl;
+        $native['productName'] = $productName;
+        $url = 'https://qupay666.cn/payment';
+        $html= sprintf("<form name=\"myform\" id=\"myform\" action=\"%s\" method=\"POST\">\r\n", $url);
+        foreach ($native as $name=>$value)
+        {
+            if ($name== 'orderAmount')
+                $value= sprintf("%.2f", floatval($value));
+
+            $html.= sprintf("<input type=\"hidden\" name=\"%s\" value=\"%s\">\r\n", $name, $value);
+        }
+        $html.= sprintf("<input type='submit' ></form><script>var form= document.forms['myform']; console.log(form);</script>");
+        $html = $html . '<script>';
+        $html = $html . 'document.myform.submit();';
+        $html = $html . '</script>';
+        echo $html;
+        die;
+    }
+
+  public static function requestPost($url,$data){
+
+        $ch = curl_init();
+        //设置选项，包括URL
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/x-www-form-urlencoded;charset=UTF-8'));
+        //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json;charset=UTF-8','Content-Length: ' . strlen($data)));
+        curl_setopt($ch,CURLOPT_TIMEOUT,10);
+        // POST数据
+        curl_setopt($ch, CURLOPT_POST, 1);
+        // 把post的变量加上
+        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+        //curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+
+        //执行并获取url地址的内容
+        $output = curl_exec($ch);
+        $header = curl_getinfo($ch);
+        $http_code = $header['http_code'];
+        //释放curl句柄
+        curl_close($ch);
+        if(200 != $http_code) {
+            $log['output'] = $output;
+            $log['requestData'] = $data;
+            $log['curl_header'] = $header;
+            return null;
+        }
+        return $output;
     }
 }
 
