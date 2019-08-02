@@ -27,7 +27,7 @@ class User extends \common\models\User
             // 密码规则，注册和修改密码时复用同一个规则
             [['password', 'newPassword'], 'match', 'pattern' => '/[a-z0-9~!@#$%^]{6,}/Ui', 'on' => ['register', 'password'], 'message' => '{attribute}至少6位'],
             // 注册场景的基础验证
-            [['cfmPassword', 'verifyCode'], 'required', 'on' => 'register'],
+            [['cfmPassword'], 'required', 'on' => 'register'],
             // 注册场景密码和确认密码的验证
             [['password'], 'compare', 'compareAttribute' => 'cfmPassword', 'on' => 'register'],
             // 注册场景验证短信手机号和实际手机号的验证
