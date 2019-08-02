@@ -28,13 +28,28 @@
 					<img src="/wap/img/icons_11.jpg" class="c2"/>
 				</div>
       <div class="clear" >
-        <a style="color: #E3E3E3;" href="<?= url(['site/forget']) ?>" >忘记密码？</a>
+          <img style="display: none" class="kefus" src="<?= config('kefu_code')?>" alt="">
+        <a class="forgotpasswd" style="color: #E3E3E3;" href="#" >忘记密码？</a>
+          <script>
+              $('.forgotpasswd').click(function () {
+                  layer.open({
+                      type: 1,
+                      title: false,
+                      closeBtn: 0,
+                      area: '516px',
+                      skin: 'layui-layer-nobg', //没有背景色
+                      shadeClose: true,
+                      content: $('.kefus')
+                  });
+              })
+          </script>
         <a style="color: #E3E3E3" href="<?= url(['site/register']) ?>" >立即注册</a>
       </div>
 				<input type="button" formid="loginform" ajaxurl="<?= url('site/login') ?>" value="确认登录" class="btn11 login_btn"/>
         <?php self::endForm() ?>
 		</div>
 		<script type="text/javascript" src="/wap/js/js.js" ></script>
+        <script src="/layer/layer.js"></script>
     <script type="text/javascript">
 
       $(function () {

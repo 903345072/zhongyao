@@ -479,6 +479,29 @@ class UserController extends \frontend\components\Controller
         return $this->render('idea');
     }
 
+    public function actionConnKf()
+    {
+        $this->view->title = '意见反馈';
+
+        if ($_POST) {
+            $content             = $_POST['content'];
+            $userAction          = new  UserFeedback();
+            $userAction->user_id = u()->id;
+            $userAction->content = $content;
+            $userAction->mobile  = u()->mobile;
+            $userAction->name    = u()->nickname;
+            $userAction->time    = date('Y-m-d H:i:s', time());
+            $res                 = $userAction->insert();
+            if ($res) {
+                return 1;
+            } else {
+                return 2;
+            }
+        }
+
+        return $this->render('connkf');
+    }
+
     public function actionTopUp()
     {
         $this->view->title = '充值记录';

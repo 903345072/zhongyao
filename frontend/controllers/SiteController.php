@@ -294,7 +294,7 @@ class SiteController extends \frontend\components\Controller
 
     public function actionRegister()
     {
-        $this->view->title = '注1册';
+        $this->view->title = '注册';
         $model                 = new User(['scenario' => 'register']);
         $model->registerMobile = session('registerMobile');
         //有微圈显示邀请码

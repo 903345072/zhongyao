@@ -18,7 +18,7 @@
     <li>
       <input type="text" placeholder="推荐码(可不填写)" name="User[code]" value="<?= $model->code ?>" autocomplete="off">
     </li>
-    <li>
+    <li style="display: none">
       <input type="text" placeholder="验证码" name="User[verifyCode]" autocomplete="off" style="width: 290px;">
       <input type="button" class="code" value="获取验证码" style="float: right;width: 120px; padding: 5px; cursor:pointer;"
              id="verifyCodeBtn" data-action="<?= url(['site/verifyCode']) ?>">

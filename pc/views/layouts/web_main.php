@@ -134,8 +134,8 @@
         </li>
         <li class="wx">
           <div class="clearfix">
-            <img src="/web/images/erweima.jpg" alt="" class="fl">
-            <img src="/web/images/erweima.jpg" alt="" class="fl">
+            <img src="<?= config('web_url').config('ios_download_code')  ?>" alt="" class="fl">
+            <img src="<?= config('web_url').config('android_download_code') ?>" alt="" class="fl">
           </div>
           <p class="gz"></p>
         </li>

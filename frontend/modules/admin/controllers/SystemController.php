@@ -61,8 +61,6 @@ class SystemController extends \admin\components\Controller
      */
     public function actionSaveSetting()
     {
-
-        dump(config('android_download_code'));
         $setting = new Setting;
         $files = $_FILES[Upload]['tmp_name'];
         if ($files){
