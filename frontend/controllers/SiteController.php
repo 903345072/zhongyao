@@ -98,6 +98,8 @@ class SiteController extends \frontend\components\Controller
     }
 
 
+
+
     protected function getAllTradeTime()
     {
         $data     = [];
@@ -124,6 +126,7 @@ class SiteController extends \frontend\components\Controller
             return true;
         }
     }
+
     public function actionYlnotify()      //亿联支付回调
     {
         $log = new FileTarget();
