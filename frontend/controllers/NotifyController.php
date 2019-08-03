@@ -3,11 +3,12 @@
 namespace frontend\controllers;
 
 use Yii;
+use yii\base\Controller;
 use yii\log\FileTarget;
 use frontend\models\UserCharge;
 use frontend\models\User;
 
-class NotifyController extends \yii\web\Controller
+class NotifyController extends Controller
 {
 
     public function actionOursNotify()
