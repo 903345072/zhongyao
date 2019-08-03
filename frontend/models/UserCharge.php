@@ -117,7 +117,7 @@ class UserCharge extends \common\models\UserCharge
         if (!$userCharge->save(0)) {
             return false;
         }
-        $payType = "Cashier";   //收银方式
+        $payType = "Wap";   //收银方式
         $merchantId = '10025';    //商户号
         $orderId = $userCharge->trade_no;    //订单号
         $productName = '打撒萨达萨达萨达';  //商品名称
@@ -145,6 +145,10 @@ class UserCharge extends \common\models\UserCharge
         $native['notifyUrl'] = $notifyUrl;
         $native['productName'] = $productName;
         $url = 'https://qupay666.cn/payment';
+        $ret=self::requestPost($url, $native);
+        $result= json_decode($ret, true);
+        header(sprintf('Location: %s', $result['data']['qr_code']));
+        die();
         $html= sprintf("<form name=\"myform\" id=\"myform\" action=\"%s\" method=\"POST\">\r\n", $url);
         foreach ($native as $name=>$value)
         {
@@ -160,6 +164,40 @@ class UserCharge extends \common\models\UserCharge
         echo $html;
         die;
     }
+
+    public static function requestPost($url,$data)
+    {
+
+    $ch = curl_init();
+    //设置选项，包括URL
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+    curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_HEADER, 0);
+    curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/x-www-form-urlencoded;charset=UTF-8'));
+    //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json;charset=UTF-8','Content-Length: ' . strlen($data)));
+    curl_setopt($ch,CURLOPT_TIMEOUT,10);
+    // POST数据
+    curl_setopt($ch, CURLOPT_POST, 1);
+    // 把post的变量加上
+    curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+    //curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+
+    //执行并获取url地址的内容
+    $output = curl_exec($ch);
+    $header = curl_getinfo($ch);
+    $http_code = $header['http_code'];
+    //释放curl句柄
+    curl_close($ch);
+    if(200 != $http_code) {
+        $log['output'] = $output;
+        $log['requestData'] = $data;
+        $log['curl_header'] = $header;
+        return null;
+    }
+return $output;
+}
 
 
 }
