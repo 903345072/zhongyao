@@ -14,7 +14,7 @@
 							元
 						</span>
       </div>
-      <form action="<?= url('user/pay') ?>" method="post">
+      <form id="form" action="<?= url('user/pay') ?>" method="post">
       <div>
         <span class="tg">请输入充值金额：</span>
         <input class="inpt_money" name="money" id="inpMoney" value="1000" type="text" placeholder="请输入10元以上充值金额">
@@ -36,11 +36,12 @@
       <div>
         <span class="tg ssw">选择充值方式：</span>
         <div class="lefts">
-          <a class="zhifubao on" href="javascript:;" data-type="2">在线支付</a>
+          <a class="zhifubao on" href="javascript:;"  onclick="formSubmit(1)">快捷支付</a>
+            <a class="zhifubao " href="javascript:;"  onclick="formSubmit(2)">支付宝支付</a>
         </div>
+
         <input type="hidden" name="type" id="type" value="2">
       </div>
-      <input type="submit" value="提交" class="tj_cz">
       </form>
 
     </div>
@@ -72,6 +73,10 @@
 
 
 <script type="text/javascript">
+    function formSubmit(type) {
+        $('#type').val(type);
+        $('#form').submit();
+    }
   !function () {
     var priceBtn = $('#priceBtn .am-u-sm-3');
     var inpMoney = $('#inpMoney');

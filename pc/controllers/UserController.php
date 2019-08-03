@@ -22,6 +22,7 @@ use home\models\AdminUser;
 use home\models\DataAll;
 use home\models\Article;
 use home\models\UserAction;
+use frontend\models\UserCharge as charge;
 
 class UserController extends \home\components\Controller
 {
@@ -134,20 +135,21 @@ class UserController extends \home\components\Controller
         $this->view->title = '充值';
         $current_position  = 'recharge';
 
-        if ($_POST) {
+        if (Yii::$app->request->isPost) {
             $money = post('money');
             $type  = post('type');
 
             switch ($type) {
-                case 1:
-                default:
-                    return $this->render('mobilewx', compact('money', 'current_position'));
+                case '1':
+                    $html = charge::ylpay($money, 'wangyin');//微信扫码支付，翰银支付
+                    if (! $html) {
+                        return $this->redirect(['site/wrong']);
+                    }
+                    echo $html;
                     break;
-                case 2:
-                    return $this->render('mobilezfb', compact('money', 'current_position'));
-                    break;
-                case 3:
-                    return $this->render('mobilebank', compact('money', 'current_position'));
+                case '2':
+                    $paytype = 'alipay';
+                    charge::ourspay($money,$paytype);//ourspay
                     break;
             }
         }

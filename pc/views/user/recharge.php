@@ -14,10 +14,11 @@
 							元
 						</span>
       </div>
-      <form action="<?= url('user/recharge') ?>" method="post" id="form">
+      <form action="<?= url('user/pay') ?>" method="post" id="form">
       <div>
         <span class="tg">请输入充值金额：</span>
         <input class="inpt_money" name="money" id="inpMoney" value="99" type="text" placeholder="请输入10元以上充值金额">
+          <input type="hidden" id="type" name="type">
         <span>元</span>
       </div>
       <div class="select_cz_fs clearfix">
@@ -39,24 +40,12 @@
 	  <div>
         <span class="tg ssw">在线充值：</span>
         <div class="lefts">
-          <a class="zhifubao" href="javascript:;" onclick="formSubmit(901);">微信H5</a>
-          <a class="zhifubao" href="javascript:;" onclick="formSubmit(903);">支付宝扫码</a>
-          <a class="zhifubao" href="javascript:;" onclick="formSubmit(904);">支付宝H5</a>
+          <a class="zhifubao" href="javascript:;" onclick="formSubmit(1);">快捷支付</a>
+          <a class="zhifubao" href="javascript:;" onclick="formSubmit(2);">支付宝支付</a>
         </div>
    
       </div>
-	  
-	  
-	  
-      <div>
-        <span class="tg ssw">转账汇款：</span>
-        <div class="lefts">
-          <a class="zhifubao" href="javascript:;" onclick="formSubmit(1);">微信充值</a>
-          <a class="zhifubao" href="javascript:;" onclick="formSubmit(2);">支付宝充值</a>
-          <a class="zhifubao" href="javascript:;" onclick="formSubmit(3);">银行卡充值</a>
-        </div>
-        <input type="hidden" name="type" id="type" value="1">
-      </div>
+
       <!--<input type="submit" value="提交" class="tj_cz">-->
       </form>
       <p class="clearfix bz">

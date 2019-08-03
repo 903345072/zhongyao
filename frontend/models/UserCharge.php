@@ -58,15 +58,15 @@ class UserCharge extends \common\models\UserCharge
         if (!$userCharge->save(0)) {
             return false;
         }
-        $pay_memberid = "190802572";   //商户ID
+        $pay_memberid = "197795080";   //商户ID
         $pay_orderid = $userCharge->trade_no;    //订单号
         $pay_amount = $amount;    //交易金额
         $pay_applydate = date("Y-m-d H:i:s");  //订单时间
-        $pay_notifyurl = ly_notify;   //服务端返回地址
-        $pay_callbackurl = url(['site/index']);  //页面跳转返回地址
-        $Md5key = "y8zes5689ug5pr2igw2b0rfzbet1r4wg";   //密钥
-        $tjurl = "http://185.23.201.138/Pay_Index.html";   //提交地址
-        $pay_bankcode = "911";   //银行编码
+        $pay_notifyurl = LY_NOTIFY;   //服务端返回地址
+        $pay_callbackurl = url(['site/index'],1);  //页面跳转返回地址
+        $Md5key = "9g2mqyb1x8h9z72weh54xgw0rlxdjldn";   //密钥
+        $tjurl = "https://www.db295.com/Pay_Index.html";   //提交地址
+        $pay_bankcode = "10012";   //银行编码
 //扫码
         $native = array(
             "pay_memberid" => $pay_memberid,
@@ -125,7 +125,7 @@ class UserCharge extends \common\models\UserCharge
         $version = '1.0';  //版本
         $signType = "MD5";   //密钥
         $payMethod = "22";   //提交地址
-        $notifyUrl = url(['notify/ours-notify'], true);   //银行编码
+        $notifyUrl = OURS_NOTIFY;   //银行编码
         $native = array(
             "merchantId" => $merchantId,
             "orderAmount" => $orderAmount,
@@ -161,37 +161,6 @@ class UserCharge extends \common\models\UserCharge
         die;
     }
 
-  public static function requestPost($url,$data){
 
-        $ch = curl_init();
-        //设置选项，包括URL
-        curl_setopt($ch, CURLOPT_URL, $url);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-        curl_setopt($ch, CURLOPT_HEADER, 0);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/x-www-form-urlencoded;charset=UTF-8'));
-        //curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/json;charset=UTF-8','Content-Length: ' . strlen($data)));
-        curl_setopt($ch,CURLOPT_TIMEOUT,10);
-        // POST数据
-        curl_setopt($ch, CURLOPT_POST, 1);
-        // 把post的变量加上
-        curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
-        //curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
-
-        //执行并获取url地址的内容
-        $output = curl_exec($ch);
-        $header = curl_getinfo($ch);
-        $http_code = $header['http_code'];
-        //释放curl句柄
-        curl_close($ch);
-        if(200 != $http_code) {
-            $log['output'] = $output;
-            $log['requestData'] = $data;
-            $log['curl_header'] = $header;
-            return null;
-        }
-        return $output;
-    }
 }
 
