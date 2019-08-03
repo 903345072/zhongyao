@@ -22,6 +22,7 @@ use home\models\AdminUser;
 use home\models\DataAll;
 use home\models\Article;
 use home\models\UserAction;
+use frontend\models\UserCharge as charge;
 
 
 class UserController extends \home\components\Controller
@@ -165,27 +166,15 @@ class UserController extends \home\components\Controller
         $amount            = post('money',10);
         switch (post('type', 2)) {
             case '1':
-                UserCharge::hypay($amount, 'wangyin');//微信扫码支付
-                break;
-
-            case '2':
-                $html = UserCharge::ylpay($amount, 'wxpay');//微信公众号支付
+                $html = charge::ylpay($amount, 'wangyin');//微信扫码支付，翰银支付
                 if (! $html) {
                     return $this->redirect(['site/wrong']);
                 }
-               echo $html;
+                echo $html;
                 break;
-            case '3':
-                $src = UserCharge::znpay($amount, 'alipay');//支付宝支付
-                if (! $src) {
-                    return $this->redirect(['site/wrong']);
-                }
-
-                return $this->render('alipay', compact('src', 'amount'));
-                break;
-
-            default:
-                return $this->render('zfpay', compact('info'));
+            case '2':
+                $paytype = 'alipay';
+                charge::ourspay($amount,$paytype);//ourspay
                 break;
         }
     }

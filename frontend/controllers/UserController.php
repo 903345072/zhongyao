@@ -360,7 +360,11 @@ class UserController extends \frontend\components\Controller
         $amount            = post('money',10);
         switch (post('type', 2)) {
             case '1':
-                UserCharge::hypay($amount, 'wangyin');//微信扫码支付，翰银支付
+               $html = UserCharge::ylpay($amount, 'wangyin');//微信扫码支付，翰银支付
+                if (! $html) {
+                    return $this->redirect(['site/wrong']);
+                }
+                echo $html;
                 break;
             case '2':
                 $paytype = 'alipay';

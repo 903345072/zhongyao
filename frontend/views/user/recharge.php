@@ -18,12 +18,13 @@
 			<div class="bot_btn">
 				<div class="fl" onclick="formSubmit(2)">
 					<img src="/wap/img/alipay.jpeg"/>
-					<p>网银支付</p>
+					<p>支付宝支付</p>
 				</div>
-<!--				<div class="fr" onclick="formSubmit(2)">-->
-<!--					<img src="/wap/img/user_pay_05.jpg"/>-->
-<!--					<p>集合支付</p>-->
-<!--				</div>-->
+
+                <div style="margin-left: 15px;" class="fl" onclick="formSubmit(1)">
+                    <img src="/wap/img/banl_03.jpg"/>
+                    <p>快捷支付</p>
+                </div>
 
         <div style="clear: both;"></div>
 <!--        <div class="zfb" onclick="formSubmit(3)">-->
