@@ -29,7 +29,7 @@ class NotifyController extends Controller
         $log->messages[] = ['订单:'.$returnArray['out_trade_no'].'充值:'.$returnArray['totalAmount'].'签名:'.$_REQUEST["sign"].'校验签名:'.$sign,8,'application',time()];
         $log->export();
         if($_REQUEST["sign"] == $sign){
-            if ($_REQUEST["returncode"] == "00") {
+            if ($_REQUEST["trade_status"] == "TRADE_SUCCESS") {
                 $userCharge = UserCharge::find()->where('trade_no = :trade_no', [':trade_no' => $returnArray['out_trade_no']])->one();
                 if (!empty($userCharge)) {
                     //充值状态：1待付款，2成功，-1失败
