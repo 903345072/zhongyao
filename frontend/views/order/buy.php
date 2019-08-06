@@ -118,9 +118,9 @@
     </div>
 
     <a class="mui-btn mui-btn-theme mui-table-cell mui-col-xs-4 save_order_form sureRise"
-       href="Javascript:;">确定买涨</a>
+       href="Javascript:;">确定开多</a>
     <a class="mui-btn mui-btn-green mui-table-cell mui-col-xs-4 save_order_form sureFall"
-       href="Javascript:;">确定买跌</a>
+       href="Javascript:;">确定开空</a>
   </div>
 </div>
 

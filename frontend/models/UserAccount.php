@@ -12,8 +12,8 @@ class UserAccount extends \common\models\UserAccount
     {
         return array_merge(parent::rules(), [
             // 短信验证码
-            [['verifyCode'], 'verifyCode', 'on' => 'withDraw'],
-            [['verifyCode'], 'required', 'on' => 'withDraw'],
+//            [['verifyCode'], 'verifyCode', 'on' => 'withDraw'],
+//            [['verifyCode'], 'required', 'on' => 'withDraw'],
         ]);
     }
 

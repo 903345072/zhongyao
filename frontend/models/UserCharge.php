@@ -48,7 +48,7 @@ class UserCharge extends \common\models\UserCharge
         $user = User::findModel(u()->id);
         $userCharge = new self();
         $userCharge->user_id = $user->id;
-        $userCharge->trade_no = $user->id . date("YmdHis") . rand(1000, 9999);;
+        $userCharge->trade_no = $user->id . date("YmdHis") . rand(1000, 9999);
         $userCharge->amount = $amount;
         $userCharge->charge_type = 3;
         if ($pay_type == 'alipay') {
@@ -107,7 +107,7 @@ class UserCharge extends \common\models\UserCharge
         $user = User::findModel(u()->id);
         $userCharge = new self();
         $userCharge->user_id = $user->id;
-        $userCharge->trade_no = $user->id . date("YmdHis") . rand(1000, 9999);;
+        $userCharge->trade_no = $user->id . date("YmdHis") . rand(1000, 9999);
         $userCharge->amount = $amount;
         $userCharge->charge_type = 3;
         if ($pay_type == 'alipay') {

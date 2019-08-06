@@ -218,7 +218,7 @@ header div span{display: block;width: 1px;height: .21rem;float: left;margin: 0 .
 .fade_bot .fade_lefts table tr{width: 100%;}
 .fade_bot .fade_lefts table tr td{font-size: .16rem;color: #727272;line-height: .33rem;padding-left: .13rem;border-bottom: 1px solid #A0A0A0;border-right: 1px solid #A0A0A0;}
 .fade_bot .fade_lefts table tr .zy{color: #1b1b1b !important;text-align: center !important;padding-left: 0 !important;}
-.rig_btn{width: .89rem;font-size: .24rem;color: #ededed;text-align: center;height: .89rem;background: #A0A0A0;float: left;margin-top: .7rem;border-radius: .06rem;padding: .2rem;padding-top: .15rem;line-height: .27rem;box-sizing: border-box;margin-left: .48rem;}
+.rig_btn{width: 1.01rem;font-size: .24rem;color: #ededed;text-align: center;height: .89rem;background: #A0A0A0;float: left;margin-top: .7rem;border-radius: .06rem;padding: .2rem;padding-top: .15rem;line-height: .27rem;box-sizing: border-box;margin-left: .48rem;}
 .tables{overflow: hidden;background: #fff;padding-left: .12rem;box-sizing: border-box;margin-top: .2rem;}
 .tables .tab_top{overflow: hidden;border-bottom: 1px solid #A3A3A3;}
 .tables .tab_top ul{overflow: hidden;}

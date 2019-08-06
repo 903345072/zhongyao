@@ -18,7 +18,7 @@
         <?php $form = self::beginForm(['showLabel' => false, 'id' => 'loginform']) ?>
 				<div class="lable">
 					<p>+86</p>
-          <input type="text" placeholder="请输入手机号码" name="User[username]" autocomplete="off">
+          <input type="text" placeholder="请输入用户名" name="User[username]" autocomplete="off">
 					<img src="/wap/img/icons_07.jpg" class="c1"/>
 
 				</div>

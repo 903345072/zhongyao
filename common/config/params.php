@@ -23,14 +23,14 @@ return [
     // 交易产品列表
     'productCode'           => [
         'cl'    => 'NECLU0',
-        'pp0' =>'WGCNN0',
-        'y0'=>'CEDAXU0',
-        'm0'=>'CMGCQ0',
-        'sr0'=>'HIHSI07',
-        'p0'=>'CENQU0',
         'scbu'=>'SCbu1912',
-        'zcsr'=>'ZCSR1909',
-        'dcpp'=>'DCpp1909'
+        'pp0' =>'SCrb1910',
+        'y0'=>'WGCNQ0',
+        'm0'=>'HIMHI08',
+        'sr0'=>'HIHSI08',
+        'p0'=>'CMHGU0',
+        'zcsr'=>'CMGCZ0',
+        'dcpp'=>'CMSIU0'
 //        'pp0' =>'CEDAXM0',
 //        'y0'=>'CMHGN0',
 //        'm0'=>'CMGCQ0',

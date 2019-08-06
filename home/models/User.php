@@ -50,7 +50,7 @@ class User extends \common\models\User
     public function scenarios()
     {
         return array_merge(parent::scenarios(), [
-            'register' => ['username', 'nickname', 'password', 'cfmPassword', 'mobile', 'verifyCode', 'pid', 'recMobile', 'code'],
+            'register' => ['nickname', 'password', 'cfmPassword', 'pid', 'recMobile', 'code'],
             'login' => ['username', 'password', 'rememberMe'],
             'password' => ['oldPassword', 'newPassword', 'cfmPassword'],
             'forget' => ['password', 'cfmPassword', 'verifyCode'],

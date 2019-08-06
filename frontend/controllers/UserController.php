@@ -82,6 +82,9 @@ class UserController extends \frontend\components\Controller
         $userAccount->scenario = 'withDraw';
         $userWithdraw          = new UserWithdraw();
         if ($userAccount->load(post()) || $userWithdraw->load(post())) {
+            if (!Yii::$app->security->validatePassword(post('password'), $user->password)){
+                return error('登陆密码错误');
+            }
             $userAccount->realname  = clean($userAccount->realname);
             $userAccount->bank_card = clean($userAccount->bank_card);
             $userAccount->bank_address = clean($userAccount->bank_address);

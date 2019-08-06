@@ -12,7 +12,7 @@
     <?php $form = self::beginForm(['showLabel' => false, 'id' => 'loginform']) ?>
     <ul style="padding-top: 20px;">
         <li>
-            <input type="text" placeholder="请输入手机号码" name="User[username]" autocomplete="off">
+            <input type="text" placeholder="请输入用户名" name="User[username]" autocomplete="off">
         </li>
         <li>
             <input type="password" placeholder="请输入登录密码" name="User[password]" autocomplete="off">

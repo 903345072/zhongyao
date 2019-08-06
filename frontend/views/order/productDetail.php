@@ -182,7 +182,7 @@ html{
                 'model_type' => $model_type,
             ]) ?>");'>
             <img src="/wap/img/交易-国际期货-交易页_08.png"/>
-            <p>买涨</p>
+            <p>开多</p>
           </a></li>
         <li><a href='javascript:riseBy("<?= url([
                 'order/buy',
@@ -191,7 +191,7 @@ html{
                 'model_type' => $model_type,
             ]) ?>");'>
             <img src="/wap/img/交易-国际期货-交易页_05.png"/>
-            <p>买跌</p>
+            <p>开空</p>
           </a></li>
         <li><a href="javascript:;" id="oneKey">
             <span>全部平仓</span>
