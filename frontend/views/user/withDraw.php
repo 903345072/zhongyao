@@ -77,7 +77,19 @@
                     </div>
                 </div>
 
-                <div class="mui-table-view-cell mui-media">
+
+                <div  class="mui-table-view-cell mui-media">
+                    <div class="mui-table">
+                        <div class="mui-table-cell uk-text-middle uk-width-em-6 ">
+                            登陆密码
+                        </div>
+                        <div class="mui-media-body uk-input-blank">
+                            <input type="password" name="password" id="mobile_show" value=""  class="uk-input " placeholder="登陆密码 ">
+                        </div>
+                    </div>
+                </div>
+
+                <div style="display: none" class="mui-table-view-cell mui-media">
                     <div class="mui-table">
                         <div class="mui-table-cell uk-text-middle uk-width-em-6 ">
                             手机号
@@ -88,7 +100,7 @@
                     </div>
                 </div>
 
-                <div class="mui-table-view-cell mui-media">
+                <div style="display: none" class="mui-table-view-cell mui-media">
                     <div class="mui-table">
                         <div class="mui-table-cell uk-text-middle uk-width-em-2 mui-text-center">
                             <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAeFBMVEWZmZnMzMz///+ZmZmZmZnMzMzMzMyZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZnMzMzMzMyZmZmZmZmZmZmZmZmZmZnMzMyZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZly+It3AAAAJ3RSTlMAAAAGBwkKDhESKSotMGZnaWpscHGAgK+wsbKztLXFxsvM6fH09fzEdjzcAAAAcklEQVQY03XOyRKCMBBF0ZuHIo6AGiTiCEr+/w/dUF2aKu/yLPo1csD2+n6FNeCEHGz63aKo+5VBqAH2J4OhAFgOBhEA4h/I2zFOje1cqOoyprJLKdR4LN8Y3G8JPB8JeJ/A8ZDA19HqPLPZrhTKw89jH6mnCbvVGj10AAAAAElFTkSuQmCC" class="" width="16" height="16">

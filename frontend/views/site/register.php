@@ -6,11 +6,10 @@
 		</div>
 		<div class="contents">
         <?php $form = self::beginForm(['showLabel' => false, 'id' => 'regform']) ?>
-				<div class="lable">
-					<p>+86</p>
-          <input type="text" name="User[mobile]" placeholder="手机号码" autocomplete="off" id="user-mobile">
-					<img src="/wap/img/icons_07.jpg" class="c1 c"/>
-				</div>
+            <div class="lable">
+                <p>用户名</p>
+                <input type="text" name="User[nickname]" placeholder="请输入用户名" autocomplete="off">
+            </div>
 				<div style="display: none" class="lable">
 					<p>验证码</p>
           <input type="text" placeholder="验证码" name="User[verifyCode]" autocomplete="off" >
@@ -26,10 +25,7 @@
         <input type="password" name="User[cfmPassword]" placeholder="确认登录密码" autocomplete="off">
         <img src="/wap/img/icons_11.jpg" class="c2 c"/>
       </div>
-				<div class="lable">
-					<p>姓名</p>
-          <input type="text" name="User[nickname]" placeholder="请输入姓名" autocomplete="off">
-				</div>
+
 
 				<div class="lable">
 					<p>邀请码</p>

@@ -290,11 +290,11 @@
       <div class="fr select_r">
         <a href="javascript:buy(1);" class="maizhang">
           <span id="price1">00.00</span>
-          <span>买涨</span>
+          <span>开多</span>
         </a>
         <a href="javascript:buy(2);" class="maidie">
           <span id="price2">00.00</span>
-          <span>买跌</span>
+          <span>开空</span>
         </a>
         <a href="javascript:;" id="sellAllBtn" class="pingang">全部平仓</a>
       </div>

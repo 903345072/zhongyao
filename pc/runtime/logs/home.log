@@ -23430,3 +23430,243 @@ Array
     [2] => You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'and o.order_state = 1 and o.model_type = 1 group by a.symbol' at line 2
 )
 
+2019-08-06 17:42:31 [POST][http://localhost:82/site/register][::1][-][8kgrkc7q8una1v8pr5lp9mirl6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+The SQL being executed was: INSERT INTO `user` (`nickname`, `password`, `username`, `face`, `moni_acount`, `admin_id`, `created_at`, `created_by`, `updated_at`, `updated_by`) VALUES ('qqq', '$2y$13$jsWN6pO9UPBzLwsgFi6YLe8UO/k.ag.L3ZsORmR2GiKVGoy2rRkpm', NULL, NULL, '100000', NULL, '2019-08-06 17:42:31', 0, '2019-08-06 17:42:31', 0)' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'username' cannot be null
+)
+
+2019-08-06 17:42:44 [POST][http://localhost:82/site/register][::1][-][8kgrkc7q8una1v8pr5lp9mirl6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+The SQL being executed was: INSERT INTO `user` (`nickname`, `password`, `username`, `face`, `moni_acount`, `admin_id`, `created_at`, `created_by`, `updated_at`, `updated_by`) VALUES ('qqq', '$2y$13$dZZkAETjSR6Nq7Lx0sB8Iuo47fFfcoqVvYdtw636I29J6Rf/bEMa.', NULL, NULL, '100000', NULL, '2019-08-06 17:42:44', 0, '2019-08-06 17:42:44', 0)' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'username' cannot be null
+)
+
+2019-08-06 17:44:29 [POST][http://localhost:82/site/register][::1][-][8kgrkc7q8una1v8pr5lp9mirl6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+The SQL being executed was: INSERT INTO `user` (`nickname`, `password`, `username`, `face`, `moni_acount`, `admin_id`, `created_at`, `created_by`, `updated_at`, `updated_by`) VALUES ('qqq', '$2y$13$ydfZzvP9/0QJTwnwvI9R1eMON0FN7iV7OmbYF7zi9zIH9tUH9XOs6', NULL, NULL, '100000', NULL, '2019-08-06 17:44:28', 0, '2019-08-06 17:44:28', 0)' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'username' cannot be null
+)
+
+2019-08-06 17:45:25 [POST][http://localhost:82/site/register][::1][-][8kgrkc7q8una1v8pr5lp9mirl6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'username' cannot be null
+The SQL being executed was: INSERT INTO `user` (`nickname`, `password`, `username`, `face`, `moni_acount`, `admin_id`, `created_at`, `created_by`, `updated_at`, `updated_by`) VALUES ('qqq', '$2y$13$VenzFpoyyHR.4OwINt0knON7Qn1O/lHv9P9h8dgxdOrMBtUDIwH2y', NULL, NULL, '100000', NULL, '2019-08-06 17:45:24', 0, '2019-08-06 17:45:24', 0)' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(397): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1048
+    [2] => Column 'username' cannot be null
+)
+
+2019-08-06 17:47:03 [POST][http://localhost:82/site/register][::1][-][8kgrkc7q8una1v8pr5lp9mirl6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'mobile'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(398): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'mobile'
+The SQL being executed was: INSERT INTO `user` (`nickname`, `password`, `username`, `face`, `moni_acount`, `admin_id`, `created_at`, `created_by`, `updated_at`, `updated_by`) VALUES ('qqqq', '$2y$13$EiL8iwGkTbu550U7IQOvvuM7d/IQ8WVaY7IHdo4kOta2WSUefiyHS', 'qqqq', NULL, '100000', NULL, '2019-08-06 17:47:02', 0, '2019-08-06 17:47:02', 0)' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(398): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '' for key 'mobile'
+)
+
+2019-08-06 17:47:16 [POST][http://localhost:82/site/register][::1][-][8kgrkc7q8una1v8pr5lp9mirl6][error][yii\db\IntegrityException] exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'mobile'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:844
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(844): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(398): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+
+Next exception 'yii\db\IntegrityException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'mobile'
+The SQL being executed was: INSERT INTO `user` (`nickname`, `password`, `username`, `face`, `moni_acount`, `admin_id`, `created_at`, `created_by`, `updated_at`, `updated_by`) VALUES ('qqqq', '$2y$13$HqNTHvtPOtLTWJeH6VbzHODhVP9Yfjnsd0fuM.ceqt0tgGfUA2fEy', 'qqqq', NULL, '100000', NULL, '2019-08-06 17:47:16', 0, '2019-08-06 17:47:16', 0)' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(854): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php(451): yii\db\Command->execute()
+#2 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(457): yii\db\Schema->insert('{{%user}}', Array)
+#3 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\ActiveRecord.php(427): yii\db\ActiveRecord->insertInternal(NULL)
+#4 C:\code\zhongyaocaifu\home\controllers\SiteController.php(398): yii\db\ActiveRecord->insert(false)
+#5 [internal function]: home\controllers\SiteController->actionRegister()
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('register', Array)
+#9 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/register', Array)
+#10 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 23000
+    [1] => 1062
+    [2] => Duplicate entry '' for key 'mobile'
+)
+

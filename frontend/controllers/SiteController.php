@@ -311,8 +311,7 @@ class SiteController extends \frontend\components\Controller
 
 
         if ($model->load(post())) {
-            $model->mobile = clean($model->mobile);
-            $model->username = $model->mobile;
+            $model->username = clean($model->nickname);
             $model->nickname = clean($model->nickname);
             $model->face     = config('web_logo');
             $model->code = clean($model->code);

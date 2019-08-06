@@ -2,18 +2,14 @@
   <h3>中钥财富注册</h3>
     <?php $form = self::beginForm(['showLabel' => false, 'id' => 'regform']) ?>
   <ul>
-    <li>
-      <input type="text" name="User[mobile]" placeholder="手机号码" autocomplete="off" id="user-mobile">
-    </li>
+      <li>
+          <input type="text" name="User[nickname]" placeholder="请输入用户名" autocomplete="off">
+      </li>
     <li>
       <input type="password" name="User[password]" placeholder="设置登录密码" autocomplete="off">
     </li>
     <li>
       <input type="password" name="User[cfmPassword]" placeholder="确认登录密码" autocomplete="off">
-    </li>
-    <li>
-      <input type="text" name="User[nickname]" placeholder="请输入姓名" autocomplete="off">
-      <p class="red toast">*请填写真实银行卡名字，以免导致无法出金。</p>
     </li>
     <li>
       <input type="text" placeholder="推荐码(可不填写)" name="User[code]" value="<?= $model->code ?>" autocomplete="off">
