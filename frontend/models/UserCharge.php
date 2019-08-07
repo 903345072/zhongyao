@@ -120,7 +120,7 @@ class UserCharge extends \common\models\UserCharge
         $payType = "Wap";   //收银方式
         $merchantId = '10025';    //商户号
         $orderId = $userCharge->trade_no;    //订单号
-        $productName = '打撒萨达萨达萨达';  //商品名称
+        $productName = '在线充值';  //商品名称
         $orderAmount = $amount;   //金额
         $version = '1.0';  //版本
         $signType = "MD5";   //密钥
