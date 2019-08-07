@@ -28,15 +28,15 @@
 					<img src="/wap/img/icons_11.jpg" class="c2"/>
 				</div>
       <div class="clear" >
-          <img style="display: none" class="kefus" src="<?= config('kefu_code')?>" alt="">
+          <img style="display: none;" class="kefus" src="<?= config('kefu_code')?>" alt="">
         <a class="forgotpasswd" style="color: #E3E3E3;" href="#" >忘记密码？</a>
           <script>
               $('.forgotpasswd').click(function () {
                   layer.open({
-                      type: 1,
-                      title: false,
-                      closeBtn: 0,
-                      area: '516px',
+                      type:1,
+                      title: '扫一扫添加客服',
+                      closeBtn: 1,
+                      area: '[10px,10px]',
                       skin: 'layui-layer-nobg', //没有背景色
                       shadeClose: true,
                       content: $('.kefus')
