@@ -36,7 +36,7 @@
                       type:1,
                       title: '扫一扫添加客服',
                       closeBtn: 1,
-                      area: '[30px,30px]',
+                      area: ['280px', '280px'],
                       skin: 'layui-layer-nobg', //没有背景色
                       shadeClose: true,
                       content: $('.kefus')
