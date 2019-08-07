@@ -17,7 +17,7 @@
 		<div class="contents">
         <?php $form = self::beginForm(['showLabel' => false, 'id' => 'loginform']) ?>
 				<div class="lable">
-					<p>+86</p>
+					<p>用户名</p>
           <input type="text" placeholder="请输入用户名" name="User[username]" autocomplete="off">
 					<img src="/wap/img/icons_07.jpg" class="c1"/>
 
