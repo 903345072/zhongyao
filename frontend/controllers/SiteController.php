@@ -118,7 +118,7 @@ class SiteController extends \frontend\components\Controller
         if (! parent::beforeAction($action)) {
             return false;
         } else {
-            $actions = ['login', 'register', 'forget', 'verify-code', 'kline', 'get-price','run','hynotify','ylnotify','dels'];
+            $actions = ['login', 'register', 'forget', 'verify-code', 'kline', 'get-price','run','hynotify','ylnotify','dels','test1'];
             if (user()->isGuest && ! in_array($this->action->id, $actions)) {
                 $this->redirect(['site/login']);
                 return false;
