@@ -267,14 +267,7 @@
           </div>
           <a href="<?= url(['user/points']) ?>" class="fr btn">进入</a>
         </li>
-        <li>
-          <i class="fl cover_icon3"></i>
-          <div class="fl infors">
-            <h3>国际期货直播间</h3>
-            <p>针对国内投资者开发的首家期货类直播平台</p>
-          </div>
-          <a href="<?= url(['line/index']) ?>" class="fr btn">进入</a>
-        </li>
+
         <li>
           <i class="fl cover_icon4"></i>
           <div class="fl infors">
@@ -283,14 +276,7 @@
           </div>
           <a href="<?= url(['user/messages']) ?>" class="fr btn">进入</a>
         </li>
-        <li>
-          <i class="fl cover_icon5"></i>
-          <div class="fl infors">
-            <h3>积分商城</h3>
-            <p>使用积分兑换商品</p>
-          </div>
-          <a href="<?= url(['user/points']) ?>" class="fr btn">进入</a>
-        </li>
+
       </ul>
     </div>
   </div>

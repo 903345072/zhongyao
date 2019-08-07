@@ -98,21 +98,24 @@
       <ul class="ul clearfix">
         <li>
           <h3>快速导航</h3>
-          <p>
-            <a href="<?= url(['user/new-gui', 'flag' => 'rulerisk']) ?>">◆ 风险提示</a>
-            <a href="<?= url(['user/points']) ?>">◆ 积分商城</a>
-          </p>
+
           <p>
             <a href="<?= url(['user/promotion']) ?>">◆ 推广赚钱</a>
-            <a href="<?= url(['user/new-gui']) ?>">◆ 新手指引</a>
-          </p>
-          <p>
-            <a href="<?= url(['line/index']) ?>">◆ 直播间</a>
 
           </p>
-          <p>
-            <a href="<?= url(['user/center']) ?>">◆ 会员中心</a>
-          </p>
+
+            <p>
+
+                <a href="<?= url(['user/new-gui']) ?>">◆ 新手指引</a>
+            </p>
+            <p>
+
+                <a href="<?= url(['user/center']) ?>">◆ 会员中心</a>
+            </p>
+
+
+
+
         </li>
         <li>
           <h3>快速导航</h3>
