@@ -52,6 +52,10 @@ class ArticleController extends \admin\components\Controller
      */
     public function actionDeleteArticle()
     {
-        return parent::actionDelete();
+        $id = post('id');
+        $model = Article::findOne($id);
+        $res = $model->delete();
+        return $this->redirect('/admin/article/list');
+
     }
 }
