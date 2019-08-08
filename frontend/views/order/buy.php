@@ -638,16 +638,16 @@
       });
     });
 
-    // $('#zy-price').on('click', function () {
-    //     layer.open({
-    //         type: 1,
-    //         title: false,
-    //         closeBtn: 0,
-    //         shadeClose: true,
-    //         skin: 'this-modal-wrap',
-    //         content: $('#modal-2')
-    //     });
-    // });
+    $('#zy-price').on('click', function () {
+        layer.open({
+            type: 1,
+            title: false,
+            closeBtn: 0,
+            shadeClose: true,
+            skin: 'this-modal-wrap',
+            content: $('#modal-2')
+        });
+    });
 
 
     // $('#zhisun_modal').on("click", ".zhisun_show", function () {
@@ -674,12 +674,12 @@
 
     })
 
-    // $('#zhiying_modal').on("click", ".zhiying_show", function () {
-    //     $(".zhiying_show").removeClass("mui-active");
-    //     $('#zyhtml').html($(this).html());
-    //     $('#zyhtml').attr('flag', $(this).attr('flag'));
-    //     $(this).addClass("mui-active");
-    // })
+    $('#zhiying_modal').on("click", ".zhiying_show", function () {
+        $(".zhiying_show").removeClass("mui-active");
+        $('#zyhtml').html($(this).html());
+        $('#zyhtml').attr('flag', $(this).attr('flag'));
+        $(this).addClass("mui-active");
+    })
   });
 </script>
 <script type="text/javascript">
