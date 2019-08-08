@@ -711,3 +711,660 @@ AND rc.table_name = 'article' AND kcu.table_name = 'article'
     in C:\code\zhongyaocaifu\common\components\Config.php:25
 2019-08-07 16:13:09 [GET][http://localhost:82/][::1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
     in C:\code\zhongyaocaifu\home\controllers\SiteController.php:37
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\SiteController::actionIndex()
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE (`on_sale`=1) AND (`state`=1) AND (`type`=1) ORDER BY `hot` DESC
+    in C:\code\zhongyaocaifu\home\models\Product.php:55
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:33
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\home\models\Product.php:55
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:33
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE (`on_sale`=1) AND (`state`=1) AND (`type`=2) ORDER BY `hot` DESC
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `product`
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'product' AND kcu.table_name = 'product'
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `data_all` `dataAll` WHERE `name` IN ('cl', 'scbu', 'zcsr', 'dcpp', 'p0', 'sr0', 'm0', 'y0', 'pp0')
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `data_all`
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'data_all' AND kcu.table_name = 'data_all'
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=1
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=26
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=27
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=28
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=21
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=22
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=23
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=24
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=25
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT * FROM `article` `article` ORDER BY `publish_time` DESC
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:36
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `article`
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:36
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'article' AND kcu.table_name = 'article'
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:36
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\site\index.php
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:37
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-08 15:18:20 [GET][http://localhost:82/][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:37
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'user/new-gui'
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: user/new-gui
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionNewGui()
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\newGui.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:207
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:207
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-08 15:18:27 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule-recharge'
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule-recharge
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRuleRecharge()
+2019-08-08 15:18:27 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule_recharge.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:30
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:18:44 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:18:45 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:18:46 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:18:47 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:18:48 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:18:49 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:18:50 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:24:09 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:24:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule4'
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule4
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule4()
+2019-08-08 15:24:11 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule4.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:58
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule7'
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule7
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule7()
+2019-08-08 15:24:13 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule7.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:70
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule11'
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule11
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule11()
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule11][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule11.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:86
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule12'
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule12
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule12()
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule12][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule12.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:90
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule13'
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule13
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule13()
+2019-08-08 15:24:14 [GET][http://localhost:82/rule/rule13][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule13.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:94
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule5'
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule5
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule5()
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule5.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:62
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule4'
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule4
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule4()
+2019-08-08 15:24:15 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule4.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:58
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:24:16 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule4'
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule4
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule4()
+2019-08-08 15:24:17 [GET][http://localhost:82/rule/rule4][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule4.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:58
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:24:20 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:24:21 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:24:22 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:24:23 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:24:24 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule5'
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule5
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule5()
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule5][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule5.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:62
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule7'
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule7
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule7()
+2019-08-08 15:24:27 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule7.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:70
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'user/new-gui'
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: user/new-gui
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionNewGui()
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\newGui.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:207
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:207
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule-recharge'
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule-recharge
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRuleRecharge()
+2019-08-08 15:26:05 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule_recharge.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:30
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'user/new-gui'
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: user/new-gui
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionNewGui()
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\newGui.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:207
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:207
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-08 15:26:05 [GET][http://localhost:82/user/new-gui][127.0.0.1][-][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule-recharge'
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule-recharge
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRuleRecharge()
+2019-08-08 15:26:06 [GET][http://localhost:82/rule/rule-recharge][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule_recharge.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:30
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule1'
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule1
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule1()
+2019-08-08 15:26:07 [GET][http://localhost:82/rule/rule1][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule1.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:46
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule2'
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule2
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule2()
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule2][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule2.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:50
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule6'
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule6
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule6()
+2019-08-08 15:26:08 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule6.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:66
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule7'
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule7
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule7()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule7][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule7.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:70
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule8'
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule8
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule8()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule8.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:74
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule9'
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule9
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule9()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule9][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule9.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:78
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule18'
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule18
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule18()
+2019-08-08 15:26:09 [GET][http://localhost:82/rule/rule18][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule18.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:114
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule20'
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule20
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule20()
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule20][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule20.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:122
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule3'
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule3
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule3()
+2019-08-08 15:26:10 [GET][http://localhost:82/rule/rule3][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule3.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:54
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule6'
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule6
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule6()
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule6][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule6.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:66
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\web\Application::handleRequest] Route requested: 'rule/rule8'
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\Controller::runAction] Route to run: rule/rule8
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\RuleController::actionRule8()
+2019-08-08 15:26:11 [GET][http://localhost:82/rule/rule8][127.0.0.1][-][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\rule\rule8.php
+    in C:\code\zhongyaocaifu\home\controllers\RuleController.php:74

@@ -53,72 +53,38 @@
       <li id="rule7" data-src="<?= url(['rule/rule7']) ?>">
         <a href="javascript:;">MHI 小恒生指数交易说明</a>
       </li>
-      <li id="rule5" data-src="<?= url(['rule/rule5']) ?>">
-        <a href="javascript:;">DAX 德国DAX指数交易说明</a>
-      </li>
+
       <li id="rule8" data-src="<?= url(['rule/rule8']) ?>">
         <a href="javascript:;">CN 富时A50交易说明</a>
       </li>
       <!--<li id="rule" data-src="<?/*= url(['rule/rule9']) */?>">
         <a href="javascript:;>美精铜期货交易说明</a>
       </li>-->
-      <li id="rule10" data-src="<?= url(['rule/rule10']) ?>">
-        <a href="javascript:;">英镑美元期货交易说明</a>
-      </li>
-      <li id="rule11" data-src="<?= url(['rule/rule11']) ?>">
-        <a href="javascript:;">欧元美元期货交易说明</a>
-      </li>
+
 <!--      <li id="rule" data-src="<?/*= url(['rule/rule12']) */?>">
         <a href="javascript:;>BP 英镑期货交易说明</a>
       </li>
       <li id="rule" data-src="<?/*= url(['rule/rule13']) */?>">
         <a href="javascript:;>EC 欧元期货交易说明</a>
       </li>-->
-      <li id="rule12" data-src="<?= url(['rule/rule12']) ?>">
-        <a href="javascript:;">AD 澳元期货交易说明</a>
-      </li>
-      <li id="rule13" data-src="<?= url(['rule/rule13']) ?>">
-        <a href="javascript:;">CD 加元期货交易说明</a>
-      </li>
+
       <li id="rule9" data-src="<?= url(['rule/rule9']) ?>">
         <a href="javascript:;">NQ 小纳指交易说明</a>
       </li>
-      <li id="rule14" data-src="<?= url(['rule/rule14']) ?>">
-        <a href="javascript:;">AU 沪黄金期货交易说明</a>
-      </li>
-      <li id="rule15" data-src="<?= url(['rule/rule15']) ?>">
-        <a href="javascript:;">AG 沪银期货交易说明</a>
-      </li>
-      <li id="rule16" data-src="<?= url(['rule/rule16']) ?>">
-        <a href="javascript:;">CU 沪铜期货交易说明</a>
-      </li>
-      <li id="rule17" data-src="<?= url(['rule/rule17']) ?>">
-        <a href="javascript:;">NI 沪镍期货交易说明</a>
-      </li>
+
+
       <li id="rule18" data-src="<?= url(['rule/rule18']) ?>">
-        <a href="javascript:;">BU 石油沥青期货交易说明</a>
+        <a href="javascript:;">BU 沥青期货交易说明</a>
       </li>
-      <li id="rule19" data-src="<?= url(['rule/rule19']) ?>">
-        <a href="javascript:;">RU 天然橡胶期货交易说明</a>
-      </li>
+
       <li id="rule20" data-src="<?= url(['rule/rule20']) ?>">
         <a href="javascript:;">RB 螺纹钢期货交易说明</a>
       </li>
-      <li id="rule21" data-src="<?= url(['rule/rule21']) ?>">
-        <a href="javascript:;">P 棕搁油期货交易说明</a>
-      </li>
-      <li id="rule22" data-src="<?= url(['rule/rule22']) ?>">
-        <a href="javascript:;">SR 白糖期货交易说明</a>
-      </li>
-      <li id="rule23" data-src="<?= url(['rule/rule23']) ?>">
-        <a href="javascript:;">M 豆粕期货交易说明</a>
-      </li>
-      <li id="rule24" data-src="<?= url(['rule/rule24']) ?>">
-        <a href="javascript:;">Y 豆油期货交易说明</a>
-      </li>
-      <li id="rule25" data-src="<?= url(['rule/rule25']) ?>">
-        <a href="javascript:;">P PP聚丙烯交易说明</a>
-      </li>
+
+
+
+
+
     </ul>
   </div>
   <!--<div class="fr alide_r">

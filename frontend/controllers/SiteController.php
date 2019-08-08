@@ -20,6 +20,8 @@ use yii\log\FileTarget;
 use frontend\models\UserCharge;
 use common\models\DataCl;
 use console\models\GatherJincheng;
+use yii\web\Controller;
+use common\components\Filter;
 class SiteController extends \frontend\components\Controller
 {
     /**
@@ -32,6 +34,7 @@ class SiteController extends \frontend\components\Controller
      *
      * @return array
      */
+
     public function sendRequest($url, $params = [], $method = 'POST', $options = [])
     {
         $method       = strtoupper($method);
@@ -849,6 +852,11 @@ class SiteController extends \frontend\components\Controller
             $obj->save(0);
         }
 
+    }
+
+    public function actionFilter()
+    {
+        
     }
 
 }
