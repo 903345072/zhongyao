@@ -23,11 +23,11 @@ class UserAccount extends \common\components\ARModel
     public function rules()
     {
         return [
-            [['user_id', 'realname', 'id_card', 'bank_name', 'bank_card', 'bank_user', 'bank_mobile', 'coding'], 'required'],
+            [['user_id', 'realname', 'id_card', 'bank_name', 'bank_card', 'bank_user', 'coding'], 'required'],
             [['user_id', 'coding'], 'integer'],
             [['created_at'], 'safe'],
             [['realname', 'id_card', 'bank_name', 'bank_card', 'bank_user', 'bank_address'], 'string', 'max' => 100],
-            [['bank_mobile'], 'string', 'max' => 11],
+
             [['address'], 'string', 'max' => 150],
             [['user_id'], 'unique']
         ];

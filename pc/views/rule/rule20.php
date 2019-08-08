@@ -69,7 +69,7 @@
             <p style="white-space: normal; text-indent: 2em;"><span
                         style="list-style: none; margin: 0px; padding: 0px;">为规避隔午、隔夜风险，全部交易设定为日内交易，本品种的交易时间请参照上表。当持仓时间到清仓时间点后，持仓中的交易会被强制清仓，不保证成交价格，请务必在到期前自行选择卖出。</span>
             </p>
-            
+
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><strong><span
                             style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">美元如何兑换成人民币 ？</span></span></strong><br>
