@@ -13,28 +13,27 @@
             <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：上午 09:15:00 -
                 12:00:00<br>
             </p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：下午 13:05:00 - 16:20:00
+            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：下午 13:00:00 - 16:30:00
             </p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：夜间 17:20:00 -
-                次日00:50:00
+            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：夜间 17:15:00 -
+                次日01:00:00
             </p>
             <p style="white-space: normal;"><span
-                        style="color: rgb(255, 0, 0);">【卖出时间】：上午 09:20:00 - 12:00:00<br></span>
+                        style="color: rgb(255, 0, 0);">【卖出时间】：上午 09:15:00 - 12:00:00<br></span>
             </p>
-            <p style="white-space: normal;"><span style="color: rgb(255, 0, 0);">【卖出时间】：下午 13:05:00 - 16:27:00</span>
+            <p style="white-space: normal;"><span style="color: rgb(255, 0, 0);">【卖出时间】：下午 13:00:00 - 16:30:00</span>
             </p>
-            <p style="white-space: normal;"><span style="color: rgb(255, 0, 0);">【卖出时间】：夜间 17:15:00 - 次日00:58:00</span>
+            <p style="white-space: normal;"><span style="color: rgb(255, 0, 0);">【卖出时间】：夜间 17:15:00 - 次日01:00:00</span>
             </p>
             <p style="white-space: normal;"><span style="color: rgb(255, 0, 0);">【<span
                             style="color: rgb(0, 176, 240);">清仓时间</span>】：<span
-                            style="color: rgb(0, 176, 240);">白天 16:28:00&nbsp;、次日00:58:00</span></span></p>
+                            style="color: rgb(0, 176, 240);">白天 16:30:00&nbsp;、次日01:00:00</span></span></p>
             <p style="white-space: normal;"><span style="color: rgb(255, 0, 0);"></span></p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">清仓时间</span>】：白天 16:27:00&nbsp;、<span
-                        style="color: rgb(0, 176, 240);">次日00:58:00</span></p>
-            <p style="white-space: normal;">【交易综合费】：50元/手</p>
-            <p style="white-space: normal;">【止损金额】：最低止损金额：440元+止损增幅金额：44元=止损金额：484元/手</p>
-            <p style="white-space: normal;">【交易保证金】：最大止损金额484元+交易综合费50元=534元/手</p>
-            <p style="white-space: normal;">【汇率】1港币＝0.88民币(汇率波动较大时，将会进行调整）</p>
+
+            <p style="white-space: normal;">【交易综合费】：80元/手</p>
+            <p style="white-space: normal;">【止损金额】：最低止损金额：945元+止损增幅金额：50元=止损金额：995元/手</p>
+            <p style="white-space: normal;">【交易保证金】：最大止损金额995元+交易综合费80元=1075元/手</p>
+            <p style="white-space: normal;">【汇率】1港币＝0.9民币(汇率波动较大时，将会进行调整）</p>
             <p style="white-space: normal;"><br></p>
             <p style="white-space: normal;"><strong style="color: rgb(255, 0, 0);"><span
                             style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">产品介绍</span></strong>
@@ -45,20 +44,13 @@
             <p style="text-indent: 2em;">香港交易所恒生指数，最小波动盈亏10港币，可买涨买跌。</p>
             <p style="text-indent: 2em;">
                 为规避隔午、隔夜风险，全部交易设定为日内交易，本品种的交易时间请参照上表。当持仓时间到清仓时间点后，持仓中的交易会被强制清仓，不保证成交价格，请务必在到期前自行选择卖出。</p>
-            <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
-                        style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
-                                style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">新手练习</span></strong></span>
-            </p>
-            <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">如果您是新手，没有交易经验，建议您到</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(255, 0, 0);">模拟操盘</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">练习区进行模拟交易。</span>
-            </p>
+
+
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><strong><span
                             style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);">美元如何兑换成人民币 ？</span></strong><br>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1港币=0.88人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1港币=0.9人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
                         style="color: rgb(102, 102, 102);">用户持仓结算后的盈亏将自动根据上述汇率换成人民币</span></p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -72,9 +64,9 @@
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
             <p style="text-indent: 2em;">盈利示例：<span style="text-indent: 2em;">500港币买</span><span
                         style="text-indent: 28px;">涨</span><span
-                        style="text-indent: 2em;">1手，510港币卖出，涨了10港币，最终<span style="text-indent: 28px;">盈利</span>：10*10*0.88(港币兑人民币汇率)=<span
-                            style="text-indent: 28px;">赚88元 RMB</span>。</span><br></p>
-            <p style="text-indent: 2em;"><span style="text-indent: 2em;">亏损示例：<span style="text-indent: 28px;">500港币买涨1手，490港币卖出，跌了10港币，最终亏损：10*10*0.88(港币兑人民币汇率)=亏88元 RMB。</span></span>
+                        style="text-indent: 2em;">1手，510港币卖出，涨了10港币，最终<span style="text-indent: 28px;">盈利</span>：10*10*0.9(港币兑人民币汇率)=<span
+                            style="text-indent: 28px;">赚90元 RMB</span>。</span><br></p>
+            <p style="text-indent: 2em;"><span style="text-indent: 2em;">亏损示例：<span style="text-indent: 28px;">500港币买涨1手，490港币卖出，跌了10港币，最终亏损：10*10*0.9(港币兑人民币汇率)=亏90元 RMB。</span></span>
             </p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -86,8 +78,8 @@
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
-            <p style="text-indent: 2em;">盈利示例：500港币买跌1手，490港币卖出，跌了10港币，最终盈利：10*10*0.88(港币兑人民币汇率)=赚88元 RMB。</p>
-            <p style="text-indent: 2em;">亏损示例：500港币买跌1手，510港币卖出，涨了10港币，最终亏损：10*10*0.88(港币兑人民币汇率)=亏88元 RMB。</p>
+            <p style="text-indent: 2em;">盈利示例：500港币买跌1手，490港币卖出，跌了10港币，最终盈利：10*10*0.9(港币兑人民币汇率)=赚90元 RMB。</p>
+            <p style="text-indent: 2em;">亏损示例：500港币买跌1手，510港币卖出，涨了10港币，最终亏损：10*10*0.9(港币兑人民币汇率)=亏90元 RMB。</p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">什么是止盈 ?</span></strong></span>
@@ -115,7 +107,7 @@
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">什么是持仓时间 ?</span></strong></span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">小恒指期货最后持仓时间：凌晨 00:58:00</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">小恒指期货最后持仓时间：凌晨 01:00:00</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">当持仓时间到点后，持仓中的交易会被强制平仓，不保证成交价格，请务必在到期前自己选择卖出。</span>
@@ -133,7 +125,7 @@
             </p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
-            <p style="text-indent: 2em; white-space: normal;">小恒指期货每手交易综合费：50元</p>
+            <p style="text-indent: 2em; white-space: normal;">小恒指期货每手交易综合费：80元</p>
             <p style="text-indent: 2em; white-space: normal;">（买进卖出只收取一次）</p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong

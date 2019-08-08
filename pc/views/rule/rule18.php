@@ -45,29 +45,28 @@
             <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：上午 09:05:00 -
                 10:15:00<br>
             </p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：上午 10:35:00 - 11:20:00
+            
+            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：下午 13:00:00 - 15:00:00
             </p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：下午 13:35:00 - 14:50:00
-            </p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：夜间 21:05:00 - 22:50:00
+            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">买入时间</span>】：夜间 21:00:00 - 23:30:00
             </p>
             <p style="white-space: normal;">【<span style="color: rgb(255, 0, 0);">卖出时间</span>】：<span
-                        style="color: rgb(255, 0, 0);">上午 09:05:00 - 10:15:00</span><br></p>
-            <p style="white-space: normal;"><span style="color: rgb(255, 0, 0);">【卖出时间】：上午 10:35:00 - 11:28:00</span>
-            </p>
+                        style="color: rgb(255, 0, 0);">上午 09:05:00 -
+                10:15:00</span><br></p>
+           
             <p style="white-space: normal;">【<span style="color: rgb(255, 0, 0);">卖出时间</span>】<span
-                        style="color: rgb(255, 0, 0);">：下午 13:35:00 - 14:58:00</span></p>
+                        style="color: rgb(255, 0, 0);">：下午 13:00:00 - 15:00:00</span></p>
             <p style="white-space: normal;">【<span style="color: rgb(255, 0, 0);">卖出时间</span>】：<span
-                        style="color: rgb(255, 0, 0);">夜间 21:05:00 - 22:58:00</span></p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">清仓时间</span>】：白天 14:58:00 夜间 22:58:00
+                        style="color: rgb(255, 0, 0);">夜间 21:00:00 - 23:30:00</span></p>
+            <p style="white-space: normal;">【<span style="color: rgb(0, 176, 240);">清仓时间</span>】：白天 13:00:00 夜间 23:30:00
             </p>
             <p style="white-space: normal;"><span style="color: rgb(0, 176, 240);">【保证金<span
-                            style="color: rgb(255, 0, 0);"></span>】&nbsp;&nbsp; ： 350元/手<span
+                            style="color: rgb(255, 0, 0);"></span>】&nbsp;&nbsp; ： 2750元/手<span
                             style="color: rgb(255, 0, 0);"></span></span>
             </p>
-            <p style="white-space: normal;">【交易综合费】：38元/手</p>
-            <p style="white-space: normal;">【止损金额】：最低止损金额：250元+止损增幅金额：100元=止损金额：350元/手</p>
-            <p style="white-space: normal;">【交易保证金】：最大止损金额350元+交易综合费168元=388元/手</p>
+            <p style="white-space: normal;">【交易综合费】：200元/手</p>
+            <p style="white-space: normal;">【止损金额】：最低止损金额：2750元+止损增幅金额：150元=止损金额：2900元/手</p>
+            <p style="white-space: normal;">【交易保证金】：最大止损金额2900元+交易综合费200元=3100元/手</p>
             <p style="white-space: normal;"><br></p>
             <p style="white-space: normal;"><strong style="color: rgb(255, 0, 0);"><span
                             style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0);">产品介绍</span></strong>
@@ -75,21 +74,14 @@
             <p style="white-space: normal; text-indent: 2em;"><span
                         style="list-style: none; margin: 0px; padding: 0px;">为规避隔午、隔夜风险，全部交易设定为日内交易，本品种的交易时间请参照上表。当持仓时间到清仓时间点后，持仓中的交易会被强制清仓，不保证成交价格，请务必在到期前自行选择卖出。</span>
             </p>
-            <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
-                        style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
-                                style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">新手练习</span></strong></span>
-            </p>
-            <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">如果您是新手，没有交易经验，建议您到</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(255, 0, 0);">模拟操盘</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">练习区进行模拟交易。</span>
-            </p>
+
+
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><strong><span
                             style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">美元如何兑换成人民币 ？</span></span></strong><br>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.2人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.0人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
                         style="color: rgb(102, 102, 102);">用户持仓结算后的盈亏将自动根据上述汇率换成人民币</span></p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -145,7 +137,7 @@
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"><strong
                             style="white-space: normal;"><span
-                                style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">沥青</span></strong>期货最后持仓时间：白天 14:58:00 夜间 22:58:00</span>
+                                style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">沥青</span></strong>期货最后持仓时间：白天 13:00:00 夜间 23:30:00</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">当持仓时间到点后，持仓中的交易会被强制平仓，不保证成交价格，请务必在到期前自己选择卖出。</span>
@@ -165,7 +157,7 @@
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
             <p style="text-indent: 2em; white-space: normal;"><span style="color: rgb(102, 102, 102);"><strong
                             style="white-space: normal;"><span
-                                style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">沥青</span></strong></span>期货每手交易综合费：38元
+                                style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">沥青</span></strong></span>期货每手交易综合费：200元
             </p>
             <p style="text-indent: 2em; white-space: normal;">（买进卖出只收取一次）</p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span

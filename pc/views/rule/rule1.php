@@ -9,19 +9,19 @@
             <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;"></span>
             </p>
-            <p style="white-space: normal;"><strong>纽交所美原油期货，每手1000桶，最小波动10美元(相当于最小波动盈亏人民币72元)，可买涨买跌。</strong></p>
+            <p style="white-space: normal;"><strong>纽交所美原油期货，每手1000桶，最小波动10美元，可买涨买跌。</strong></p>
             <p style="white-space: normal;">【交易品种】：美原油</p>
             <p style="white-space: normal;">【货币单位】：美元</p>
             <p style="white-space: normal;">【交易单位】：1000桶/手&nbsp;&nbsp;</p>
             <p style="white-space: normal;">【最小波动】：0.01美元/桶&nbsp;</p>
             <p style="white-space: normal;">【波动盈亏】：波动一次 = 10美元&nbsp;</p>
-            <p style="white-space: normal;">【买入时间】：上午06:05:00 - 次日04:50:00</p>
-            <p style="white-space: normal;">【卖出时间】：上午06:00:00 - 次日04:58:00</p>
-            <p style="white-space: normal;">【清仓时间】：次日04:58:00</p>
-            <p style="white-space: normal;">【交易综合费】：168元/手</p>
-            <p style="white-space: normal;">【止损金额】：最低止损金额：1440元+止损增幅金额：360元=止损金额：1800元/手</p>
-            <p style="white-space: normal;">【交易保证金】：最大止损金额1800元+交易综合费168元=1968元/手</p>
-            <p style="white-space: normal;">【汇率】1美元＝7.2人民币(汇率波动较大时，将会进行调整）</p>
+            <p style="white-space: normal;">【买入时间】：上午06:00:00 - 次日05:00:00</p>
+            <p style="white-space: normal;">【卖出时间】：上午06:00:00 - 次日05:00:00</p>
+            <p style="white-space: normal;">【清仓时间】：次日05:00:00</p>
+            <p style="white-space: normal;">【交易综合费】：210元/手</p>
+            <p style="white-space: normal;">【止损金额】：最低止损金额：2352元+止损增幅金额：360元=止损金额：2712元/手</p>
+            <p style="white-space: normal;">【交易保证金】：最大止损金额2712元+交易综合费210元=2922元/手</p>
+            <p style="white-space: normal;">【汇率】1美元＝7.0人民币(汇率波动较大时，将会进行调整）</p>
             <p style="white-space: normal;"><strong style="color: rgb(255, 0, 0); white-space: normal;"><span
                             style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">品种介绍</span></strong>
             </p>
@@ -29,21 +29,13 @@
                         style="list-style: none; margin: 0px; padding: 0px;"><span
                             style="list-style: none; margin: 0px; padding: 0px; color: rgb(0, 0, 0);">NYM原油，属于纽约商业交易所通过公开竞价来进行交易的原油期货合约。合约通过芝加哥商业交易所的电子贸易系统进行交易，通过纽约商业期货交易所的票据交换所清算。纽约商品交易所NYMEX 美原油期货，每手1000桶，最小波动0.01美元/桶（相当于最小波动盈亏10美元），可买涨买跌。为规避隔午、隔夜风险，全部交易设定为日内交易，本品种的交易时间请参照上表。当持仓时间到清仓时间点后，持仓中的交易会被强制清仓，不保证成交价格，请务必在到期前自行选择卖出。</span></span>
             </p>
-            <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><span
-                        style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
-                                style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; font-size: 14px;">新手练习</span></strong></span>
-            </p>
-            <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">如果您是新手，没有交易经验，建议您到</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(255, 0, 0); font-size: 14px;">模拟操盘</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">练习区进行模拟交易。</span>
-            </p>
+
             <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><strong><span
                             style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">美元如何兑换成人民币 ？</span></span></strong><br>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.2人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.0人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
                         style="color: rgb(102, 102, 102);">用户持仓结算后的盈亏将自动根据上述汇率换成人民币</span></p>
             <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -54,10 +46,10 @@
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">当您买涨时，价格涨了你就赚钱，跌了亏钱。</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">盈利示例：50美元买涨1手，51美元卖出，涨了1美元，最终盈利：1美元*1000桶*7.2(美元兑人民币汇率)=赚7200元 RMB。</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">盈利示例：50美元买涨1手，51美元卖出，涨了1美元，最终盈利：1美元*1000桶*7.0(美元兑人民币汇率)=赚7000元 RMB。</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">亏损示例：50美元买涨1手，49美元卖出，跌了1美元，最终亏损：1美元*1000桶*7.2(美元兑人民币汇率)=亏7200元 RMB。</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">亏损示例：50美元买涨1手，49美元卖出，跌了1美元，最终亏损：1美元*1000桶*7.0(美元兑人民币汇率)=亏7000元 RMB。</span>
             </p>
             <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none;"><span style="color: rgb(255, 0, 0);"><strong
@@ -68,10 +60,10 @@
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">当您买跌时，价格跌了你就赚钱，涨了亏钱。</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">盈利示例：50美元买跌1手，49美元卖出，跌了1美元，最终盈利：1美元*1000桶*7.2(美元兑人民币汇率)=赚7200元 RMB。</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">盈利示例：50美元买跌1手，49美元卖出，跌了1美元，最终盈利：1美元*1000桶*7.0(美元兑人民币汇率)=赚7200元 RMB。</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">亏损示例：50美元买跌1手，51美元卖出，涨了1美元，最终亏损：1美元*1000桶*7.2(美元兑人民币汇率)=亏7200元 RMB。</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">亏损示例：50美元买跌1手，51美元卖出，涨了1美元，最终亏损：1美元*1000桶*7.0(美元兑人民币汇率)=亏7200元 RMB。</span>
             </p>
             <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
@@ -100,7 +92,7 @@
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0); font-size: 14px;">什么是持仓时间 ?</span></strong></span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">美原油期货最后持仓时间：凌晨 04:58:00</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">美原油期货最后持仓时间：凌晨 05:00:00</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;">当持仓时间到点后，持仓中的交易会被强制平仓，不保证成交价格，请务必在到期前自己选择卖出。</span>
@@ -118,7 +110,7 @@
             <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102); font-size: 14px;"></span>
             </p>
-            <p style="text-indent: 2em;">美原油期货每手交易综合费：168元</p>
+            <p style="text-indent: 2em;">美原油期货每手交易综合费：210元</p>
             <p style="text-indent: 2em;">（买进卖出只收取一次）</p>
             <p style="list-style: none; padding: 0px; font-family:;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong

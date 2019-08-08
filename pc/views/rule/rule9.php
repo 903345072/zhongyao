@@ -3,41 +3,29 @@
     <div class="am-padding-horizontal-xs am-padding-bottom-sm am-text-sm">
 
         <div style="padding:10px;line-height: 25px;font-size: 14px;background: none">
-            <p style="white-space: normal;"><strong>芝加哥商品交易所 小纳指NQ 期货，每个指数点20美元，可买涨买跌。</strong></p>
-            <p style="white-space: normal;">【交易品种】：小钠指</p>
+            <p style="white-space: normal;"><strong>芝加哥商品交易所 美精铜NQ 期货，每个指数点20美元，可买涨买跌。</strong></p>
+            <p style="white-space: normal;">【交易品种】：美精铜</p>
             <p style="white-space: normal;">【货币单位】：美元</p>
             <p style="white-space: normal;">【交易单位】：1个指数点</p>
             <p style="white-space: normal;">【最小波动】：0.25指数点&nbsp;</p>
             <p style="white-space: normal;">【波动盈亏】：波动一次 = 5美元&nbsp;</p>
-            <p style="white-space: normal;">【买入时间】：上午06:05:00 - 次日04:50:00</p>
-            <p style="white-space: normal;">【卖出时间】：上午06:00:00 - 次日04:58:00</p>
-            <p style="white-space: normal;">【清仓时间】：次日04:58:00</p>
-            <p style="white-space: normal;">【交易综合费】：168元/手</p>
-            <p style="white-space: normal;">【止损金额】：最低止损金额：1152元+止损增幅金额：360元=止损金额：1512元/手</p>
-            <p style="white-space: normal;">【交易保证金】：最大止损金额1512元+交易综合费168元=1680元/手</p>
-            <p style="white-space: normal;">【汇率】1美元＝7.2人民币(汇率波动较大时，将会进行调整）</p>
+            <p style="white-space: normal;">【买入时间】：上午06:00:00 - 次日05:00:00</p>
+            <p style="white-space: normal;">【卖出时间】：上午06:00:00 - 次日05:00:00</p>
+            <p style="white-space: normal;">【清仓时间】：次日05:00:00</p>
+            <p style="white-space: normal;">【交易综合费】：210元/手</p>
+            <p style="white-space: normal;">【止损金额】：最低止损金额：4704元+止损增幅金额：360元=止损金额：5064元/手</p>
+            <p style="white-space: normal;">【交易保证金】：最大止损金额5064元+交易综合费210元=5274元/手</p>
+            <p style="white-space: normal;">【汇率】1美元＝7.0人民币(汇率波动较大时，将会进行调整）</p>
             <p style="white-space: normal;"><br></p>
-            <p style="white-space: normal;"><strong style="color: rgb(255, 0, 0); white-space: normal;"><span
-                            style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">产品介绍</span></strong>
-            </p>
-            <p style="text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(0, 0, 0);">迷你纳斯达克（M-NAS）全称为美国全国证券交易商协会自动报价系统。特点是收集和发布场外交易非上市股票的证券商报价。迷你纳斯达克指数是反映纳斯达克证券市场行情变化的股票价格平均指数。</span>
-            </p>
-            <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
-                        style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
-                                style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">新手练习</span></strong></span>
-            </p>
-            <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">如果您是新手，没有交易经验，建议您到</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(255, 0, 0);">模拟操盘</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">练习区进行模拟交易。</span>
-            </p>
+
+
+
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><strong><span
                             style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">美元如何兑换成人民币 ？</span></span></strong><br>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.2人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.0人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
                         style="color: rgb(102, 102, 102);">用户持仓结算后的盈亏将自动根据上述汇率换成人民币</span></p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -85,7 +73,7 @@
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">什么是持仓时间 ?</span></strong></span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">小纳指期货最后持仓时间：凌晨 04:13:00</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">美精铜期货最后持仓时间：凌晨 05:00:00</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">当持仓时间到点后，持仓中的交易会被强制平仓，不保证成交价格，请务必在到期前自己选择卖出。</span>
@@ -103,7 +91,7 @@
             </p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
-            <p style="text-indent: 2em; white-space: normal;">小纳指期货每手交易综合费：168元</p>
+            <p style="text-indent: 2em; white-space: normal;">美精铜期货每手交易综合费：210元</p>
             <p style="text-indent: 2em; white-space: normal;">（买进卖出只收取一次）</p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -131,7 +119,7 @@
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">实盘交易下单</span></strong></span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">操盘人的所有小纳指期货交易，全部经由投资人的期货交易账户，下单到芝加哥商品交易所。</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">操盘人的所有美精铜期货交易，全部经由投资人的期货交易账户，下单到芝加哥商品交易所。</span>
             </p>
             <p><span style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"><br></span></p>
             <p><br></p></div>
