@@ -10,34 +10,27 @@
             <p style="white-space: normal;">【交易单位】：100盎司/手&nbsp;</p>
             <p style="white-space: normal;">【最小波动】：0.1美元/盎司&nbsp;</p>
             <p style="white-space: normal;">【波动盈亏】：波动一次 = 10美元&nbsp;</p>
-            <p style="white-space: normal;">【买入时间】：上午06:05:00 - 次日04:50:00</p>
-            <p style="white-space: normal;">【卖出时间】：上午06:00:00 - 次日04:58:00</p>
-            <p style="white-space: normal;">【清仓时间】：次日04:58:00</p>
-            <p style="white-space: normal;">【交易综合费】：158元/手</p>
-            <p style="white-space: normal;">【止损金额】：最低止损金额：1080元+止损增幅金额：360元=止损金额：1440元/手</p>
-            <p style="white-space: normal;">【交易保证金】：最大止损金额1440元+交易综合费158元=1598元/手</p>
-            <p style="white-space: normal;">【汇率】1美元＝7.2人民币(汇率波动较大时，将会进行调整）</p>
+            <p style="white-space: normal;">【买入时间】：上午06:00:00 - 次日05:00:00</p>
+            <p style="white-space: normal;">【卖出时间】：上午06:00:00 - 次日05:00:00</p>
+            <p style="white-space: normal;">【清仓时间】：次日05:00:00</p>
+            <p style="white-space: normal;">【交易综合费】：210元/手</p>
+            <p style="white-space: normal;">【止损金额】：最低止损金额：4707元+止损增幅金额：360元=止损金额：5067元/手</p>
+            <p style="white-space: normal;">【交易保证金】：最大止损金额5067元+交易综合费210元=5277元/手</p>
+            <p style="white-space: normal;">【汇率】1美元＝7.0人民币(汇率波动较大时，将会进行调整）</p>
             <p style="white-space: normal;"><strong style="color: rgb(255, 0, 0); white-space: normal;"><span
                             style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">产品介绍</span></strong>
             </p>
             <p style="text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(127, 127, 127);">CME-黄金期货(GC)是纽约商品交易所（芝加哥商业交易所集团）其中的一个交易品种，简称纽约金，属于美式黄金交易（American gold trading)。目前纽约商品交易所(COMEX)和芝加哥商品交易所(IMM)是世界最大的黄金期货交易中心。两大交易所对黄金现货市场的金价影响很大。以纽约商品交易所(COMEX)为例，该交易所本身不参加期货的买卖，仅提供一个场所和设施，并制定一些法规，保证交易双方在公平、合理的前提下进行交易。该所对进行现货和期货交易的黄金的重量、成色、形状、价格波动的上下限、交易日期、交易时间等有极为详尽和复杂的描述。COMEX黄金则是纽交所其中的一个代表交易品种。</span>
             </p>
-            <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
-                        style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
-                                style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">新手练习</span></strong></span>
-            </p>
-            <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">如果您是新手，没有交易经验，建议您到</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(255, 0, 0);">模拟操盘</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">练习区进行模拟交易。</span>
-            </p>
+
+
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><strong><span
                             style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">美元如何兑换成人民币 ？</span></span></strong><br>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.2人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.0人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
                         style="color: rgb(102, 102, 102);">用户持仓结算后的盈亏将自动根据上述汇率换成人民币</span></p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -48,10 +41,10 @@
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">当您买涨时，价格涨了你就赚钱，跌了亏钱。</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">盈利示例：50美元买涨1手，51美元卖出，涨了1美元，最终盈利：1美元*100盎司*7.2(美元兑人民币汇率)=赚720元 RMB。</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">盈利示例：50美元买涨1手，51美元卖出，涨了1美元，最终盈利：1美元*100盎司*7.0(美元兑人民币汇率)=赚700元 RMB。</span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">亏损示例：50美元买涨1手，49美元卖出，跌了1美元，最终亏损：1美元*100盎司*7.2(美元兑人民币汇率)=亏720元 RMB。</span>
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">亏损示例：50美元买涨1手，49美元卖出，跌了1美元，最终亏损：1美元*100盎司*7.0(美元兑人民币汇率)=亏700元 RMB。</span>
             </p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none;"><span
@@ -68,14 +61,14 @@
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">盈利示例：<span
                             style="color: rgb(102, 102, 102); text-indent: 28px;">50美元买<span
                                 style="color: rgb(102, 102, 102); text-indent: 28px;">跌</span>1手，49美元卖出，跌了1美元，最终<span
-                                style="color: rgb(102, 102, 102); text-indent: 28px;">盈利</span>：1美元*100盎司*7.2(美元兑人民币汇率)=<span
-                                style="color: rgb(102, 102, 102); text-indent: 28px;">赚720元</span> RMB。</span></span>
+                                style="color: rgb(102, 102, 102); text-indent: 28px;">盈利</span>：1美元*100盎司*7.0(美元兑人民币汇率)=<span
+                                style="color: rgb(102, 102, 102); text-indent: 28px;">赚700元</span> RMB。</span></span>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">亏损示例：<span
                             style="color: rgb(102, 102, 102); text-indent: 28px;">50美元买跌1手，51美元卖出，涨了1美元，最终<span
-                                style="color: rgb(102, 102, 102); text-indent: 28px;">亏损</span>：1美元*100盎司*7.2(美元兑人民币汇率)=<span
-                                style="color: rgb(102, 102, 102); text-indent: 28px;">亏720元 RMB</span>。</span></span>
+                                style="color: rgb(102, 102, 102); text-indent: 28px;">亏损</span>：1美元*100盎司*7.0(美元兑人民币汇率)=<span
+                                style="color: rgb(102, 102, 102); text-indent: 28px;">亏700元 RMB</span>。</span></span>
             </p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
@@ -105,7 +98,7 @@
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"><strong
-                            style="white-space: normal;">美黄金</strong>期货最后持仓时间：凌晨 04:58:00</span></p>
+                            style="white-space: normal;">美黄金</strong>期货最后持仓时间：凌晨 05:00:00</span></p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">当持仓时间到点后，持仓中的交易会被强制平仓，不保证成交价格，请务必在到期前自己选择卖出。</span>
             </p>
@@ -122,7 +115,7 @@
             </p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
-            <p style="text-indent: 2em; white-space: normal;"><strong style="white-space: normal;">美黄金</strong>期货每手交易综合费：158元
+            <p style="text-indent: 2em; white-space: normal;"><strong style="white-space: normal;">美黄金</strong>期货每手交易综合费：210元
             </p>
             <p style="text-indent: 2em; white-space: normal;">（买进卖出只收取一次）</p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span

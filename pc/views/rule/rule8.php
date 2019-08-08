@@ -5,21 +5,21 @@
         <div style="padding:10px;line-height: 25px;font-size: 14px;background: none">
             <p style="white-space: normal;"><span style="font-family: Calibri;"><span
                             style="font-family: 宋体;"></span></span></p>
-            <p><strong>新加坡交易所SGXQ 富时A50指数期货，每手1点，最小波动2.5点，(相当于最小波动盈亏人民币18元)，可买涨买跌。</strong></p>
+            <p><strong>新加坡交易所SGXQ 富时A50指数期货，每手1点，最小波动2.5点，(相当于最小波动盈亏人民币17.5元)，可买涨买跌。</strong></p>
             <p style="white-space: normal;">【交易品种】：富时A50</p>
             <p style="white-space: normal;">【货币单位】：美元</p>
             <p style="white-space: normal;">【交易单位】：1个指数点/手</p>
             <p style="white-space: normal;">【最小波动】：2.5美元/2.5点&nbsp;</p>
             <p style="white-space: normal;">【波动盈亏】：波动一次 =25美元&nbsp;</p>
-            <p style="white-space: normal;">【买入时间】：上午09:05:00 - 16:20:00</p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 0, 0);">买入时间</span>】：夜间 17:05:00 - 04:40:00</p>
-            <p style="white-space: normal;">【卖出时间】：上午09:05:00 - 16:28:00</p>
-            <p style="white-space: normal;">【<span style="color: rgb(0, 0, 0);">卖出时间</span>】：夜间 17:00:00 - 04:40:00</p>
-            <p style="white-space: normal;">【清仓时间】：16:28:00、凌晨04:40:00</p>
-            <p style="white-space: normal;">【交易综合费】：68元/手</p>
-            <p style="white-space: normal;">【止损金额】：最低止损金额：360元+止损增幅金额：144元=止损金额：504元/手</p>
-            <p style="white-space: normal;">【交易保证金】：最大止损金额504元+交易综合费68元=572元/手</p>
-            <p style="white-space: normal;">【汇率】1美元＝7.2人民币(汇率波动较大时，将会进行调整）</p>
+            <p style="white-space: normal;">【买入时间】：上午09:00:00 - 16:30:00</p>
+            <p style="white-space: normal;">【<span style="color: rgb(0, 0, 0);">买入时间</span>】：夜间 17:00:00 - 04:45:00</p>
+            <p style="white-space: normal;">【卖出时间】：上午09:00:00 - 16:30:00</p>
+            <p style="white-space: normal;">【<span style="color: rgb(0, 0, 0);">卖出时间</span>】：夜间 17:00:00 - 04:45:00</p>
+            <p style="white-space: normal;">【清仓时间】：16:30:00、凌晨04:45:00</p>
+            <p style="white-space: normal;">【交易综合费】：140元/手</p>
+            <p style="white-space: normal;">【止损金额】：最低止损金额：945元+止损增幅金额：144元=止损金额：1089元/手</p>
+            <p style="white-space: normal;">【交易保证金】：最大止损金额1089元+交易综合费140元=1229元/手</p>
+            <p style="white-space: normal;">【汇率】1美元＝7.0人民币(汇率波动较大时，将会进行调整）</p>
             <p style="white-space: normal;"><br></p>
             <p style="white-space: normal;"><strong style="color: rgb(255, 0, 0);"><span
                             style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">产品介绍</span></strong>
@@ -27,21 +27,14 @@
             <p style="text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px;">富时A50指数包含了中国A股市场市值最大的50家公司，其总市值占A股总市值的33%，是最能代表中国A股市场的指数，许多国际投资者把这一指数看作是衡量中国市场的精确指标。富时A50指数期货在新加坡交易所（SGX）上市。</span>
             </p>
-            <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
-                        style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
-                                style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">新手练习</span></strong></span>
-            </p>
-            <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">如果您是新手，没有交易经验，建议您到</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(255, 0, 0);">模拟操盘</span><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">练习区进行模拟交易。</span>
-            </p>
+
+
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><strong><span
                             style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">美元如何兑换成人民币 ？</span></span></strong><br>
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
-                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.2人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
+                        style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">用户交易涉及到美元兑换人民币将使用固定汇率 7 进行兑换即1美元=7.0人民币。(实际兑换汇率波动到一定点位会进行调整将另行公布)</span><span
                         style="color: rgb(102, 102, 102);">用户持仓结算后的盈亏将自动根据上述汇率换成人民币</span></p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong
@@ -53,10 +46,10 @@
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
-            <p style="text-indent: 2em;">盈利示例：500美元买涨1手，510美元卖出，涨了10美元，最终盈利：10美元*1手*1点*7.2（美元兑人民币汇率）=赚72元 RMB。<span
+            <p style="text-indent: 2em;">盈利示例：500美元买涨1手，510美元卖出，涨了10美元，最终盈利：10美元*1手*1点*7.0（美元兑人民币汇率）=赚70元 RMB。<span
                         style="text-indent: 28px;"></span></p>
             <p style="text-indent: 2em;">亏损示例：<span style="text-indent: 28px;">500美元买涨1手，490美元卖出，跌了10美元，</span><span
-                        style="text-indent: 28px;">最终亏损：10美元*1手*1点*7.2（美元兑人民币汇率）=亏72元 RMB。</span></p>
+                        style="text-indent: 28px;">最终亏损：10美元*1手*1点*7.0（美元兑人民币汇率）=亏70元 RMB。</span></p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none;"><span
                             style="color: rgb(255, 0, 0);"><strong
@@ -68,8 +61,8 @@
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
-            <p style="text-indent: 2em;">盈利示例：500美元买跌1手，490美元卖出，跌了10美元，最终盈利：10美元*1手*1点*7.2（美元兑人民币汇率）=赚72元 RMB。</p>
-            <p style="text-indent: 2em;">亏损示例：500美元买跌1手，510美元卖出，涨了10美元，最终亏损：10美元*1手*1点*7.2（美元兑人民币汇率）=亏72元 RMB。</p>
+            <p style="text-indent: 2em;">盈利示例：500美元买跌1手，490美元卖出，跌了10美元，最终盈利：10美元*1手*1点*7.0（美元兑人民币汇率）=赚70元 RMB。</p>
+            <p style="text-indent: 2em;">亏损示例：500美元买跌1手，510美元卖出，涨了10美元，最终亏损：10美元*1手*1点*7.0（美元兑人民币汇率）=亏70元 RMB。</p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="border: 1px solid rgb(0, 0, 0); border-image: none; color: rgb(255, 0, 0);"><strong><span
                                 style="list-style: none; margin: 0px; padding: 0px; border: 1px solid rgb(0, 0, 0); border-image: none;">什么是止盈 ?</span></strong></span>
@@ -98,7 +91,7 @@
             </p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"><strong
-                            style="white-space: normal;">富时A50</strong>期货最后持仓时间：白天 16:28:00、夜间04:40</span></p>
+                            style="white-space: normal;">富时A50</strong>期货最后持仓时间：白天 16:30:00、夜间04:45</span></p>
             <p style="list-style: none; padding: 0px; text-indent: 2em; white-space: normal;"><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);">当持仓时间到点后，持仓中的交易会被强制平仓，不保证成交价格，请务必在到期前自己选择卖出。</span>
             </p>
@@ -115,7 +108,7 @@
             </p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span
                         style="list-style: none; margin: 0px; padding: 0px; color: rgb(102, 102, 102);"></span></p>
-            <p style="text-indent: 2em; white-space: normal;"><strong style="white-space: normal;">富时A50</strong>期货每手交易综合费：68元
+            <p style="text-indent: 2em; white-space: normal;"><strong style="white-space: normal;">富时A50</strong>期货每手交易综合费：140元
             </p>
             <p style="text-indent: 2em; white-space: normal;">（买进卖出只收取一次）</p>
             <p style="list-style: none; padding: 0px; white-space: normal;" microsoft=""><span

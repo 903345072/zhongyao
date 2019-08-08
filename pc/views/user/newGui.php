@@ -9,10 +9,7 @@
 <div class="clearfix wrap1 mb59">
   <div class="fl aslide">
     <ul class="help_list">
-      <li id="rule-recharge" data-src="<?= url(['rule/rule-recharge']) ?>">
-        <i>zf</i>
-        <span>微信、支付宝转账到银行卡-新手操作指南</span>
-      </li>
+
       <li id="rulerisk" data-src="<?= url(['rule/rulerisk']) ?>">
         <i>FX</i>
         <span>《中钥财富交易风险提示》风险告知书</span>
@@ -44,7 +41,7 @@
       <li id="rule3" data-src="<?= url(['rule/rule3']) ?>">
         <a href="javascript:;">SL 美白银期货交易说明</a>
       </li>
-      <li id="rule4" data-src="<?= url(['rule/rule4']) ?>">
+      <li id="rule4" data-src="<?= url(['rule/rule9']) ?>">
         <a href="javascript:;">HG 美铜期货交易说明</a>
       </li>
       <li id="rule6" data-src="<?= url(['rule/rule6']) ?>">
@@ -56,20 +53,6 @@
 
       <li id="rule8" data-src="<?= url(['rule/rule8']) ?>">
         <a href="javascript:;">CN 富时A50交易说明</a>
-      </li>
-      <!--<li id="rule" data-src="<?/*= url(['rule/rule9']) */?>">
-        <a href="javascript:;>美精铜期货交易说明</a>
-      </li>-->
-
-<!--      <li id="rule" data-src="<?/*= url(['rule/rule12']) */?>">
-        <a href="javascript:;>BP 英镑期货交易说明</a>
-      </li>
-      <li id="rule" data-src="<?/*= url(['rule/rule13']) */?>">
-        <a href="javascript:;>EC 欧元期货交易说明</a>
-      </li>-->
-
-      <li id="rule9" data-src="<?= url(['rule/rule9']) ?>">
-        <a href="javascript:;">NQ 小纳指交易说明</a>
       </li>
 
 
