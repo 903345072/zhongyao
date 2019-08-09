@@ -39,7 +39,7 @@
         <style>
 
             .banks{
-                margin-left: 30%;font-size: 12px;
+                margin-left: 30%;font-size: 14px;
                 margin-top: 30px;
 
 
