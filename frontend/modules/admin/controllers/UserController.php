@@ -388,6 +388,7 @@ class UserController extends \admin\components\Controller
             [
                 'header' => '推荐人(ID)',
                 'value'  => function ($row) {
+                    
                     return $row->user->getParentLink('user.id');
                 },
             ],
