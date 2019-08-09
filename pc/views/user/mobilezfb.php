@@ -3,44 +3,56 @@
 		<div class="wrap1 clearfix houtai_content">
         <?= $this->render('../layouts/menu', compact('current_position')) ?>
 
-			<div class="hover">
-				<h3 class="mx clearfix">※ 支付宝转账
-				</h3>
-				<div class="wxs">
-					<h2>支付宝充值</h2>
-					<img src="http://wap.6ff7.com<?= config('ali_qrcode') ?>" class="ewm"/>
-					<p class="opens">【打开支付宝手机app，扫描上方二维码充值】</p>
-					<div class="insp">
-						<img src="/web/images/user_wx_07.jpg"/>
-						<input type="text" id="name" placeholder="填写支付宝昵称，方便财务审核，快速入账" />
-					</div>
-          <input type="hidden" id="money" value="<?= $money ?>">
-					<a href="javascript:;" id="submission"><div class="user_btn">提 交</div></a>
-					<span>请在充值后再提交昵称！</span>
-				</div>
+            <div style="height: 60px;background: #313131;width: 75%;margin-left: 290px;line-height: 60px">
+                <h3 style="color: white;padding-left: 20px" class="">※ 线下转账
+                </h3>
+            </div>
+			<div class="hover" style="height: 922px;">
+
+                <?php
+                if (config('ali_is_show') == 1){
+                    $src1 = config('web_url').config('ali_qrcode');
+                    echo '<div style="float: left;width: 30%;margin-left: 120px" class="wxs">';
+                    echo '<h2>支付宝充值</h2>';
+                    echo "<img class='ewm' style='width: 40%' src= {$src1} >";
+                    echo '<p class="opens">【打开支付宝手机app，扫描上方二维码充值】</p>';
+                    echo '</div>';
+                }
+                ?>
+
+                <?php
+                if (config('wx_is_show') == 1){
+                    $src1 = config('web_url').config('wx_qrcode');
+                    echo '<div style="float: right;width: 30%;margin-right: 120px" class="wxs">';
+                    echo '<h2>微信充值</h2>';
+                    echo "<img class='ewm' style='width: 40%' src= {$src1} >";
+                    echo '<p class="opens">【打开微信手机app，扫描上方二维码充值】</p>';
+                    echo '</div>';
+                }
+                ?>
+                <?php
+
+                $bank_code = config('bank_code');
+                $bank_name = config('bank_name');
+                $bank_position = config('bank_position');
+                echo '<div style="float: left;width: 650px;margin-top: 30px">';
+                echo "<p class='banks'>收款卡号:$bank_code</p>";
+                echo "<p class='banks'>收款人姓名:$bank_name</p>";
+                echo "<p class='banks'>开户行:$bank_position</p>";
+                echo '</div>';
+                ?>
+
+                <style>
+
+                    .banks{
+                        margin-left: 30%;font-size: 12px;
+                        margin-top: 30px;
+
+
+                    }
+                </style>
+
+
 			</div>
+
 		</div>
-    <script type="text/javascript">
-      $(function(){
-        $('#submission').click(function(){
-          var name = $('#name').val();
-          var money = $('#money').val();
-          if(!name || !money){
-            alert('请填写完整信息');return;
-          }
-          $.ajax({
-            url:'<?= url(['user/userpayment']) ?>',
-            type:'post',
-            data:{type:2,name:name,money:money},
-            success:function(data){
-              if(data == 1) {
-                alert('提交成功');
-                window.location.href = 'center';
-              }else{
-                alert('提交失败')
-              }
-            }
-          })
-        })
-      })
-    </script>

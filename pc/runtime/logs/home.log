@@ -23670,3 +23670,68 @@ Array
     [2] => Duplicate entry '' for key 'mobile'
 )
 
+2019-08-09 14:34:12 [POST][http://localhost:82/user/pay][::1][100053][vvjklaatudu6jnde36hairuua1][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\code\zhongyaocaifu\pc\views\layouts\empty.php' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\code\\zhongya...', Array, Object(home\controllers\UserController))
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n\t\t\r\n\t\t<div cl...')
+#2 C:\code\zhongyaocaifu\home\controllers\UserController.php(180): yii\base\Controller->render('mobilebank', Array)
+#3 [internal function]: home\controllers\UserController->actionPay()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('pay', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/pay', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2019-08-09 14:34:59 [POST][http://localhost:82/user/pay][::1][100053][vvjklaatudu6jnde36hairuua1][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\code\zhongyaocaifu\pc\views\layouts\empty.php' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\code\\zhongya...', Array, Object(home\controllers\UserController))
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n\t\t\r\n\t\t<div cl...')
+#2 C:\code\zhongyaocaifu\home\controllers\UserController.php(181): yii\base\Controller->render('mobilebank', Array)
+#3 [internal function]: home\controllers\UserController->actionPay()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('pay', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/pay', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2019-08-09 14:35:31 [POST][http://localhost:82/user/pay][::1][100053][vvjklaatudu6jnde36hairuua1][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\code\zhongyaocaifu\pc\views\layouts\empty.php' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\code\\zhongya...', Array, Object(home\controllers\UserController))
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n\t\t\r\n\t\t<div cl...')
+#2 C:\code\zhongyaocaifu\home\controllers\UserController.php(181): yii\base\Controller->render('mobilebank', Array)
+#3 [internal function]: home\controllers\UserController->actionPay()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('pay', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/pay', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2019-08-09 14:36:09 [POST][http://localhost:82/user/pay][::1][100053][vvjklaatudu6jnde36hairuua1][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\code\zhongyaocaifu\pc\views\layouts\empty.php' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\code\\zhongya...', Array, Object(home\controllers\UserController))
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n\t\t\r\n\t\t<div cl...')
+#2 C:\code\zhongyaocaifu\home\controllers\UserController.php(181): yii\base\Controller->render('mobilezfb', Array)
+#3 [internal function]: home\controllers\UserController->actionPay()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('pay', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/pay', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+2019-08-09 14:37:05 [POST][http://localhost:82/user/pay][::1][100053][vvjklaatudu6jnde36hairuua1][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: C:\code\zhongyaocaifu\pc\views\layouts\empty.php' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\View.php:226
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(393): yii\base\View->renderFile('C:\\code\\zhongya...', Array, Object(home\controllers\UserController))
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(379): yii\base\Controller->renderContent('\r\n\t\t\r\n\t\t<div cl...')
+#2 C:\code\zhongyaocaifu\home\controllers\UserController.php(181): yii\base\Controller->render('mobilezfb', Array)
+#3 [internal function]: home\controllers\UserController->actionPay()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('pay', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user/pay', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}

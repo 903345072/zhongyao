@@ -375,19 +375,18 @@ class UserController extends \frontend\components\Controller
 
                 break;
             case '3':
-                $src = UserCharge::znpay($amount, 'alipay');//支付宝支付
-                if (! $src) {
-                    return $this->redirect(['site/wrong']);
-                }
-
-                return $this->render('alipay', compact('src', 'amount'));
+        //微信、支付宝、银行卡线下转账
+                $tip = '使用微信扫一扫即可转账';
+                $src =config('web_rul').config('wx_qrcode');
+                return $this->render('pay');
                 break;
-
             default:
                 return $this->render('zfpay', compact('info'));
                 break;
         }
     }
+
+
 
     public function actionWrong()
     {

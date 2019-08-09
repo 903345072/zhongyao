@@ -21,6 +21,8 @@
           <input type="hidden" id="type" name="type">
         <span>元</span>
       </div>
+
+
       <div class="select_cz_fs clearfix">
         <span class="fl tg">选择快捷充值金额：</span>
         <div class="fl clearfix jine_select" id="priceBtn">
@@ -42,6 +44,7 @@
         <div class="lefts">
           <a class="zhifubao" href="javascript:;" onclick="formSubmit(1);">快捷支付</a>
           <a class="zhifubao" href="javascript:;" onclick="formSubmit(2);">支付宝支付</a>
+            <a class="zhifubao" href="javascript:;" onclick="formSubmit(3);">线下转账</a>
         </div>
    
       </div>

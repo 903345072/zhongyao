@@ -161,10 +161,11 @@ class UserController extends \home\components\Controller
 
     public function actionPay()
     {
-        $this->layout      = 'empty';
+
         $this->view->title = '安全支付';
-        $amount            = post('money',10);
-        switch (post('type', 2)) {
+        $amount =  $money            = post('money',10);
+        $current_position  = 'recharge';
+        switch (post('type', 3)) {
             case '1':
                 $html = charge::ylpay($amount, 'wangyin');//微信扫码支付，翰银支付
                 if (! $html) {
@@ -175,6 +176,9 @@ class UserController extends \home\components\Controller
             case '2':
                 $paytype = 'alipay';
                 charge::ourspay($amount,$paytype);//ourspay
+                break;
+            case '3':
+                return $this->render('mobilezfb', compact('money', 'current_position'));
                 break;
         }
     }

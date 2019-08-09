@@ -131,5 +131,16 @@
               $('.hovers').html(res)
           })
       })
+
+      $(document).on('click','.xianxiax',function () {
+          var urlsss = $(this).attr('data-href');
+          var index2 = layer.load(1)
+          $.get(urlsss,{},function (res) {
+              layer.close(index2);
+              $('.hovers').html('')
+              $('.hovers').html(res)
+          })
+      })
+
   })
 </script>
