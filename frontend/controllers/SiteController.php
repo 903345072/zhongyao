@@ -16,6 +16,7 @@ use frontend\models\Product;
 use frontend\models\DataAll;
 use frontend\models\Retail;
 use common\models\Order;
+use yii\filters\VerbFilter;
 use yii\log\FileTarget;
 use frontend\models\UserCharge;
 use common\models\DataCl;
@@ -34,6 +35,7 @@ class SiteController extends \frontend\components\Controller
      *
      * @return array
      */
+
 
     public function sendRequest($url, $params = [], $method = 'POST', $options = [])
     {
@@ -842,6 +844,18 @@ class SiteController extends \frontend\components\Controller
           });
     }
 
+    /*定时删除错误数据*/
+      public function actionDelWrong()
+      {
+          $a = \Yii::$app->params['productList'];
+          array_walk($a,function ($item){
+              $name = self::db("select id,Name From data_{$item} order by id asc limit 1")->queryone();//最早一条数据
+              $name = $name['Name'];
+              self::dbDelete("data_{$item}","Name != '{$name}' or price = 0 limit 20");
+          });
+      }
+
+
     public function actionTest6()
     {
         $obj = User::findOne(100051);
@@ -853,8 +867,6 @@ class SiteController extends \frontend\components\Controller
         }
 
     }
-
-    
 
 
 

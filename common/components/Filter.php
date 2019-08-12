@@ -27,12 +27,13 @@ class Filter extends Behavior{
          $post = \Yii::$app->request->post();
          if (!empty($get)){
                 array_filter($get,function(&$item1){
-                    $item1 =htmlspecialchars($item1);
+                    $item1 =intval($item1);
              });
          }
 
         if (!empty($post)){
             array_filter($post,function(&$item2){
+
                 $item2 =htmlspecialchars($item2);
             });
         }
