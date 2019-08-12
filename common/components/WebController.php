@@ -86,13 +86,13 @@ class WebController extends \yii\web\Controller
                 });
                 // 校验是否反复点击按钮导致的表单重复提交
 
-                if ($this->isRepeatSubmit()) {
-                    if (Yii::$app->controller->action->id != 'with-draw'){
-                        self::ajaxReturn(false, '已经提交过了！');
-                        return false;
-                    }
-
-                }
+//                if ($this->isRepeatSubmit()) {
+//                    if (Yii::$app->controller->action->id != 'with-draw'){
+//                        self::ajaxReturn(false, '已经提交过了！');
+//                        return false;
+//                    }
+//
+//                }
                 // 记录表单提交的token
                 $this->recordSubmit();
             }
