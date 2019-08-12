@@ -20,7 +20,7 @@ class UserAccount extends \common\models\UserAccount
     public function scenarios()
     {
         return array_merge(parent::scenarios(), [
-            'withDraw' => ['verifyCode', 'user_id', 'realname', 'id_card', 'bank_name', 'bank_card', 'bank_user', 'bank_mobile', 'bank_address', 'address'],
+            'withDraw' => ['verifyCode', 'user_id', 'realname', 'id_card', 'bank_name', 'bank_card', 'bank_user',  'bank_address', 'address'],
         ]);
     }
 
