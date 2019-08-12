@@ -20,7 +20,12 @@ return [
     'components' => [
         'user' => [
             'loginUrl' => is_access_admin() ? ['admin/site/login'] : ['site/login'],
-            'identityClass' => is_access_admin() ? 'admin\components\AdminWebUser' : 'home\components\WebUser'
+            'identityClass' => is_access_admin() ? 'admin\components\AdminWebUser' : 'home\components\WebUser',
+            'on beforeLogin' => function($event) {
+                $user = $event->identity; //这里的就是User Model的实例
+                $user->login_time = date( "Y-m-d H:i:s",time()) ;
+                $user->save(0);
+            },
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
