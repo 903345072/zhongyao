@@ -47,11 +47,7 @@
                class="inpt_money"
                placeholder="网点支行">
       </div>
-      <div class="select_cz_fs clearfix">
-        <span class="fl tg">手机号：</span>
-        <input type="number" name="mobile" id="mobile_show"
-               class="inpt_money" placeholder="手机号" readonly value="<?= u()->mobile ?>">
-      </div>
+
       <div class="select_cz_fs clearfix">
         <span class="fl tg">登录密码：</span>
         <input class="inpt_money" name="UserAccount[password]" type="password" placeholder="请输入登录密码">
