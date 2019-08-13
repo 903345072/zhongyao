@@ -21,10 +21,8 @@ class NotifyController extends Controller
             "totalAmount" =>  $_REQUEST["totalAmount"], // 交易金额
             "sign" =>  $_REQUEST["sign"], // 交易时间
         );
-        $md5key = "NqckueFfNBTmTT0RHcLrt7K6us38c6bC";
-
+        $md5key = "v63jjdJHtVq3exy6HyHEZ2D7cg23HrR1";
         $md5str = "orderAmount=".$returnArray['totalAmount']."&orderId=".$returnArray['out_trade_no'].'&priKey='.$md5key;
-
         $sign = strtoupper(md5($md5str));
         $log->messages[] = ['订单:'.$returnArray['out_trade_no'].'充值:'.$returnArray['totalAmount'].'签名:'.$_REQUEST["sign"].'校验签名:'.$sign,8,'application',time()];
         $log->export();

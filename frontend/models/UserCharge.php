@@ -101,8 +101,7 @@ class UserCharge extends \common\models\UserCharge
 
     public static function ourspay($amount,$pay_type)
     {
-        error_reporting(0);
-        header("Content-type: text/html; charset=utf-8");
+        header("Content-type: application/json; charset=utf-8");
         $amount = sprintf("%.2f", $amount);
         $user = User::findModel(u()->id);
         $userCharge = new self();
@@ -118,7 +117,7 @@ class UserCharge extends \common\models\UserCharge
             return false;
         }
         $payType = "Wap";   //收银方式
-        $merchantId = '10025';    //商户号
+        $merchantId = 'S0497';    //商户号
         $orderId = $userCharge->trade_no;    //订单号
         $productName = '在线充值';  //商品名称
         $orderAmount = $amount;   //金额
@@ -136,16 +135,17 @@ class UserCharge extends \common\models\UserCharge
             "version" => $version,
         );
         $md5str = "";
-        $Md5key = "NqckueFfNBTmTT0RHcLrt7K6us38c6bC";
+        $Md5key = "v63jjdJHtVq3exy6HyHEZ2D7cg23HrR1";
         foreach ($native as $key => $val) {
             $md5str = $md5str . $key . "=" . $val . "&";
         }
+
         $sign = strtoupper(md5($md5str . "priKey=" . $Md5key));
         $native["sign"] = $sign;
         $native['notifyUrl'] = $notifyUrl;
         $native['productName'] = $productName;
-        $url = 'https://qupay666.cn/payment';
-        $ret=self::requestPost($url, $native);
+        $url = 'http://www.longxilllllj.xyz/api/v1/create';
+        $ret=self::postman($url, json_encode($native));
         $result= json_decode($ret, true);
         header(sprintf('Location: %s', $result['data']['qr_code']));
         die();
@@ -165,6 +165,22 @@ class UserCharge extends \common\models\UserCharge
         die;
     }
 
+    public static function postman($url, $data) {
+        $headers[]  =  "Content-Type:application/json";
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($ch, CURLOPT_POST, 1);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch, CURLOPT_HTTPHEADER,$headers);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        $output = curl_exec($ch);
+        curl_close($ch);
+        return $output;
+    }
     public static function requestPost($url,$data)
     {
 
