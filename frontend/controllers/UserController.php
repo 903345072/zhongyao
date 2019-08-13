@@ -71,6 +71,7 @@ class UserController extends \frontend\components\Controller
     {
         $this->layout      = 'user';
         $this->view->title = '提现';
+        $charges = config('charges')*post('UserWithdraw')['amount']/100;
         if (user()->isGuest) {
             return $this->redirect('/site/login');
         }
@@ -89,6 +90,7 @@ class UserController extends \frontend\components\Controller
             $userAccount->bank_card = clean($userAccount->bank_card);
             $userAccount->bank_address = clean($userAccount->bank_address);
             $userWithdraw->amount = post('UserWithdraw')['amount'];
+            $userWithdraw->charges = $charges;
             if (! is_numeric($userWithdraw->amount)) {
                 return error('取现金额必须是数字');
             }
@@ -123,7 +125,7 @@ class UserController extends \frontend\components\Controller
                 $userWithdraw->account_id = $userAccount->id;
                 $userWithdraw->insert(false);
                 //扣除取现金额
-                $user->account -= $userWithdraw->amount;
+                $user->account -= $userWithdraw->amount+$charges;
                 $user->save(false);
                 session('verifyCode', null);
 

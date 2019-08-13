@@ -277,7 +277,7 @@ class UserController extends \admin\components\Controller
         $query      = (new UserWithdraw)->listQuery()->joinWith([
             'user.parent',
             'user.admin',
-        ])->andWhere(['user.state' => User::STATE_VALID])->orderBy('op_state');
+        ])->andWhere(['user.state' => User::STATE_VALID])->orderBy('userwithdraw.created_at desc');
         $countQuery = (new UserWithdraw)->listQuery()->joinWith(['user.admin'])->andWhere(['user.state' => User::STATE_VALID])->andWhere(['op_state' => UserWithdraw::OP_STATE_PASS]);
         $count      = $countQuery->select('SUM(amount) amount')->one()->amount ?: 0;
         $newCount   = (new UserWithdraw)->search()->where(['op_state' => 1])->andFilterWhere([
@@ -291,6 +291,7 @@ class UserController extends \admin\components\Controller
             'user.nickname',
             'user.mobile',
             'user.account',
+            'charges'=>'提现手续费',
             'amount'         => '出金金额',
             [
                 'header' => '推荐人(ID)',

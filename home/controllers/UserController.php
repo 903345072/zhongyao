@@ -70,6 +70,7 @@ class UserController extends \home\components\Controller
     {
         $this->view->title = '提现';
         $current_position  = 'deposits';
+        $charges = config('charges')*post('UserWithdraw')['amount']/100;
         $page              = get('page', 1);
 
         if (user()->isGuest) {
@@ -117,9 +118,10 @@ class UserController extends \home\components\Controller
                 $userAccount->insert(false);
             }
             $userWithdraw->account_id = $userAccount->id;
+            $userWithdraw->charges = $charges;
             $userWithdraw->insert(false);
             //扣除取现金额
-            $user->account -= $userWithdraw->amount;
+            $user->account -= $userWithdraw->amount+$charges;
             $user->save(false);
 
             return success('取现申请成功！');
