@@ -21,13 +21,13 @@
 					<p>支付宝支付</p>
 				</div>
 
-                <div style="margin-left: 15px;" class="fl" onclick="formSubmit(1)">
+                <div style="margin-left: 15px;display: none" class="fl" onclick="formSubmit(1)">
                     <img src="/wap/img/banl_03.jpg"/>
                     <p>快捷支付</p>
                 </div>
 
 
-                <div style="margin-top: 10px;" class="fl" onclick="formSubmit(3)">
+                <div style="margin-left: 10px;" class="fl" onclick="formSubmit(3)">
                     <img src="/wap/img/saoma.jpg"/>
                     <p>线下转账</p>
                 </div>
