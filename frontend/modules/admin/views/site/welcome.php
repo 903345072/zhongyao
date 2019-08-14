@@ -86,8 +86,12 @@ $url = 'http://' . $_SERVER['HTTP_HOST'] . url(['/site/register', 'code' => $ret
   </tr>
 <?php if(u()->power != 10000):?>
     <tr>
-        <td>俺的推广二维码</td>
+        <td>我的推广二维码</td>
         <td><img src="https://www.kuaizhan.com/common/encode-png?large=true&data=<?=$url?>" alt=""></td>
+    </tr>
+    <tr>
+        <td>我的推广链接</td>
+        <td><?= $url ?></td>
     </tr>
   <?php endif;?>
 
