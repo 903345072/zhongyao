@@ -313,6 +313,10 @@ class SiteController extends \frontend\components\Controller
             $model->code = isset($retail) ? $retail->code : '';
         }
 
+        if (get('code')){
+            $model->code = get('code');
+        }
+
 
 
         if ($model->load(post())) {

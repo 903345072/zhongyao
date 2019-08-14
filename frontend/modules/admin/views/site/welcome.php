@@ -60,7 +60,11 @@
         </tr>
     </tbody>
 </table> -->
-
+<?php
+$uid = u()->id;
+$retail = \common\models\Retail::findOne($uid);
+$url = 'http://' . $_SERVER['HTTP_HOST'] . url(['/site/register', 'code' => $retail->code]); //二维码内容
+?>
 <table class="table table-border table-bordered table-bg">
   <thead>
   <tr>
@@ -80,9 +84,17 @@
     <td>当前待审核提现记录</td>
     <td><?= $newUsercashCount ?>条</td>
   </tr>
+<?php if(u()->power != 10000):?>
+    <tr>
+        <td>俺的推广二维码</td>
+        <td><img src="https://www.kuaizhan.com/common/encode-png?large=true&data=<?=$url?>" alt=""></td>
+    </tr>
+  <?php endif;?>
+
 
   </tbody>
 </table>
+
 
 <!--<table class="table table-border table-bordered table-bg">
     <thead>
