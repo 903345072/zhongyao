@@ -54,7 +54,7 @@
       </div>
       <input style="margin-top: 33px;" type="button" value="提交" class="tj_cz usercashSubmit">
       <p class="clearfix bz">
-        <a href="" class="fr">如遇到充值问题，请联系客服！</a>
+          <a style="color: #c09853" href="" class="fr">提现手续费<?= config('charges') ?>%(从余额中扣除)</a>
       </p>
         <?php self::endForm() ?>
     </div>
