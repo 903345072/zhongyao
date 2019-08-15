@@ -10485,3 +10485,1379 @@ AND rc.table_name = 'user_payment' AND kcu.table_name = 'user_payment'
     in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
     in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
     in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: ''
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: site/index
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\SiteController::actionIndex()
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE (`on_sale`=1) AND (`state`=1) AND (`type`=1) ORDER BY `hot` DESC
+    in C:\code\zhongyaocaifu\home\models\Product.php:55
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:33
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\home\models\Product.php:55
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:33
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE (`on_sale`=1) AND (`state`=1) AND (`type`=2) ORDER BY `hot` DESC
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:14
+    in C:\code\zhongyaocaifu\common\behaviors\ARSaveBehavior.php:47
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:14
+    in C:\code\zhongyaocaifu\common\behaviors\ARSaveBehavior.php:47
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:14
+    in C:\code\zhongyaocaifu\common\behaviors\ARSaveBehavior.php:47
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:14
+    in C:\code\zhongyaocaifu\common\behaviors\ARSaveBehavior.php:47
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `product`
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'product' AND kcu.table_name = 'product'
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `data_all` `dataAll` WHERE `name` IN ('cl', 'scbu', 'zcsr', 'dcpp', 'p0', 'sr0', 'm0', 'y0', 'pp0')
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `data_all`
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'data_all' AND kcu.table_name = 'data_all'
+    in C:\code\zhongyaocaifu\home\models\Product.php:92
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=1
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=26
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=27
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=28
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=21
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=22
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=23
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=24
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=25
+    in C:\code\zhongyaocaifu\common\models\Product.php:188
+    in C:\code\zhongyaocaifu\home\models\Product.php:95
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:35
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `article` `article` ORDER BY `publish_time` DESC
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:36
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `article`
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:36
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'article' AND kcu.table_name = 'article'
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:36
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\site\index.php
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:37
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:41:02 [GET][http://localhost:82/][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\SiteController.php:37
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/center'
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/center
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionCenter()
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `order` `order` WHERE (`order_state`=1) AND (`user_id`=100053) AND (`model_type`=1) ORDER BY `created_at` DESC
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:441
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `order`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:441
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'order' AND kcu.table_name = 'order'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:441
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id` IN (27, 1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:441
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `product`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:441
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'product' AND kcu.table_name = 'product'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:441
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=27) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:446
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `product_price`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:446
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'product_price' AND kcu.table_name = 'product_price'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:446
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=27) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:446
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:446
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `order` `order` WHERE (`order_state`=2) AND (`user_id`=100053) AND (`model_type`=1) ORDER BY `created_at` DESC
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:454
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id` IN (1, 21, 22)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:454
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=21) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=22) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:459
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `article` `article` ORDER BY `publish_time` DESC
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:464
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `article`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:464
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'article' AND kcu.table_name = 'article'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:464
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT MAX(profit) FROM `order` `order` WHERE (`order_state`=2) AND (`user_id`=100053)
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:466
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\center.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:472
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\center.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:472
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:472
+2019-08-15 18:41:04 [GET][http://localhost:82/user/center][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'order/ajax-update-order'
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: order/ajax-update-order
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\OrderController::actionAjaxUpdateOrder()
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:16
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:64
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:16
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:64
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:16
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:64
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:16
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:64
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\common\functions\Yii_func.php:16
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:64
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `order` `order` WHERE (`order_state`=1) AND (`user_id`=100053)
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:65
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `order`
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:65
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'order' AND kcu.table_name = 'order'
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:65
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=1) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\common\models\Order.php:346
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `product_price`
+    in C:\code\zhongyaocaifu\common\models\Order.php:346
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'product_price' AND kcu.table_name = 'product_price'
+    in C:\code\zhongyaocaifu\common\models\Order.php:346
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `product`
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:71
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'product' AND kcu.table_name = 'product'
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:71
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=1
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:71
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `data_all`
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:76
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'data_all' AND kcu.table_name = 'data_all'
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:76
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `data_all` `dataAll` WHERE `name`='cl'
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:76
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=27) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\common\models\Order.php:346
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=27
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:71
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `data_all` `dataAll` WHERE `name`='zcsr'
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:76
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product_price` `productPrice` WHERE (`product_id`=27) AND (`hand`=1)
+    in C:\code\zhongyaocaifu\common\models\Order.php:346
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `product` `product` WHERE `id`=27
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:71
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+    in C:\code\zhongyaocaifu\home\controllers\OrderController.php:71
+2019-08-15 18:41:05 [POST][http://localhost:82/order/ajax-update-order][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `data_all` `dataAll` WHERE `name`='zcsr'
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\common\models\DataAll.php:76
+    in C:\code\zhongyaocaifu\common\models\Order.php:347
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/deposits'
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/deposits
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionDeposits()
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:79
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_account` `userAccount` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_account`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_account' AND kcu.table_name = 'user_account'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_withdraw` `userWithdraw` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_withdraw`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_withdraw' AND kcu.table_name = 'user_withdraw'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\deposits.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\deposits.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:06 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/deposits'
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/deposits
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionDeposits()
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:79
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_account` `userAccount` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_account`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_account' AND kcu.table_name = 'user_account'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_withdraw` `userWithdraw` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_withdraw`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_withdraw' AND kcu.table_name = 'user_withdraw'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\deposits.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\deposits.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:55 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/deposits'
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/deposits
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:56 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionDeposits()
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:79
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_account` `userAccount` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_account`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_account' AND kcu.table_name = 'user_account'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_withdraw` `userWithdraw` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_withdraw`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_withdraw' AND kcu.table_name = 'user_withdraw'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\deposits.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\deposits.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:41:57 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/deposits'
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/deposits
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionDeposits()
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:79
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_account` `userAccount` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_account`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_account' AND kcu.table_name = 'user_account'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_withdraw` `userWithdraw` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_withdraw`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_withdraw' AND kcu.table_name = 'user_withdraw'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\deposits.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\deposits.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:07 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/deposits'
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/deposits
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionDeposits()
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:79
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_account` `userAccount` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_account`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_account' AND kcu.table_name = 'user_account'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_withdraw` `userWithdraw` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_withdraw`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_withdraw' AND kcu.table_name = 'user_withdraw'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\deposits.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\deposits.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:08 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/deposits'
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/deposits
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionDeposits()
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:79
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_account` `userAccount` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_account`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_account' AND kcu.table_name = 'user_account'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_withdraw` `userWithdraw` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_withdraw`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_withdraw' AND kcu.table_name = 'user_withdraw'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\deposits.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\deposits.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:22 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Module::getModule] Loading module: wizard
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with common\modules\wizard\Module::bootstrap()
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Application::bootstrap] Bootstrap with yii\log\Dispatcher
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\UrlManager::parseRequest] No matching URL rules. Using default URL parsing logic.
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\web\Application::handleRequest] Route requested: 'user/deposits'
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\Controller::runAction] Route to run: user/deposits
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\web\Session::open] Session started
+    in C:\code\zhongyaocaifu\common\components\Session.php:59
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user`
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Connection::open] Opening DB connection: mysql:host=localhost;dbname=fuxing
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user' AND kcu.table_name = 'user'
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\Identity.php:84
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:42
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\InlineAction::runWithParams] Running action: home\controllers\UserController::actionDeposits()
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT option_value FROM `option` WHERE option_name='frontend_settings'
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:129
+    in C:\code\zhongyaocaifu\common\modules\setting\models\Setting.php:120
+    in C:\code\zhongyaocaifu\common\components\Config.php:25
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user` `user` WHERE `id`=100053
+    in C:\code\zhongyaocaifu\common\components\ARModel.php:240
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:79
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_account` `userAccount` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_account`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_account' AND kcu.table_name = 'user_account'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:80
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT * FROM `user_withdraw` `userWithdraw` WHERE `user_id`=100053
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SHOW FULL COLUMNS FROM `user_withdraw`
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][info][yii\db\Command::query] SELECT
+    kcu.constraint_name,
+    kcu.column_name,
+    kcu.referenced_table_name,
+    kcu.referenced_column_name
+FROM information_schema.referential_constraints AS rc
+JOIN information_schema.key_column_usage AS kcu ON
+    (
+        kcu.constraint_catalog = rc.constraint_catalog OR
+        (kcu.constraint_catalog IS NULL AND rc.constraint_catalog IS NULL)
+    ) AND
+    kcu.constraint_schema = rc.constraint_schema AND
+    kcu.constraint_name = rc.constraint_name
+WHERE rc.constraint_schema = database() AND kcu.table_schema = database()
+AND rc.table_name = 'user_withdraw' AND kcu.table_name = 'user_withdraw'
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:86
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\user\deposits.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\menu.php
+    in C:\code\zhongyaocaifu\pc\views\user\deposits.php:2
+    in C:\code\zhongyaocaifu\common\components\View.php:37
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
+2019-08-15 18:42:23 [GET][http://localhost:82/user/deposits][::1][100053][-][trace][yii\base\View::renderFile] Rendering view file: C:\code\zhongyaocaifu\pc\views\layouts\web_main.php
+    in C:\code\zhongyaocaifu\home\controllers\UserController.php:133
