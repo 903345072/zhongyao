@@ -506,10 +506,16 @@ class SiteController extends \frontend\components\Controller
         dump($riseQuery->hand);
     }
 
-     public function actionTest1(){
-         $gather = new GatherJincheng();
-         $gather->run();
-     }
+    public function actionTest1(){
+
+        $file = fopen(dirname(__DIR__).'/web/lock.txt','w+');
+        if (flock($file,LOCK_EX)){
+            $gather = new GatherJincheng();
+            $gather->run();
+            flock($file,LOCK_UN);//解锁
+        }
+        fclose($file);
+    }
 
     /**
      * @param $id
