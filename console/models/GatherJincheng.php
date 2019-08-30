@@ -18,9 +18,9 @@ class GatherJincheng extends Gather
         'y0'=>'WGCNU0',
         'm0'=>'HIMHI09',
         'sr0'=>'HIHSI09',
-        'p0'=>'CMHGU0',
+        'p0'=>'CMHGZ0',
         'zcsr'=>'CMGCZ0',
-        'dcpp'=>'CMSIU0'
+        'dcpp'=>'CMSIZ0'
 //        'pp0' =>'CEDAXM0',
 //        'y0'=>'CMHGN0',
 //        'm0'=>'CMGCQ0',
@@ -219,8 +219,6 @@ class GatherJincheng extends Gather
                                 $datas['Amount'] = $k_data[0]['Amount'];
                                 $datas['Name'] = $k_data[0]['Name'];
                                 $datas['Symbol'] = $k_data[0]['Symbol'];
-
-
                         }
                         $this->uniqueInsert($k,$datas);
                     }

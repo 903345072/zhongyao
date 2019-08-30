@@ -28,9 +28,9 @@ return [
         'y0'=>'WGCNU0',
         'm0'=>'HIMHI09',
         'sr0'=>'HIHSI09',
-        'p0'=>'CMHGU0',
+        'p0'=>'CMHGZ0',
         'zcsr'=>'CMGCZ0',
-        'dcpp'=>'CMSIU0'
+        'dcpp'=>'CMSIZ0'
 //        'pp0' =>'CEDAXM0',
 //        'y0'=>'CMHGN0',
 //        'm0'=>'CMGCQ0',
