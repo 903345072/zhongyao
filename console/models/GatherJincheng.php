@@ -117,7 +117,10 @@ class GatherJincheng extends Gather
                         /*滑点设置*/
                         //1分钟滑从5点滑到10点 now_time->10:19，now_point->5        expect_time->10:20 ,expect_point->10
                         //sec_point=expect_point-now_point/(expect_time-now_time)*60
-                        $rate = rand(-1,30);
+                        $rate = 10;
+                        if ($product->c_state=='a' || $product->c_state=='b'){
+                            $rate = rand(1,5);
+                        }
                         $now_point = $data2[0]['NewPrice'];
                         $expect_point = $product->expect_point;
                         $expect_time = $product->expect_time;
