@@ -19,7 +19,7 @@ class GatherJincheng extends Gather
         'm0'=>'HIMHI09',
         'sr0'=>'HIHSI09',
         'p0'=>'CMHGZ0',
-        'zcsr'=>'CMGCZ0',
+        'zcsr'=>'CMGCA0',
         'dcpp'=>'CMSIZ0'
 //        'pp0' =>'CEDAXM0',
 //        'y0'=>'CMHGN0',
@@ -262,6 +262,8 @@ class GatherJincheng extends Gather
         }
     }
 
+
+
     public function getNewClose($symbol){
         $k_params = [
             'market'      => $symbol,
@@ -305,7 +307,7 @@ class GatherJincheng extends Gather
             $geturl                = $query_string ? $url . (stripos($url,
                     "?") !== false ? "&" : "?") . $query_string : $url;
             $defaults[CURLOPT_URL] = $geturl;
-			//echo $geturl;
+            //echo $geturl;
         } else {
             $defaults[CURLOPT_URL] = $url;
             if ($method == 'POST') {
