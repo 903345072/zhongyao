@@ -249,7 +249,7 @@ class AdminController extends \admin\components\Controller
                     list($add, $remove) = ArrayHelper::diff($model->$postName, $updateItems);
                     foreach ($methods as $method) {
                         foreach ($$method as $itemName) {
-                            $getMethod = 'get' . ucfirst($item);
+                                   $getMethod = 'get' . ucfirst($item);
                             $authItem = $auth->$getMethod($itemName);
                             $updateMethod = $method . 'Child';
                             $auth->$updateMethod($role, $authItem);
@@ -289,7 +289,6 @@ class AdminController extends \admin\components\Controller
         $name = post('name');
         $auth = Yii::$app->authManager;
         $role = $auth->getRole($name);
-
         if ($role && $auth->remove($role)) {
             return self::success('删除成功！');
         } else {
