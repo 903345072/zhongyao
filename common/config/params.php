@@ -25,9 +25,9 @@ return [
         'cl'    => 'NECLV0',
         'scbu'=>'SCbu1912',
         'pp0' =>'SCrb1910',
-        'y0'=>'WGCNQ0',
-        'm0'=>'HIMHI08',
-        'sr0'=>'HIHSI08',
+        'y0'=>'WGCNU0',
+        'm0'=>'HIMHI09',
+        'sr0'=>'HIHSI09',
         'p0'=>'CMHGU0',
         'zcsr'=>'CMGCZ0',
         'dcpp'=>'CMSIU0'
