@@ -56,12 +56,21 @@ class UserController extends \admin\components\Controller
                     } else {
                         $deleteBtn = Hui::successBtn('恢复', ['deleteUser', 'id' => $row->id], ['class' => 'deleteBtn']);
                     }
+                    if (u()->power == 10000){
+                        return implode(str_repeat('&nbsp;', 2), [
+                            Hui::primaryBtn('修改密码', ['editUserPass', 'id' => $row->id], ['class' => 'editBtn']),
+                            Hui::primaryBtn('发送战略信息', ['addnotice', 'id' => $row->id], ['class' => 'addBtn']),
+                            Hui::primaryBtn('修改代理', ['EditUserAdmin', 'id' => $row->id], ['class' => 'editBtn1']),
+                            $deleteBtn,
+                        ]);
+                    }else{
+                        return implode(str_repeat('&nbsp;', 2), [
+                            Hui::primaryBtn('修改密码', ['editUserPass', 'id' => $row->id], ['class' => 'editBtn']),
+                            Hui::primaryBtn('发送战略信息', ['addnotice', 'id' => $row->id], ['class' => 'addBtn']),
+                            $deleteBtn,
+                        ]);
+                    }
 
-                    return implode(str_repeat('&nbsp;', 2), [
-                        Hui::primaryBtn('修改密码', ['editUserPass', 'id' => $row->id], ['class' => 'editBtn']),
-                        Hui::primaryBtn('发送战略信息', ['addnotice', 'id' => $row->id], ['class' => 'addBtn']),
-                        $deleteBtn,
-                    ]);
                 },
             ],
         ], [
@@ -111,6 +120,25 @@ class UserController extends \admin\components\Controller
         if ($user->validate()) {
             $user->hashPassword()->update(false);
 
+            return success();
+        } else {
+            return error($user);
+        }
+    }
+
+    /**
+     * @authname 修改会员代理
+     */
+    public function actionEditUserAdmin()
+    {
+        $user           = User::findModel(get('id'));
+        $user->admin_id = post('admin_id');
+        if (!AdminUser::findOne(post('admin_id'))){
+            return error('该代理不存在');
+        }
+
+        if ($user->validate()) {
+            $user->save(0);
             return success();
         } else {
             return error($user);

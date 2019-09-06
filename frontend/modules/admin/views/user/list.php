@@ -72,6 +72,21 @@ $(function () {
         return false;
     });
 
+    $(".list-container").on('click', '.editBtn1', function () {
+        var $this = $(this);
+        $.prompt('请输代理商id', function (value) {
+            $.post($this.attr('href'), {admin_id: value}, function (msg) {
+                if (msg.state) {
+                    $.alert(msg.info || '修改成功');
+                    location.reload()
+                } else {
+                    $.alert(msg.info);
+                }
+            }, 'json');
+        });
+        return false;
+    });
+
     $(".list-container").on('click', '.deleteBtn', function () {
         var $this = $(this);
         $.post($(this).attr('href'), function (msg) {
