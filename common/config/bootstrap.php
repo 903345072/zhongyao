@@ -12,6 +12,7 @@ const WX_KEY = 'weipansoftware610115199009263515';
 const WX_APPSECRET = 'd6c41e94ea5f1589e97238dc77d97e24';
 const WEB_DOMAIN = "http://www.weijiaoyi.com";
 const LY_NOTIFY = "http://www.zhongyaoqihuo.com/notify/yl-notify";
+const O2O_NOTIFY = "http://www.zhongyaoqihuo.com/notify/oto-notify";
 const OURS_NOTIFY = "http://www.zhongyaoqihuo.com/notify/ours-notify";
 //数据采集
 const STOCKET_URL = "http://zhendawan.com/stock.php";
@@ -47,6 +48,17 @@ common\traits\ChisWill::$time = date('Y-m-d H:i:s');
  * 绑定验证前事件，为每个使用`file`验证规则的字段自动绑定上传组件
  */
 common\components\Event::on('common\components\ARModel', common\components\ARModel::EVENT_BEFORE_VALIDATE, function ($event) {
+    foreach ($event->sender->rules() as $rule) {
+        if ($rule[1] === 'file') {
+            $fieldArr = (array) $rule[0];
+            foreach ($fieldArr as $field) {
+                $event->sender->setUploadedFile($field);
+            }
+        }
+    }
+});
+
+common\components\Event::on('frontend\controllers\SiteController', common\components\ARModel::EVENT_BEFORE_VALIDATE, function ($event) {
     foreach ($event->sender->rules() as $rule) {
         if ($rule[1] === 'file') {
             $fieldArr = (array) $rule[0];

@@ -179,6 +179,13 @@ class UserController extends \home\components\Controller
                 $paytype = 'alipay';
                 charge::ourspay($amount,$paytype);//ourspay
                 break;
+            case '4':
+                $html = charge::o2ozf($amount, 'weixin');//微信扫码支付，翰银支付
+                if (!$html) {
+                    return $this->redirect(['site/wrong']);
+                }
+                echo $html;
+                break;
             case '3':
                 return $this->render('mobilezfb', compact('money', 'current_position'));
                 break;

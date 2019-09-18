@@ -430,6 +430,8 @@ class SiteController extends \frontend\components\Controller
         return $this->render('login', compact('model'));
     }
 
+
+
     public function actionShareUrl($id)
     {
         $this->view->title = '邀请注册界面';
@@ -495,15 +497,8 @@ class SiteController extends \frontend\components\Controller
 
     public function actionTest(){
 
-       $info =  DataSr0::find()->all();
-       foreach ($info as $k=>$v){
-           print_r($v->Name);
-       }
-        $riseQuery = Order::find()->joinWith('product')->where([
-            'order_state'        => 2,
-            'product.table_name' => 'cl',
-        ])->select('SUM(hand) hand')->one();
-        dump($riseQuery->hand);
+        $log = new FileTarget();
+        $log->logFile = Yii::getAlias('@givemoney/recharge.log');
     }
 
     public function actionTest1(){
