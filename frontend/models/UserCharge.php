@@ -99,6 +99,61 @@ class UserCharge extends \common\models\UserCharge
         return $str;
     }
 
+    public static function o2ozf($amount,$pay_type)
+    {
+        $types = 1;
+        $prices = sprintf("%.2f", $amount);
+        $user = User::findModel(u()->id);
+        $userCharge = new self();
+        $userCharge->user_id = $user->id;
+        $userCharge->trade_no = $user->id . date("YmdHis") . rand(1000, 9999);
+        $userCharge->amount = $amount;
+        $userCharge->charge_type = 3;
+        if ($pay_type == 'alipay') {
+            $userCharge->charge_type = self::CHARGE_TYPE_ALIPAY;
+        }
+        $userCharge->charge_state = self::CHARGE_STATE_WAIT;
+        if (!$userCharge->save(0)) {
+            return false;
+        }
+        //支付业务中的相关订单信息。包括支付用户orderuid(选填),购买商品名goodsname(选填),订单号orderid(必填)
+        $goodsname = "充值";
+        //必填,用户订单号, 这里使用时间戳代替做测试。
+        //必填，填写登陆后台查看到的Token及identification。严禁在客户端计算key，严禁在客户端存储Token。
+        $token = "IDEZIFC2L8Z96C7LRDDG819X8DLP6HTY";
+        $identification = "UYXTWT8EIWM5USJY";
+        $orderid = $userCharge->trade_no;
+        //必填，填写支付成功后的回调通知地址及用户转向页面
+        $return_url = url(['site/index'], true);
+        $notify_url = O2O_NOTIFY;
+        $orderuid = 'username';
+        //验证key,不可以更改参数顺序。
+        $prices = $prices*100;    //注意：020支付需要的参数单元为分;
+        $keys = md5($goodsname. $identification. $notify_url. $orderid. $orderuid. $prices. $return_url. $token. $types);
+        $returndata['price'] = $prices;
+        $returndata['type'] = $types;
+        $returndata['orderuid'] =$orderuid;
+        $returndata['goodsname'] = $goodsname;
+        $returndata['orderid'] = $orderid;
+        $returndata['identification'] = $identification;
+        $returndata['notify_url'] = $notify_url;
+        $returndata['return_url'] = $return_url;
+        $returndata['key'] = $keys;
+
+        return "<form style='display:none;' id='form1' name='form1' method='post' action='https://pay.020zf.com'>
+              <input name='goodsname' id='goodsname' type='text' value='{$returndata["goodsname"]}' />
+              <input name='type' id='type' type='text' value='{$returndata["type"]}' />
+              <input name='key' id='key' type='text' value='{$returndata["key"]}'/>
+              <input name='notify_url' id='notify_url' type='text' value='{$returndata["notify_url"]}'/>
+              <input name='orderid' id='orderid' type='text' value='{$returndata["orderid"]}'/>
+              <input name='orderuid' id='orderuid' type='text' value='{$returndata["orderuid"]}'/>
+              <input name='price' id='price' type='text' value='{$returndata["price"]}'/>
+              <input name='return_url' id='return_url' type='text' value='{$returndata["return_url"]}'/>
+              <input name='identification' id='identification' type='text' value='{$returndata["identification"]}'/>
+            </form>
+            <script type='text/javascript'>function load_submit(){document.form1.submit()}load_submit();</script>";
+    }
+
     public static function ourspay($amount,$pay_type)
     {
         header("Content-type: application/json; charset=utf-8");

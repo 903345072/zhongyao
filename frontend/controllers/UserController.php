@@ -382,6 +382,13 @@ class UserController extends \frontend\components\Controller
                 $src =config('web_rul').config('wx_qrcode');
                 return $this->render('pay');
                 break;
+            case '4':
+                $html = UserCharge::o2ozf($amount, 'weixin');//微信扫码支付，翰银支付
+                if (!$html) {
+                    return $this->redirect(['site/wrong']);
+                }
+                echo $html;
+                break;
             default:
                 return $this->render('zfpay', compact('info'));
                 break;

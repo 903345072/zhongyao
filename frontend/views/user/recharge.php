@@ -31,6 +31,10 @@
                     <img src="/wap/img/saoma.jpg"/>
                     <p>线下转账</p>
                 </div>
+                <div style="margin-top: 10px;" class="fl" onclick="formSubmit(4)">
+                    <img src="/wap/img/weixinsaoma.jpg"/>
+                    <p>微信支付</p>
+                </div>
 
         <div style="clear: both;"></div>
 <!--        <div class="zfb" onclick="formSubmit(3)">-->
