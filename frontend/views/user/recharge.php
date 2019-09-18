@@ -27,11 +27,11 @@
                 </div>
 
 
-                <div style="margin-left: 10px;" class="fl" onclick="formSubmit(3)">
+                <div style="margin-left: 10px;display: none" class="fl" onclick="formSubmit(3)">
                     <img src="/wap/img/saoma.jpg"/>
                     <p>线下转账</p>
                 </div>
-                <div style="margin-top: 10px;" class="fl" onclick="formSubmit(4)">
+                <div style="margin-left: 10px;" class="fl" onclick="formSubmit(4)">
                     <img src="/wap/img/weixinsaoma.jpg"/>
                     <p>微信支付</p>
                 </div>
