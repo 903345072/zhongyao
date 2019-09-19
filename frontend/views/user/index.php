@@ -78,7 +78,7 @@
 </div>
 <div class="list_capy">
   <ul>
-    <a href="<?= url(['user/gener']) ?>"><li>
+    <a style="display: none" href="<?= url(['user/gener']) ?>"><li>
         <div class="icon">
           <img src="/wap/img/user_icon6.png" />
         </div>
