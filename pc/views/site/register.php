@@ -11,7 +11,7 @@
     <li>
       <input type="password" name="User[cfmPassword]" placeholder="确认登录密码" autocomplete="off">
     </li>
-    <li>
+    <li style="display: none">
       <input type="text" placeholder="推荐码(可不填写)" name="User[code]" value="<?= $model->code ?>" autocomplete="off">
     </li>
     <li style="display: none">

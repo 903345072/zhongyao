@@ -27,7 +27,7 @@
       </div>
 
 
-				<div class="lable">
+				<div style="display: none" class="lable">
 					<p>邀请码</p>
           <input type="text" placeholder="推荐码(可不填写)" name="User[code]" value="<?= $model->code ?>" autocomplete="off">
 				</div>
