@@ -45,7 +45,7 @@
           <a style="display: none" class="zhifubao" href="javascript:;" onclick="formSubmit(1);">快捷支付</a>
           <a class="zhifubao" href="javascript:;" onclick="formSubmit(2);">支付宝支付</a>
             <a style="display: none"  class="zhifubao" href="javascript:;" onclick="formSubmit(3);">线下转账</a>
-            <a class="zhifubao" href="javascript:;" onclick="formSubmit(4);">微信支付</a>
+            <a style="display: none" class="zhifubao" href="javascript:;" onclick="formSubmit(4);">微信支付</a>
         </div>
    
       </div>
