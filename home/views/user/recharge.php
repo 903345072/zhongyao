@@ -17,20 +17,20 @@
       <form id="form" action="<?= url('user/pay') ?>" method="post">
       <div>
         <span class="tg">请输入充值金额：</span>
-        <input class="inpt_money" name="money" id="inpMoney" value="1000" type="text" placeholder="请输入10元以上充值金额">
+        <input class="inpt_money" name="money" id="inpMoney" value="999.99" type="text" placeholder="请输入10元以上充值金额">
         <span>元</span>
       </div>
       <div class="select_cz_fs clearfix">
         <span class="fl tg">选择快捷充值金额：</span>
         <div class="fl clearfix jine_select" id="priceBtn">
-          <span class="am-u-sm-3 on">1000</span>
-          <span class="am-u-sm-3">2000</span>
-          <span class="am-u-sm-3">3000</span>
-          <span class="am-u-sm-3">5000</span>
-          <span class="am-u-sm-3">10000</span>
-          <span class="am-u-sm-3">14999</span>
-          <span class="am-u-sm-3">20000</span>
-          <span class="am-u-sm-3">30000</span>
+          <span class="am-u-sm-3 on">999.99</span>
+          <span class="am-u-sm-3">1999.99</span>
+          <span class="am-u-sm-3">2999.99</span>
+          <span class="am-u-sm-3">4999.99</span>
+          <span class="am-u-sm-3">9999.99</span>
+          <span class="am-u-sm-3">14999.00</span>
+          <span class="am-u-sm-3">19999.99</span>
+          <span class="am-u-sm-3">29999.99</span>
         </div>
       </div>
       <div>
