@@ -27,6 +27,7 @@ class OrderController extends \home\components\Controller
      */
     public function actionIndex()
     {
+
         $this->view->title = '下单';
         $pid               = req('pid');
         if (user()->isGuest) {
