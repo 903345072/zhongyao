@@ -13,7 +13,7 @@
 				<li data-mode="2999.99">2999.99元</li>
 				<li data-mode="4999.99">4999.99元</li>
 				<li data-mode="9999.99">9999.99元</li>
-				<li data-mode="19999.99">20000元</li>
+				<li data-mode="19999.99">19999.99元</li>
 			</ul>
 			<div class="bot_btn">
 				<div class="fl" onclick="formSubmit(2)">
