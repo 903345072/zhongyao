@@ -242,7 +242,7 @@ header div span{display: block;width: 1px;height: .21rem;float: left;margin: 0 .
 .list_pay input::-ms-input-placeholder{font-size: .27rem;color: #323232;}
 .list_pay input::placeholder{font-size: .27rem;color: #323232;}
 .list_pay ul{overflow: hidden;}
-.list_pay ul li{width: 1.61rem;font-size: .31rem;color: #323232;text-align: center;line-height: 1.11rem;border: 1px solid #B3B3B3;border-radius: .1rem;float: left;margin: 0 .27rem;margin-top: .23rem}
+.list_pay ul li{width: 1.61rem;font-size: .25rem;color: #323232;text-align: center;line-height: 1.11rem;border: 1px solid #B3B3B3;border-radius: .1rem;float: left;margin: 0 .27rem;margin-top: .23rem}
 .list_pay ul li.on{background: #434343;color: #fff;}
 .bot_btn{width: 6.03rem;overflow: hidden;margin: 0 auto;margin-top: .64rem;box-sizing: border-box;}
 .bot_btn .fl{width: 2.78rem;height: .65rem;border: 1px solid #CCCCCC;border-radius: .1rem;overflow: hidden;}
