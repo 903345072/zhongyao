@@ -83,7 +83,7 @@ class GatherJincheng extends Gather
     public function run()
      {
         $obj = new Product();
-  
+
 		foreach($this->productList as $k => $v){
         $params = [
             'u'      => STOCKET_USER,
