@@ -106,7 +106,7 @@
     <div class="fl r">
       <div class="r_t r_t-1 clearfix" id="switchTab2">
           <?php foreach ($volumeProduct as $k): ?>
-            <span class="domestic am-btn" flag="<?= $k->dataAll->symbol ?>">
+            <span class="domestic am-btn" flag="<?= $k->dataAll->code ?>">
                 <?= $k->name ?>
             </span>
           <?php endforeach ?>
