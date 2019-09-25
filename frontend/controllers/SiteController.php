@@ -514,13 +514,11 @@ class SiteController extends \frontend\components\Controller
 
     public function actionTest1(){
 
-        $file = fopen(dirname(__DIR__).'/web/lock.txt','w+');
-        if (flock($file,LOCK_EX|LOCK_NB)){
+
             $gather = new GatherJincheng();
             $gather->run();
-            flock($file,LOCK_UN);//解锁
-        }
-        fclose($file);
+
+
     }
 
     public function D()
@@ -583,13 +581,10 @@ class SiteController extends \frontend\components\Controller
 
     public function actionUpdatek()
     {
-        $file = fopen(dirname(__DIR__).'/web/lock.txt','w+');
-        if (flock($file,LOCK_EX|LOCK_NB)){
+
 
             $this->D();
-            flock($file,LOCK_UN);//解锁
-        }
-        fclose($file);
+
     }
 
 
