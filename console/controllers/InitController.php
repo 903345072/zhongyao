@@ -40,7 +40,7 @@ class InitController extends \common\components\ConsoleController
 
     public function actionGather()
     {
-               $gather = new GatherJincheng();
+        $gather = new GatherJincheng();
         while (true) {
             try{
                 $gather->run();
@@ -49,8 +49,10 @@ class InitController extends \common\components\ConsoleController
             }
             sleep(1);
         }
+    }
 
-
+    public function actionKdata()
+    {
 
     }
 }

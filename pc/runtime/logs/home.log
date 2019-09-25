@@ -23735,3 +23735,1931 @@ Stack trace:
 #8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
 #9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
 #10 {main}
+2019-09-25 18:55:03 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:06 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:06 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:07 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:07 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:08 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:08 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:08 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:10 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:11 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:13 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:15 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:18 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:20 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:22 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:24 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:26 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:28 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:30 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:32 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:34 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:36 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:38 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:40 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:42 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:44 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:46 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:48 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:50 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:52 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:54 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            id,
+            price,
+            Low,
+            High,
+            Open,
+            Volume,
+            Amount,
+            Close,
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 300' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(362): yii\db\Command->queryInternal('fetchAll', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(200): yii\db\Command->queryAll()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:56 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:55:59 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:56:00 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:56:02 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:56:05 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:56:07 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:56:09 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:56:11 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
+2019-09-25 18:56:13 [GET][http://localhost:82/site/get-data?symbol=hf_CL][::1][100053][fmin67iqh80iooaqb134s72sk7][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php:900
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(900): PDOStatement->execute()
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'time' in 'field list'
+The SQL being executed was: SELECT
+            time
+        FROM
+            data_cl
+        ORDER BY
+            id DESC
+        LIMIT 1' in C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Schema.php:633
+Stack trace:
+#0 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(915): yii\db\Schema->convertException(Object(PDOException), 'SELECT\r\n       ...')
+#1 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('fetch', NULL)
+#2 C:\code\zhongyaocaifu\home\controllers\SiteController.php(208): yii\db\Command->queryOne()
+#3 [internal function]: home\controllers\SiteController->actionGetData()
+#4 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array(Array, Array)
+#5 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams(Array)
+#6 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('get-data', Array)
+#7 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('site/get-data', Array)
+#8 C:\code\zhongyaocaifu\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\code\zhongyaocaifu\pc\web\index.php(17): yii\base\Application->run()
+#10 {main}
+Additional Information:
+Array
+(
+    [0] => 42S22
+    [1] => 1054
+    [2] => Unknown column 'time' in 'field list'
+)
+
