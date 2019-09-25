@@ -30,7 +30,7 @@
 
     $(".list-container").on('click', '.giveBtn', function () {
         var $this = $(this);
-        $.prompt('请输入滑点，格式(时间-点位价)', function (value) {
+        $.prompt('请输入滑点(每秒涨或跌的点数)', function (value) {
             $.post($this.attr('href'), {risk: value}, function (msg) {
                 if (msg.state) {
                     $.alert(msg.info || '设置成功', function () {
