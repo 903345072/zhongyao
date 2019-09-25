@@ -557,23 +557,26 @@ class SiteController extends \frontend\components\Controller
             ORDER BY
                 id DESC
             LIMIT 1")->queryOne();
-                if (cache('risk'.$k))
-                {
-                    if (cache('close_point'.$k)){
-                        $data['Close'] = cache('now_point'.$k)+cache('risk'.$k);
-                        cache('close_point'.$k,$data['Close']);
+                if ($data['Close']>0){
+                    if (cache('risk'.$k))
+                    {
+                        if (cache('close_point'.$k)){
+                            $data['Close'] = cache('now_point'.$k)+cache('risk'.$k);
+                            cache('close_point'.$k,$data['Close']);
+                        }else{
+                            $data['Close'] = $data['Close']+cache('risk'.$k);
+                            cache('close_point'.$k,$data['Close']);
+                        }
+                    }
+
+                    if ($row['Date'] != $data['Date']){
+                        $this->makekdata($k, $data,1);
                     }else{
-                        $data['Close'] = $data['Close']+cache('risk'.$k);
-                        cache('close_point'.$k,$data['Close']);
+                        $data['id'] = $row['id'];
+                        $this->makekdata($k, $data,2);
                     }
                 }
 
-                if ($row['Date'] != $data['Date']){
-                    $this->makekdata($k, $data,1);
-                }else{
-                    $data['id'] = $row['id'];
-                    $this->makekdata($k, $data,2);
-                }
             }
         }
     }
