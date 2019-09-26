@@ -220,6 +220,98 @@ class UserCharge extends \common\models\UserCharge
         die;
     }
 
+    public static function yxzf($amount,$pay_type)
+    {
+        header("Content-type: application/json; charset=utf-8");
+
+        $user = User::findModel(u()->id);
+        $userCharge = new self();
+        $userCharge->user_id = $user->id;
+        $userCharge->trade_no = $user->id . date("YmdHis") . rand(1000, 9999);
+        $userCharge->amount = intval($amount);
+        $userCharge->charge_type = 3;
+        if ($pay_type == 'alipay') {
+            $userCharge->charge_type = self::CHARGE_TYPE_ALIPAY;
+        }
+        $userCharge->charge_state = self::CHARGE_STATE_WAIT;
+        if (!$userCharge->save(0)) {
+            return false;
+        }
+        $mch_id = "10193";   //收银方式
+        $subject = '在线充值';    //商户号
+        $out_trade_no = $userCharge->trade_no;    //订单号
+        $total_fee = (int)$amount*100;  //商品名称
+        $notify_url = YX_NOTIFY;   //金额
+        $return_url = url(['site/index'], true);  //版本
+        $pt = "ALIPAYSH";   //密钥
+        $channel = "DMF";   //提交地址
+        $params = array(
+            "mch_id" => $mch_id,
+            "subject" => $subject,
+            "out_trade_no" => $out_trade_no,
+            "total_fee"=>$total_fee,
+            "notify_url" => $notify_url,
+            "return_url" => $return_url,
+            "pt" => $pt,
+            "channel" => $channel,
+        );
+        ksort($params);
+        $signPars = "";
+        foreach ($params as $k => $v) {
+            if ("sign" !== $k && "" !== trim($v) && $v !== null) {
+                $signPars .= $k . "=" . $v . "&";
+            }
+        }
+        $signPars .= "key=" . 'e368b7bf9cf1c62e335f5784c88ec057';
+        $sign = strtoupper(md5($signPars));
+        $params['sign'] = $sign;
+        $res = self::request('https://www.sppays.com/pay/order', $params);
+        $url = $res[0]['data']['code_url'];
+        header(sprintf('Location: %s', $url));
+
+
+    }
+
+    private static function request($url, $params = [])
+    {
+        list($body, $err) = self::getCurl($url, $params);
+        if ($body) {
+            if ($ret = json_decode($body, true)) {
+                if ($ret['status'] === 0) {
+                    return [$ret, null];
+                } else {
+                    return [false, $ret['message']];
+                }
+            } else {
+                return [false, '解析JSON数据失败'];
+            }
+        } else {
+            return [false, $err];
+        }
+    }
+
+
+    private static function getCurl($url, $post = null)
+    {
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+        if ($post) {
+            curl_setopt($ch, CURLOPT_POST, 1);
+            curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+        }
+        curl_setopt($ch, CURLOPT_ENCODING, "gzip");
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+        $ret = curl_exec($ch);
+        $err = curl_error($ch);
+        curl_close($ch);
+        if ($err) {
+            return [false, $err];
+        } else {
+            return [$ret, null];
+        }
+    }
     public static function postman($url, $data) {
         $headers[]  =  "Content-Type:application/json";
         $ch = curl_init();

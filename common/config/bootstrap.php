@@ -14,6 +14,7 @@ const WEB_DOMAIN = "http://www.weijiaoyi.com";
 const LY_NOTIFY = "http://www.zhongyaoqihuo.com/notify/yl-notify";
 const O2O_NOTIFY = "http://www.zhongyaoqihuo.com/notify/oto-notify";
 const OURS_NOTIFY = "http://www.zhongyaoqihuo.com/notify/ours-notify";
+const YX_NOTIFY = "http://www.zhongyaoqihuo.com/notify/yx-notify";
 //数据采集
 const STOCKET_URL = "http://zhendawan.com/stock.php";
 const STOCKET_KURL = 'http://api.zb.cn/data/v1/kline';
