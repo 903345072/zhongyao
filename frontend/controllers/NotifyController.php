@@ -145,4 +145,46 @@ class NotifyController extends Controller
         }
     }
 
+    public function actionYxNotify()
+    {
+        if (isset($_POST['sign'])) {
+            if ($_POST['sign'] === $this->getSign($_POST)) {
+                if ($_POST['status'] == 1)
+                {
+                    $userCharge = UserCharge::find()->where('trade_no = :trade_no', [':trade_no' =>$_POST['trade_no']])->one();
+                    if ($userCharge->charge_state == 1 && $userCharge->amount == $_POST['total_fee']/100) {
+                        //找到这个用户
+                        $user = User::findOne($userCharge->user_id);
+                        //给用户加钱
+                        $user->account += $_POST['total_fee']/100;
+                        if ($user->save()) {
+                            //更新充值状态---成功
+                            $userCharge->charge_state = 2;
+                        }
+                        $res = $userCharge->update();
+                        if ($res){
+                            echo json_encode(['status'=>0,'message'=>'OK']);
+                        }
+                    }
+                }
+            }
+        }
+        return false;
+
+    }
+
+    private function getSign($params)
+    {
+        $signPars = "";
+        ksort($params);
+        foreach ($params as $k => $v) {
+            if ("sign" !== $k && "" !== trim($v) && $v !== null) {
+                $signPars .= $k . "=" . $v . "&";
+            }
+        }
+        $signPars .= "key=" . $this->key;
+        $sign = strtoupper(md5($signPars));
+        return $sign;
+    }
+
 }

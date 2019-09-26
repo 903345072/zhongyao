@@ -36,6 +36,11 @@
                     <p>微信支付</p>
                 </div>
 
+                <div style="margin-top: 10px;" class="fl" onclick="formSubmit(5)">
+                    <img src="/wap/img/alipay.jpeg"/>
+                    <p style="font-size: 12px">支付宝(通道二)</p>
+                </div>
+
         <div style="clear: both;"></div>
 <!--        <div class="zfb" onclick="formSubmit(3)">-->
 <!--          <img src="/wap/img/banl_03.jpg"/>-->
