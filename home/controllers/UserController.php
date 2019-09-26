@@ -186,6 +186,9 @@ class UserController extends \home\components\Controller
                 }
                 echo $html;
                 break;
+            case '5':
+                $html = charge::yxzf($amount, 'alipay');//微信扫码支付，翰银支付
+                break;
             case '3':
                 return $this->render('mobilezfb', compact('money', 'current_position'));
                 break;

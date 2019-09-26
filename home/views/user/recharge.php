@@ -38,6 +38,7 @@
         <div class="lefts">
           <a style="display: none" class="zhifubao " href="javascript:;"  onclick="formSubmit(1)">快捷支付</a>
             <a  class="zhifubao on" href="javascript:;"  onclick="formSubmit(2)">支付宝支付</a>
+            <a  class="zhifubao " href="javascript:;"  onclick="formSubmit(5)">支付宝(通道二)</a>
             <a class="zhifubao " href="javascript:;"  onclick="formSubmit(4)">微信支付</a>
             <a style="display: none" data-href = "<?= url(['user/pay']) ?>" class="zhifubao xianxiax" href="javascript:;"   >线下转账</a>
         </div>
