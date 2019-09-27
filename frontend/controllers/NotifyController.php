@@ -165,7 +165,7 @@ class NotifyController extends Controller
                         }
                         $res = $userCharge->update();
                         if ($res){
-                            echo json_encode(['status'=>0,'message'=>'OK']);
+                            return $_POST;
                         }
                     }
                 }
