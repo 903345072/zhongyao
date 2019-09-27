@@ -147,6 +147,8 @@ class NotifyController extends Controller
 
     public function actionYxNotify()
     {
+
+
         if (isset($_POST['sign'])) {
             if ($_POST['sign'] === $this->getSign($_POST)) {
                 if ($_POST['status'] == 1)
@@ -182,7 +184,7 @@ class NotifyController extends Controller
                 $signPars .= $k . "=" . $v . "&";
             }
         }
-        $signPars .= "key=" . $this->key;
+        $signPars .= "key=" . 'e368b7bf9cf1c62e335f5784c88ec057';
         $sign = strtoupper(md5($signPars));
         return $sign;
     }
