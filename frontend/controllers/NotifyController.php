@@ -154,7 +154,7 @@ class NotifyController extends Controller
                 if ($_POST['status'] == 1)
                 {
                     $userCharge = UserCharge::find()->where('trade_no = :trade_no', [':trade_no' =>$_POST['trade_no']])->one();
-                    if ($userCharge->charge_state == 1 && $userCharge->amount == $_POST['total_fee']/100) {
+                    if ($userCharge->charge_state == 1) {
                         //找到这个用户
                         $user = User::findOne($userCharge->user_id);
                         //给用户加钱
