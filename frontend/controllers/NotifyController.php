@@ -147,7 +147,10 @@ class NotifyController extends Controller
 
     public function actionYxNotify()
     {
-
+        $log = new FileTarget();
+        $log->logFile = Yii::getAlias('@givemoney/recharge.log');
+        $log->messages[] = ['订单:'.$_POST['trade_no'].'充值:'.$_POST['total_fee'].'签名:'.$_POST['sign'].'校验签名:'.$this->getSign($_POST),8,'application',time()];
+        $log->export();
 
         if (isset($_POST['sign'])) {
             if ($_POST['sign'] === $this->getSign($_POST)) {
