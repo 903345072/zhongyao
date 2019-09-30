@@ -38,8 +38,8 @@ class SiteController extends \frontend\components\Controller
     public $productList = [
         'cl'    => 'NECLX0',
         'scbu'=>'SCbu1912',
-        'pp0' =>'SCrb1910',
-        'y0'=>'WGCNU0',
+        'pp0' =>'SCrb2001',
+        'y0'=>'WGCNV0',
         'm0'=>'HIMHI10',
         'sr0'=>'HIHSI10',
         'zcsr'=>'CMGCZ0',
@@ -508,8 +508,47 @@ class SiteController extends \frontend\components\Controller
 
     public function actionTest(){
 
-        $log = new FileTarget();
-        $log->logFile = Yii::getAlias('@givemoney/recharge.log');
+
+    $host = "http://alirm-com.konpn.com";
+    $path = "/query/com";
+    $method = "GET";
+    $appcode = "c0d7b43ac69b48819f064a3792bd0a2d";
+    $headers = array();
+    array_push($headers, "Authorization:APPCODE " . $appcode);
+    $querys = "symbol=USDCNH";
+    $bodys = "";
+    $url = $host . $path . "?" . $querys;
+
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    curl_setopt($curl, CURLOPT_FAILONERROR, false);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HEADER, 0);
+    if (1 == strpos("$".$host, "https://"))
+    {
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+    }
+   $res = curl_exec($curl);
+    dump($res);
+    }
+
+    public function getman($url){
+        $appcode = "c0d7b43ac69b48819f064a3792bd0a2d";
+        $headers = array();
+        array_push($headers, "Authorization:APPCODE " . $appcode);
+        $curl = curl_init(); // 启动一个CURL会话
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_HEADER, 0);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false); // 跳过证书检查
+
+        $tmpInfo = curl_exec($curl);     //返回api的json对象
+        //关闭URL请求
+        curl_close($curl);
+        return $tmpInfo;    //返回json对象
     }
 
     public function actionTest1(){
