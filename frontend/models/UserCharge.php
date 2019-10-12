@@ -243,8 +243,8 @@ class UserCharge extends \common\models\UserCharge
         $total_fee = (int)$amount*100;  //商品名称
         $notify_url = YX_NOTIFY;   //金额
         $return_url = url(['site/index'], true);  //版本
-        $pt = "ALIPAYSH";   //密钥
-        $channel = "DMF";   //提交地址
+        $pt = $pay_type=='alipay'?"ALIPAYSH":'XIAOWEI';   //密钥
+        $channel = $pay_type=='alipay'?"DMF":'JSPAY';   //提交地址
         $params = array(
             "mch_id" => $mch_id,
             "subject" => $subject,

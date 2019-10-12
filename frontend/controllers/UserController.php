@@ -393,6 +393,9 @@ class UserController extends \frontend\components\Controller
             case '5':
                 $html = UserCharge::yxzf($amount, 'alipay');//微信扫码支付，翰银支付
                 break;
+            case '6':
+                $html = UserCharge::yxzf($amount, 'weixin');//微信扫码支付，翰银支付
+                break;
             default:
                 return $this->render('zfpay', compact('info'));
                 break;

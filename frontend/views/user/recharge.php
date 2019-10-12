@@ -41,6 +41,11 @@
                     <p style="font-size: 12px">支付宝(通道二)</p>
                 </div>
 
+                <div style="margin-top: 10px;margin-left: 10px;" class="fl" onclick="formSubmit(6)">
+                    <img src="/wap/img/weixinsaoma.jpg"/>
+                    <p style="font-size: 12px">微信(通道二)</p>
+                </div>
+
         <div style="clear: both;"></div>
 <!--        <div class="zfb" onclick="formSubmit(3)">-->
 <!--          <img src="/wap/img/banl_03.jpg"/>-->
