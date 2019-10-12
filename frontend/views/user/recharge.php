@@ -16,10 +16,12 @@
 				<li data-mode="19999.99">19999.99元</li>
 			</ul>
 			<div class="bot_btn">
-				<div class="fl" onclick="formSubmit(2)">
-					<img src="/wap/img/alipay.jpeg"/>
-					<p>支付宝支付</p>
-				</div>
+
+
+                <div style="" class="fl" onclick="formSubmit(5)">
+                    <img src="/wap/img/alipay.jpeg"/>
+                    <p >支付宝</p>
+                </div>
 
                 <div style="margin-left: 15px;display: none" class="fl" onclick="formSubmit(1)">
                     <img src="/wap/img/banl_03.jpg"/>
@@ -31,19 +33,20 @@
                     <img src="/wap/img/saoma.jpg"/>
                     <p>线下转账</p>
                 </div>
-                <div style="margin-left: 10px;" class="fl" onclick="formSubmit(4)">
+                <div style="margin-left: 10px;display: none" class="fl" onclick="formSubmit(4)">
                     <img src="/wap/img/weixinsaoma.jpg"/>
                     <p>微信支付</p>
                 </div>
 
-                <div style="margin-top: 10px;" class="fl" onclick="formSubmit(5)">
+                <div style="margin-left: 10px;" class="fl" onclick="formSubmit(2)">
                     <img src="/wap/img/alipay.jpeg"/>
-                    <p style="font-size: 12px">支付宝(通道二)</p>
+                    <p style="font-size: 12px">支付宝支付(通道二)</p>
                 </div>
 
-                <div style="margin-top: 10px;margin-left: 10px;" class="fl" onclick="formSubmit(6)">
+
+                <div style="margin-top: 10px;" class="fl" onclick="formSubmit(6)">
                     <img src="/wap/img/weixinsaoma.jpg"/>
-                    <p style="font-size: 12px">微信(通道二)</p>
+                    <p style="font-size: 12px">微信</p>
                 </div>
 
         <div style="clear: both;"></div>
