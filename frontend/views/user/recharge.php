@@ -20,33 +20,33 @@
 
                 <div style="" class="fl" onclick="formSubmit(5)">
                     <img src="/wap/img/alipay.jpeg"/>
-                    <p >支付宝</p>
+                    <p style="font-size: 10px">支付宝</p>
                 </div>
 
                 <div style="margin-left: 15px;display: none" class="fl" onclick="formSubmit(1)">
                     <img src="/wap/img/banl_03.jpg"/>
-                    <p>快捷支付</p>
+                    <p style="font-size: 10px">快捷支付</p>
                 </div>
 
 
                 <div style="margin-left: 10px;display: none" class="fl" onclick="formSubmit(3)">
                     <img src="/wap/img/saoma.jpg"/>
-                    <p>线下转账</p>
+                    <p style="font-size: 10px">线下转账</p>
                 </div>
                 <div style="margin-left: 10px;display: none" class="fl" onclick="formSubmit(4)">
                     <img src="/wap/img/weixinsaoma.jpg"/>
-                    <p>微信支付</p>
+                    <p style="font-size: 10px">微信支付</p>
                 </div>
 
                 <div style="margin-left: 10px;" class="fl" onclick="formSubmit(2)">
                     <img src="/wap/img/alipay.jpeg"/>
-                    <p style="font-size: 12px">支付宝支付(通道二)</p>
+                    <p style="font-size: 10px">支付宝支付(通道二)</p>
                 </div>
 
 
                 <div style="margin-top: 10px;" class="fl" onclick="formSubmit(6)">
                     <img src="/wap/img/weixinsaoma.jpg"/>
-                    <p style="font-size: 12px">微信</p>
+                    <p style="font-size: 10px" style="font-size: 12px">微信</p>
                 </div>
 
         <div style="clear: both;"></div>
