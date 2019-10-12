@@ -760,7 +760,7 @@ class SiteController extends \frontend\components\Controller
             unset($item['time']);
             unset($item['id']);
         });
-     echo json_encode($data);die;
+     echo json_encode($data);die();
 
         switch ($unit) {
             case 'day':
