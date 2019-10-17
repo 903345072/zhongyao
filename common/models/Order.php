@@ -485,16 +485,16 @@ class Order extends \common\components\ARModel
             $diffPoint = $diffPoint / $productPrice->point_unit;//计算出点差
 
             //挣了多少钱
-            $order->profit = sprintf('%.2f', $diffPoint * $order->one_profit * $order->hand);
+            $order->profit = sprintf('%.2f', $diffPoint * $order->one_profit * $order->hand);//81*10*10
             //如果平仓的时候收益超出，按设定最高收益
             if ($order->profit > 0) {
 
                 if ($order->stop_profit_point > 0) {
                     //盈利不能超过设置盈利
 
-                    if ($order->profit > $order->one_profit * $order->stop_profit_point * $order->hand) {
-
-                        $order->profit = $order->one_profit * $order->stop_profit_point * $order->hand;
+                    if ($order->profit > $order->stop_profit_amount) {
+                           cache('a','3');
+                        $order->profit = $order->stop_profit_amount;
                     }
                 }
 
@@ -506,8 +506,8 @@ class Order extends \common\components\ARModel
 
                 if ($order->stop_loss_point > 0) {
                     //亏损不能超过设置亏损
-                    if (-$order->profit > $order->one_profit * $order->stop_loss_point * $order->hand) {
-                        $order->profit = -$order->one_profit * $order->stop_loss_point * $order->hand;
+                    if (-$order->profit > $order->stop_loss_amount) {
+                        $order->profit = -$order->stop_loss_amount;
                     }
                 }
                 //亏损不超过保证金
