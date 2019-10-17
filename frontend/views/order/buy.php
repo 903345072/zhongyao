@@ -693,9 +693,9 @@
         if (result) {
           var currentType = "<?= $productInfo->table_name ?>" + ''.toLowerCase();
           if (nowType == 1) {
-            $('#lastprice').val(result.info[currentType].sp);
+            $('#lastprice').val(result.info[currentType].price);
           } else {
-            $('#lastprice').val(result.info[currentType].bp);
+            $('#lastprice').val(result.info[currentType].price);
           }
           reCountFn();
         }
