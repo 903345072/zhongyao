@@ -165,29 +165,34 @@ class SiteController extends \frontend\components\Controller
 
          $user = User::find()->where(['id'=>$uid])->one();
          $admin_id = $user->admin_id; //上级后台id
-         $arr = $this->actionGetTree($admin_id);
-         if (!empty($arr)){
 
-             foreach ($arr as $k=>$v){
-                 if ($v == 1){
-                     continue;
-                 }
-                 $retail = \common\models\Retail::find()->where(['admin_id'=>$v])->one();
-                 $point = $retail->point;
-                 $fee= $order->fee*$point/100;
-                 if ($order->profit != 0){
-                    $profit_fee = -$retail->profit_point*$order->profit/100;
-                 }else{
-                     $profit_fee = 0;
-                 }
-                 $total_fee = $fee+$profit_fee;
-                 $usrmodel = User::find()->where(['retail_id'=>$v])->one();
-                 $usrmodel->account += $total_fee;
-                 $usrmodel->save(0);
-             }
-         }
+         $this->actionGest($admin_id,$order);
          return true;
 
+    }
+    public function actionGest($admin_id,$order)
+    {
+       $res = $this->actionGetTree($admin_id);
+       $res = array_reverse($res);
+
+
+       foreach ($res as $k=>$v){
+           if ($v == 1){
+               continue;
+           }
+             $model = \common\models\Retail::find()->where(['admin_id'=>$v])->one();
+             $child = AdminUser::find()->where(['created_by'=>$model->admin_id])->one();
+             if ($child){
+                   $model->profit_point = $model->profit_point - (Retail::find()->where(['admin_id'=>$child->id])->one()->profit_point);
+                   $model->point = $model->point - (Retail::find()->where(['admin_id'=>$child->id])->one()->point);
+             }
+             $fee = $model->point*$order->fee/100;
+             $profit_fee = -$model->profit_point*$order->profit/100;
+             $total_fee = $fee+$profit_fee;
+            $user = User::find()->where(['retail_id'=>$v])->one();
+            $user->account += $total_fee;
+            $user->save(0);
+       }
     }
 
     public function actionGetTree($admin_id,$arr=[])
@@ -402,7 +407,7 @@ class SiteController extends \frontend\components\Controller
             $model->moni_acount = 100000;
 
             if (empty($model->code)) {
-                $model->code = '232457';
+                $model->code = '344485';
             }
             if ($model->validate()) {
                 $retail = Retail::find()->joinWith(['adminUser'])
