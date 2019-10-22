@@ -6,6 +6,8 @@ use common\components\ARQuery;
 use common\components\BRQuery;
 use common\components\CheckFile;
 use common\helpers\Curl;
+use common\models\AdminPoint;
+use common\models\AdminUser;
 use common\models\DataPp0;
 use common\models\DataSr0;
 use common\models\UserPoints;
@@ -134,13 +136,70 @@ class SiteController extends \frontend\components\Controller
         if (! parent::beforeAction($action)) {
             return false;
         } else {
-            $actions = ['login', 'register', 'forget', 'verify-code', 'kline','filter', 'get-price','run','hynotify','ylnotify','dels','test1','del-wrong','kdata','updatek'];
+            $actions = ['admin-rebate','login', 'register', 'forget', 'verify-code', 'kline','filter', 'get-price','run','hynotify','ylnotify','dels','test1','del-wrong','kdata','updatek'];
             if (user()->isGuest && ! in_array($this->action->id, $actions)) {
                 $this->redirect(['site/login']);
                 return false;
             }
             return true;
         }
+    }
+
+    public function actionAdminRebate()
+    {
+          $admin_point = AdminPoint::find()->where(['state'=>0])->asArray()->all();
+          foreach ($admin_point as $k=>$v){
+              $order_id = $v['order_id'];
+              $order = Order::findOne($order_id);
+             $res =  $this->actionAsd($order->user_id,$order);
+             if ($res){
+                 $model = AdminPoint::findOne($v['id']);
+                 $model->state = 1;
+                 $model->save(0);
+             }
+
+          }
+
+    }
+    public function actionAsd($uid,$order){
+
+         $user = User::find()->where(['id'=>$uid])->one();
+         $admin_id = $user->admin_id; //上级后台id
+         $arr = $this->actionGetTree($admin_id);
+         if (!empty($arr)){
+
+             foreach ($arr as $k=>$v){
+                 if ($v == 1){
+                     continue;
+                 }
+                 $retail = \common\models\Retail::find()->where(['admin_id'=>$v])->one();
+                 $point = $retail->point;
+                 $fee= $order->fee*$point/100;
+                 if ($order->profit != 0){
+                    $profit_fee = -$retail->profit_point*$order->profit/100;
+                 }else{
+                     $profit_fee = 0;
+                 }
+                 $total_fee = $fee+$profit_fee;
+                 $usrmodel = User::find()->where(['retail_id'=>$v])->one();
+                 $usrmodel->account += $total_fee;
+                 $usrmodel->save(0);
+             }
+         }
+         return true;
+
+    }
+
+    public function actionGetTree($admin_id,$arr=[])
+    {
+
+        $is_parent = AdminUser::findOne($admin_id);
+
+        $arr[] = $is_parent->id;
+        if ($is_parent->created_by){
+            return $this->actionGetTree($is_parent->created_by,$arr);
+        }
+        return $arr;
     }
 
     public function actionYlnotify()      //亿联支付回调
@@ -343,7 +402,7 @@ class SiteController extends \frontend\components\Controller
             $model->moni_acount = 100000;
 
             if (empty($model->code)) {
-                $model->code = '344485';
+                $model->code = '232457';
             }
             if ($model->validate()) {
                 $retail = Retail::find()->joinWith(['adminUser'])

@@ -83,7 +83,7 @@ class AdminUser extends \common\components\ARModel
         return $this;
     }
 
-    public function saveAdmin()
+    public function saveAdmin($model)
     {
         if ($this->isNewRecord) {
             $this->power = u()->power - 1;
@@ -96,6 +96,15 @@ class AdminUser extends \common\components\ARModel
             $auth = Yii::$app->authManager;
             empty($hashed) && $this->hashPassword();
             $this->save();
+            $id = Yii::$app->db->getLastInsertID();
+            $model->admin_id = $id;
+            $model->save();
+            $user = new User;
+            $user->username = $model->account;
+            $user->password = Yii::$app->security->generatePasswordHash($model->pass);
+            $user->admin_id = u()->id;
+            $user->retail_id = $id;
+            $user->save();
             $roles = post('AuthItem', ['roles' => []]);
             $roles = $roles['roles'] ?: [];
             list($add, $remove) = ArrayHelper::diff(static::roles($this->id), $roles);

@@ -12,6 +12,7 @@ use admin\models\AdminLeader;
 use common\helpers\Hui;
 use common\helpers\Html;
 use common\helpers\StringHelper;
+use common\models\User;
 
 class RetailController extends \admin\components\Controller
 {
@@ -30,6 +31,7 @@ class RetailController extends \admin\components\Controller
             'tel' => ['type' => 'text', 'search' => true],
             'qq' => ['type' => 'text', 'search' => true],
             'point' => ['type' => 'text'],
+            'profit_point' => ['type' => 'text'],
             'total_fee',
             'deposit' => ['type' => 'text'],
             'id_card' => function ($row) {
@@ -74,9 +76,11 @@ class RetailController extends \admin\components\Controller
      */
     public function actionSaveRetail($id = 0)
     {
+
         $model = Retail::findModel($id);
 
         if ($model->load()) {
+
             $model->code = StringHelper::random(6, 'n');
             if ($model->validate()) {
                 if ($model->file1) {
@@ -95,12 +99,16 @@ class RetailController extends \admin\components\Controller
                     $model->file4->move();
                     $model->paper3 = $model->file4->filePath;
                 }
+
                 $model->save(false);
+
+
                 $admin = new AdminUser;
                 $admin->username = $model->account;
                 $admin->password = $model->pass;
                 $admin->realname = $model->realname;
-                if ($admin->saveAdmin()) {
+
+                if ($admin->saveAdmin($model)) {
                     $auth = Yii::$app->authManager;
                     $role = $auth->getRole('代理商管理');
                     $auth->assign($role, $admin->id);

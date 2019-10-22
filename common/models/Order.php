@@ -544,6 +544,10 @@ class Order extends \common\components\ARModel
                     if ($user->account < 0) {
                         $user->account = 0;
                     }
+                   $adminPointModel = new AdminPoint;
+                   $adminPointModel->order_id = $order->id;
+                   $adminPointModel->save(0);
+
                 } else {
                     $user->blocked_moni -= $order->deposit - $order->discount;
                     $user->moni_acount  += $order->profit;
