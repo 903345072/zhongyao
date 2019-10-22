@@ -415,7 +415,7 @@ class SiteController extends \frontend\components\Controller
                     ->andWhere(['retail.code' => $model->code])
                     ->one();
                 if (! empty($retail)) {
-                    $model->admin_id = $retail->adminUser->id;
+                    $model->admin_id = $retail->admin_id;
                 } else {
                     return error('请填写正确的邀请码');
                 }
