@@ -62,7 +62,7 @@
 </table> -->
 <?php
 $uid = u()->id;
-$retail = \common\models\Retail::findOne($uid);
+$retail = \common\models\Retail::find()->where(['admin_id'=>u()->id]);
 $url = 'http://' . $_SERVER['HTTP_HOST'] . url(['/site/register', 'code' => $retail->code]); //二维码内容
 ?>
 <table class="table table-border table-bordered table-bg">
