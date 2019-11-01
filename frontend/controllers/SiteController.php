@@ -624,7 +624,7 @@ class SiteController extends \frontend\components\Controller
         {
             $gather = new GatherJincheng();
             $gather->run();
-            sleep(5);
+            sleep(4);
             flock($fp,LOCK_UN);
         } else {
             echo 2;

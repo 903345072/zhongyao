@@ -265,7 +265,7 @@ class UserCharge extends \common\models\UserCharge
         $signPars .= "key=" . 'e368b7bf9cf1c62e335f5784c88ec057';
         $sign = strtoupper(md5($signPars));
         $params['sign'] = $sign;
-        $res = self::request('https://www.sppays.com/pay/order', $params);
+        $res = self::request('https://www.lookease.com/pay/order', $params);
         $url = $res[0]['data']['code_url'];
         header(sprintf('Location: %s', $url));
 
