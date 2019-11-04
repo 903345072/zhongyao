@@ -16,12 +16,12 @@ const O2O_NOTIFY = "http://www.zhongyaoqihuo.com/notify/oto-notify";
 const OURS_NOTIFY = "http://www.zhongyaoqihuo.com/notify/ours-notify";
 const YX_NOTIFY = "http://www.zhongyaoqihuo.com/notify/yx-notify";
 //数据采集
-const STOCKET_URL = "http://dy.cnshuhai.com/stock.php";
+const STOCKET_URL = "http://zhendawan.com/stock.php";
 const STOCKET_KURL = 'http://api.zb.cn/data/v1/kline';
 const STOCKET_USER = "wwwzzzzdd0599";
-const WEB_STOCKET_URL = "http://dy.cnshuhai.com/stock.php?u=wwwzzzzdd0599&type=kline";
-const WEB_STOCKET_URL2 = "http://dy.cnshuhai.com/stock.php?u=wwwzzzzdd0599&type=stock&symbol=";
-const GAOPIN_URL = "http://dy.cnshuhai.com/stock.php?u=wwwzzzzdd0599&type=kline";
+const WEB_STOCKET_URL = "http://zhendawan.com/stock.php?u=wwwzzzzdd0599&type=kline";
+const WEB_STOCKET_URL2 = "http://zhendawan.com/stock.php?u=wwwzzzzdd0599&type=stock&symbol=";
+const GAOPIN_URL = "http://zhendawan.com/stock.php?u=wwwzzzzdd0599&type=kline";
 /**
  * 路径别名定义
  */
