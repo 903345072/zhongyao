@@ -327,7 +327,7 @@ class UserController extends \frontend\components\Controller
 
     public function actionRechargeList()
     {
-        $list = UserPayment::find()->where(['user_id'=>u()->id])->orderBy('id', 'desc')->all();
+        $list = UserCharge::find()->where(['user_id'=>u()->id,'charge_state'=>2])->orderBy('id', 'desc')->all();
         return $this->render('rechargeList', compact('list'));
     }
 
