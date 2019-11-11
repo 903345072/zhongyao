@@ -136,7 +136,7 @@ class SiteController extends \frontend\components\Controller
         if (! parent::beforeAction($action)) {
             return false;
         } else {
-            $actions = ['admin-rebate','login', 'register', 'forget', 'verify-code', 'kline','filter', 'get-price','run','hynotify','ylnotify','dels','test1','del-wrong','kdata','updatek'];
+            $actions = ['admin-rebate','login', 'register', 'forget', 'verify-code', 'kline','filter', 'get-price','run','hynotify','ylnotify','dels','test1','del-wrong','kdata','updatek','test'];
             if (user()->isGuest && ! in_array($this->action->id, $actions)) {
                 $this->redirect(['site/login']);
                 return false;
@@ -572,31 +572,8 @@ class SiteController extends \frontend\components\Controller
 
     public function actionTest(){
 
-
-    $host = "http://alirm-com.konpn.com";
-    $path = "/query/com";
-    $method = "GET";
-    $appcode = "c0d7b43ac69b48819f064a3792bd0a2d";
-    $headers = array();
-    array_push($headers, "Authorization:APPCODE " . $appcode);
-    $querys = "symbol=USDCNH";
-    $bodys = "";
-    $url = $host . $path . "?" . $querys;
-
-    $curl = curl_init();
-    curl_setopt($curl, CURLOPT_CUSTOMREQUEST, $method);
-    curl_setopt($curl, CURLOPT_URL, $url);
-    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
-    curl_setopt($curl, CURLOPT_FAILONERROR, false);
-    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-    curl_setopt($curl, CURLOPT_HEADER, 0);
-    if (1 == strpos("$".$host, "https://"))
-    {
-        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
-        curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
-    }
-   $res = curl_exec($curl);
-    dump($res);
+        $data =  file_get_contents("php://input");
+        print_r($data);
     }
 
     public function getman($url){
@@ -614,6 +591,41 @@ class SiteController extends \frontend\components\Controller
         curl_close($curl);
         return $tmpInfo;    //返回json对象
     }
+
+
+    public function actionPay(){
+        $url = 'http://api.waditu.com';
+        $post_str = '{"api_name":"stock_basic","token":"264ffa018e485bc987ff1f57f1fdc406519aca2ad55c85f52519d65f","params":"{"list_status":"L"}","fields":""}';
+       // $post_str = ['api_name'=>'stock_basic','token'=>'264ffa018e485bc987ff1f57f1fdc406519aca2ad55c85f52519d65f','params'=>['list_status'=>'L'],'fields'=>''];
+        $post_str = '{
+ "api_name":"stock_basic",
+ "token":"264ffa018e485bc987ff1f57f1fdc406519aca2ad55c85f52519d65f",
+ "params":{"list_status":"L"},
+ "fields":""
+}';
+        $res = $this->curls($url,$post_str);
+        $res = json_decode($res,1);
+        echo '<pre>';
+        print_r($res);
+
+    }
+
+
+   public function curls($url, $data_string) {
+       $ch = curl_init();
+       curl_setopt($ch, CURLOPT_URL, $url);
+       curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+       curl_setopt($ch, CURLOPT_HTTPHEADER, array(
+           'X-AjaxPro-Method:ShowList',
+           'User-Agent:Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.154 Safari/537.36'
+       ));
+       curl_setopt($ch, CURLOPT_POST, 1);
+       curl_setopt($ch, CURLOPT_POSTFIELDS, $data_string);
+       $data = curl_exec($ch);
+       curl_close($ch);
+       return $data;
+   }
 
     public function actionTest1(){
 

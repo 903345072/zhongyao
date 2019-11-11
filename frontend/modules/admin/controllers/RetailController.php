@@ -24,7 +24,7 @@ class RetailController extends \admin\components\Controller
         $query = (new Retail)->search()->retail();
 
         $html = $query->getTable([
-            'id',
+            'admin_id',
             'account' => ['header' => '代理商账号', 'search' => true],
             'company_name' => ['type' => 'text', 'search' => true],
             'realname' => ['type' => 'text', 'search' => true],
