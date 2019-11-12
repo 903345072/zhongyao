@@ -112,7 +112,7 @@
         <img src="/wap/img/user_icon_30.png" class="ris"/>
       </li></a>
 
-      <a href="<?= url(['user/conn-kf']) ?>"><li>
+      <a href="<?= config('kefu_url') ?>"><li>
               <div class="icon">
                   <img src="/wap/img/user_icon10.png"/>
               </div>
