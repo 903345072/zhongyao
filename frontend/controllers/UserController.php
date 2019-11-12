@@ -501,6 +501,7 @@ class UserController extends \frontend\components\Controller
     public function actionConnKf()
     {
         $this->view->title = '意见反馈';
+        $this->layout = false;
 
         if ($_POST) {
             $content             = $_POST['content'];

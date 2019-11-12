@@ -1,14 +1,27 @@
-<body style="background-color: #ffffff">
-		<div class="header">
-			<p>意见反馈</p>
-      <img src="/wap/img/icons_03.png" onclick="javascript:history.back()">
-		</div>
 
-        <div >
-            <img src="<?= config('kefu_code')  ?>" alt="">
 
-        </div>
-<div style="font-size: 30px;display: flex;justify-content: center"><p>保存二维码至手机，扫一扫添加客服</p></div>
-    <?= $this->render('../layouts/_footer') ?>
+<!doctype html>
+<html>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?f8a96cfc5aa8a32ac9c45eaa7fd5f6db";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+</head>
+
+<body>
 
 </body>
+</html>
+
+
