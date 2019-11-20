@@ -45,6 +45,9 @@ class LoginForm extends \common\components\Model
     public function login()
     {
         if ($this->validate()) {
+            if ($this->getUser()->state == -1){
+                return error('账户被禁用');
+            }
             return user()->login($this->getUser(), $this->rememberMe ? 3600 * 24 * 30 : 0);
         } else {
             return false;

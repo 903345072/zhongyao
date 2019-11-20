@@ -50,6 +50,7 @@ class AdminController extends \admin\components\Controller
      */
     public function actionSaveAdmin($id = null)
     {
+
         $user = AdminUser::findModel($id);
 
         $this->checkAccess($user);
@@ -63,6 +64,7 @@ class AdminController extends \admin\components\Controller
         $authItem->roles = AdminUser::roles($id);
 
         if ($user->load()) {
+
             if ($user->saveAdmin()) {
                 return self::success();
             } else {
