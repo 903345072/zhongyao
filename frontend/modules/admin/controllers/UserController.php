@@ -51,11 +51,9 @@ class UserController extends \admin\components\Controller
                 'header' => '操作',
                 'width'  => '120px',
                 'value'  => function ($row) {
-                    if ($row['state'] == User::STATE_VALID) {
-                        $deleteBtn = Hui::dangerBtn('冻结', ['deleteUser', 'id' => $row->id], ['class' => 'deleteBtn']);
-                    } else {
-                        $deleteBtn = Hui::successBtn('恢复', ['deleteUser', 'id' => $row->id], ['class' => 'deleteBtn']);
-                    }
+
+                        $deleteBtn = Hui::dangerBtn('删除', ['deleteUser', 'id' => $row->id], ['class' => 'deleteBtn']);
+
                     if (u()->power == 10000){
                         return implode(str_repeat('&nbsp;', 2), [
                             Hui::primaryBtn('修改密码', ['editUserPass', 'id' => $row->id], ['class' => 'editBtn']),
@@ -166,12 +164,10 @@ class UserController extends \admin\components\Controller
      */
     public function actionDeleteUser()
     {
-        $user = User::find()->where(['id' => get('id')])->one();
+        $user = User::findOne(get('id'));
 
-        if ($user->toggle('state')) {
-            return success('冻结成功！');
-        } else {
-            return success('账号恢复成功！');
+        if ($user->delete()) {
+            return success('删除成功！');
         }
     }
 
