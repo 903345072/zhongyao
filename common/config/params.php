@@ -11,13 +11,12 @@ return [
     'productList'           => [
         'cl',
         'm0',
-        'p0',
         'pp0',
         'sr0',
         'y0',
         'scbu',
         'zcsr',
-        'dcpp'
+        'dcpp',
     ],
 
     // 交易产品列表
@@ -29,38 +28,7 @@ return [
         'm0'=>'hf_HSI',
         'sr0'=>'hkHSI',
         'zcsr'=>'hf_GC',
-        'dcpp'=>'hf_SI',
-//        'p0'=>'hf_HG',
-//        'pp0' =>'CEDAXM0',
-//        'y0'=>'CMHGN0',
-//        'm0'=>'CMGCQ0',
-//        'sr0'=>'HIHSI06',
-//        'p0'=>'CMSIN0'
-//        'gc'    => 'CMGCA0',
-//        'si'    => 'CMSIA0',
-//        'hg'    => 'NENGA0',
-//        'dax'   => 'CEDAXA0',
-//        'hkhsi' => 'HIHSIF',
-//        'mhi'   => 'HIMHIF',
-        //'a50'   => 'WGCNA0',
-        //'ixic'  => 'CENQA0',
-        //'bp'    => 'WICMBPA0',
-        //'ec'    => 'WICMECA0',
-        //'ad'    => 'WICMADA0',
-        //'cd'    => 'WICMCDA0',
-
-        //'au0' => 'SCau0001',
-        //'ag0' => 'SCag0001',
-        //'cu0' => 'SCcu0001',
-        //'ni0' => 'SCni0001',
-        //'bu0' => 'SCbu0001',
-        //'ru0' => 'SCru0001',
-        //'rb0' => 'SCrb0001',
-        //'p0'  => 'DCp0001',
-        //'sr0' => 'ZCSR0001',
-        //'m0'  => 'DCm0001',
-        //'y0'  => 'DCy0001',
-        //'pp0' => 'DCpp0001',
+        'dcpp'=>'hf_SI'
     ],
 
     'bankList' => [
