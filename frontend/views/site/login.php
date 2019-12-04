@@ -29,7 +29,7 @@
 				</div>
       <div class="clear" >
           <img style="display: none;" class="kefus" src="<?= config('kefu_code')?>" alt="">
-        <a class="forgotpasswd" style="color: #E3E3E3;" href="#" >忘记密码？</a>
+        <a  style="color: #E3E3E3;" href="<?= config('kefu_url') ?>" >忘记密码？</a>
           <script>
               $('.forgotpasswd').click(function () {
                   layer.open({
