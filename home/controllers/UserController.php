@@ -221,6 +221,7 @@ class UserController extends \home\components\Controller
     public function actionNewGui()
     {
         $this->view->title = '新手指引';
+
         $ruleFlag          = get('flag', 'rule-recharge');
 
         return $this->render('newGui', compact('ruleFlag'));

@@ -38,7 +38,7 @@ class SiteController extends \frontend\components\Controller
      * @return array
      */
     public $productList = [
-        'cl'    => 'NECLF0',
+        'cl'    => 'NECLG0',
         'scbu'=>'SCbu1912',
         'pp0' =>'SCrb2001',
         'y0'=>'WGCNZ0',
@@ -643,8 +643,6 @@ class SiteController extends \frontend\components\Controller
         }
 //关闭文件
         fclose($fp);
-
-
     }
 
     public function D()
